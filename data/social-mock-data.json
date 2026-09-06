@@ -1,21 +1,29 @@
 {
   "_readme": "REAL where noted, PLACEHOLDER elsewhere. Verified via public search (Aug 2026): Instagram and X follower counts are real, pulled from public profile pages. YouTube, TikTok, and LinkedIn handles are confirmed real (found in daytraders.com's own footer) but their follower counts could not be retrieved from public search results and are still placeholders below, marked _verified:false. Engagement rate, reach, and 7-day growth deltas are NOT publicly visible on any platform without account login or API access — those remain placeholders until the real API integrations in lib/socialApis/ are connected.",
   "overviewStats": {
-    "_readme": "totalReach, engagementRate, and netFollowerGrowth7d below are UNVERIFIED PLACEHOLDERS from the original mock build — these require private analytics (Meta Business Suite, X Analytics, etc.) that public search cannot see, so they could not be verified or corrected, only flagged. topPostOfWeek has been corrected to reflect the actual best real post found in research (previously said Instagram/4.2k likes, which was fabricated and contradicted the real findings).",
+    "_readme": "totalReach and engagementRate remain genuinely unverifiable without private analytics access — shown as a dash, not a fake number, but the PLACEHOLDER label stays so it's clear the card exists and is just empty pending real data. netFollowerGrowth7d is the same situation. bestVerifiedPlatform and combinedVerifiedFollowers are NEW — both are computed directly from the verified channel data (Instagram + X), not fabricated.",
     "totalReach": {
-      "value": 284000,
-      "verified": false,
-      "note": "Placeholder — needs Meta Business Suite / native analytics access to verify"
+      "value": null,
+      "verified": false
     },
     "engagementRate": {
-      "value": 5.2,
-      "verified": false,
-      "note": "Placeholder — needs native analytics access to verify"
+      "value": null,
+      "verified": false
     },
     "netFollowerGrowth7d": {
-      "value": 1120,
-      "verified": false,
-      "note": "Placeholder — needs day-over-day snapshots to compute for real"
+      "value": null,
+      "verified": false
+    },
+    "bestVerifiedPlatform": {
+      "platform": "X",
+      "followers": 6666,
+      "verified": true,
+      "note": "Highest follower count among the platforms with a verified real number (Instagram, X only — YouTube/TikTok/LinkedIn aren't in this comparison since their numbers aren't verified)."
+    },
+    "combinedVerifiedFollowers": {
+      "value": 9226,
+      "verified": true,
+      "note": "Sum of Instagram (2560) + X (6666) only — real accounts with real numbers. Does NOT include YouTube/TikTok/LinkedIn since those aren't verified, so this understates true total reach."
     },
     "topPostOfWeek": {
       "platform": "Prediction Giveaway (X)",
@@ -48,7 +56,9 @@
         "url": "https://www.instagram.com/daytraderscom/",
         "retrieved": "Aug 2026",
         "metric": "followers, following, post count"
-      }
+      },
+      "following": 1023,
+      "_postsLast30dVerified": false
     },
     {
       "platform": "X",
@@ -71,7 +81,9 @@
         "url": "https://x.com/DayTraders_com",
         "retrieved": "Aug 2026",
         "metric": "followers, following, join date"
-      }
+      },
+      "following": 1847,
+      "_postsLast30dVerified": false
     },
     {
       "platform": "YouTube",
@@ -89,7 +101,9 @@
         "Thumbnails underperform vs. category leaders"
       ],
       "_verified": false,
-      "_sourceNote": "Channel confirmed real (ID: UCDP2o8_mXEb_v6C7rEix6Qw) but subscriber count not retrievable via public search — check youtube.com/@DayTraders_com directly"
+      "_sourceNote": "Channel confirmed real (ID: UCDP2o8_mXEb_v6C7rEix6Qw) but subscriber count not retrievable via public search — check youtube.com/@DayTraders_com directly",
+      "following": null,
+      "_postsLast30dVerified": false
     },
     {
       "platform": "TikTok",
@@ -107,7 +121,9 @@
         "Trending-audio usage is inconsistent"
       ],
       "_verified": false,
-      "_sourceNote": "Handle confirmed real via daytraders.com footer, but TikTok blocks automated access to follower counts — check the app/site directly"
+      "_sourceNote": "Handle confirmed real via daytraders.com footer, but TikTok blocks automated access to follower counts — check the app/site directly",
+      "following": null,
+      "_postsLast30dVerified": false
     },
     {
       "platform": "LinkedIn",
@@ -125,7 +141,9 @@
         "No consistent content pillar yet"
       ],
       "_verified": false,
-      "_sourceNote": "Company page confirmed real (linkedin.com/company/daytraders-com) but follower count not retrievable via public search"
+      "_sourceNote": "Company page confirmed real (linkedin.com/company/daytraders-com) but follower count not retrievable via public search",
+      "following": null,
+      "_postsLast30dVerified": false
     }
   ],
   "liveFeedTopPosts": [

@@ -2,7 +2,7 @@
 
 import {
   Instagram, Youtube, Linkedin, Twitter, Music2,
-  Eye, TrendingUp, Users, Flame, ExternalLink,
+  Eye, Flame, ExternalLink, Trophy, Users2,
 } from "lucide-react";
 import data from "@/data/social-mock-data.json";
 
@@ -13,7 +13,8 @@ const PLATFORM_ICON: Record<string, any> = {
   Instagram, X: Twitter, YouTube: Youtube, TikTok: Music2, LinkedIn: Linkedin,
 };
 
-function fmt(n: number) {
+function fmt(n: number | null) {
+  if (n == null) return "—";
   if (n >= 1000) return `${(n / 1000).toFixed(n % 1000 === 0 ? 0 : 1)}k`;
   return `${n}`;
 }
@@ -33,8 +34,19 @@ export default function DashboardOverview() {
       {/* ================= STAT CARDS ================= */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <StatCard icon={Eye} label="Total Reach" value={fmt(overviewStats.totalReach.value)} verified={overviewStats.totalReach.verified} />
-        <StatCard icon={TrendingUp} label="Engagement Rate" value={`${overviewStats.engagementRate.value}%`} verified={overviewStats.engagementRate.verified} />
-        <StatCard icon={Users} label="Net Follower Growth (7d)" value={`+${fmt(overviewStats.netFollowerGrowth7d.value)}`} verified={overviewStats.netFollowerGrowth7d.verified} />
+        <StatCard
+          icon={Users2}
+          label="Verified Followers (IG+X)"
+          value={fmt(overviewStats.combinedVerifiedFollowers.value)}
+          verified={overviewStats.combinedVerifiedFollowers.verified}
+        />
+        <StatCard
+          icon={Trophy}
+          label="Best Verified Platform"
+          value={overviewStats.bestVerifiedPlatform.platform}
+          sub={`${fmt(overviewStats.bestVerifiedPlatform.followers)} followers`}
+          verified={overviewStats.bestVerifiedPlatform.verified}
+        />
         <StatCard
           icon={Flame}
           label="Top Post (Real)"
@@ -85,12 +97,12 @@ export default function DashboardOverview() {
 
                 <div className="grid grid-cols-2 gap-2 mb-3 text-center">
                   <div className="bg-white/5 rounded-lg py-2">
-                    <div className="font-bold text-sm">{ch.engagementRate !== null ? `${ch.engagementRate}%` : "—"}</div>
+                    <div className="font-bold text-sm">{ch.engagementRate == null ? "—" : `${ch.engagementRate}%`}</div>
                     <div className="text-[9px] text-gray-500">ENGAGEMENT</div>
                   </div>
                   <div className="bg-white/5 rounded-lg py-2">
-                    <div className="font-bold text-sm">{ch.postsLast30d}</div>
-                    <div className="text-[9px] text-gray-500">POSTS / 30D</div>
+                    <div className="font-bold text-sm">{fmt((ch as any).following)}</div>
+                    <div className="text-[9px] text-gray-500">FOLLOWING{(ch as any).following == null && " (unverified)"}</div>
                   </div>
                 </div>
 
