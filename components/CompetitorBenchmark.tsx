@@ -34,7 +34,9 @@ export default function CompetitorBenchmark() {
             <div className="flex-1">
               <div className="font-bold text-sm flex items-center gap-1.5">
                 {c.firm}
-                <ExternalLink size={11} className="text-gray-500" />
+                <span className="text-[8px] font-bold text-green-400 bg-green-400/10 rounded px-1.5 py-0.5 flex items-center gap-0.5">
+                  VERIFIED <ExternalLink size={7} />
+                </span>
               </div>
               <div className="text-xs text-gray-500">{c.platform} &middot; {c.handle}</div>
               <div className="text-[11px] text-gray-400 mt-1 leading-relaxed">{c.sourceNote}</div>
@@ -58,7 +60,12 @@ export default function CompetitorBenchmark() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {unverifiedButRealCompetitors.map((c: any) => (
             <div key={c.firm} className="bg-white/[0.03] border border-white/10 rounded-lg p-3">
-              <div className="font-bold text-sm">{c.firm}</div>
+              <div className="font-bold text-sm flex items-center gap-1.5">
+                {c.firm}
+                <span className="text-[8px] font-bold text-amber-400 bg-amber-400/10 rounded px-1.5 py-0.5">
+                  UNVERIFIED
+                </span>
+              </div>
               <div className="text-[11px] text-gray-500 mt-1 leading-relaxed">{c.reason}</div>
             </div>
           ))}

@@ -21,6 +21,10 @@ export default function ContentIdeaGenerator() {
             <Lightbulb size={22} className="text-[#D42B3F]" /> AI Content Idea Generator
           </h1>
           <p className="text-gray-400 text-sm mt-1">Fresh ideas from trend + performance data — trading-niche and beyond.</p>
+          <p className="text-[10px] text-gray-600 mt-2">
+            These are generated suggestions, not factual claims about anything — no verified/unverified
+            badges apply here the way they do elsewhere in the app.
+          </p>
         </div>
         <button className="flex items-center gap-2 text-xs font-bold bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-3 py-2">
           <RefreshCw size={13} /> Regenerate

@@ -31,7 +31,18 @@ function TrendSection({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {items.map((item) => (
           <div key={item.name} className="bg-[#151517] border rounded-xl p-4" style={{ borderColor: `${color}33` }}>
-            <div className="font-bold text-sm mb-2" style={{ color }}>{item.name}</div>
+            <div className="flex items-start justify-between gap-2 mb-2">
+              <div className="font-bold text-sm" style={{ color }}>{item.name}</div>
+              {item.exampleLink ? (
+                <span className="text-[8px] font-bold text-green-400 bg-green-400/10 rounded px-1.5 py-0.5 shrink-0">
+                  REAL EXAMPLE
+                </span>
+              ) : (
+                <span className="text-[8px] font-bold text-amber-400 bg-amber-400/10 rounded px-1.5 py-0.5 shrink-0">
+                  PATTERN, UNLINKED
+                </span>
+              )}
+            </div>
             <p className="text-xs text-gray-400 leading-relaxed mb-2">{item.description}</p>
             {item.exampleLink && (
               <a

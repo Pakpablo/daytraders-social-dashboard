@@ -1,15 +1,29 @@
 {
   "_readme": "REAL where noted, PLACEHOLDER elsewhere. Verified via public search (Aug 2026): Instagram and X follower counts are real, pulled from public profile pages. YouTube, TikTok, and LinkedIn handles are confirmed real (found in daytraders.com's own footer) but their follower counts could not be retrieved from public search results and are still placeholders below, marked _verified:false. Engagement rate, reach, and 7-day growth deltas are NOT publicly visible on any platform without account login or API access — those remain placeholders until the real API integrations in lib/socialApis/ are connected.",
   "overviewStats": {
-    "totalReach": 284000,
-    "engagementRate": 5.2,
-    "netFollowerGrowth7d": 1120,
+    "_readme": "totalReach, engagementRate, and netFollowerGrowth7d below are UNVERIFIED PLACEHOLDERS from the original mock build — these require private analytics (Meta Business Suite, X Analytics, etc.) that public search cannot see, so they could not be verified or corrected, only flagged. topPostOfWeek has been corrected to reflect the actual best real post found in research (previously said Instagram/4.2k likes, which was fabricated and contradicted the real findings).",
+    "totalReach": {
+      "value": 284000,
+      "verified": false,
+      "note": "Placeholder — needs Meta Business Suite / native analytics access to verify"
+    },
+    "engagementRate": {
+      "value": 5.2,
+      "verified": false,
+      "note": "Placeholder — needs native analytics access to verify"
+    },
+    "netFollowerGrowth7d": {
+      "value": 1120,
+      "verified": false,
+      "note": "Placeholder — needs day-over-day snapshots to compute for real"
+    },
     "topPostOfWeek": {
-      "platform": "Instagram",
-      "caption": "Old price vs new price, side by side — same account, $58 cheaper.",
-      "likes": 4200,
-      "comments": 310,
-      "shares": 890
+      "platform": "Prediction Giveaway (X)",
+      "caption": "Predict the exact World Cup Final score for a $50K S2F Account",
+      "views": 7700,
+      "verified": true,
+      "sourceUrl": "https://x.com/DayTraders_com",
+      "note": "Corrected from fabricated Instagram/4.2k-likes placeholder. This is the real top post found in research, dated 2026-07-19, not literally 'this week.'"
     }
   },
   "channels": [
@@ -29,7 +43,12 @@
         "Bio link click-through is below category average"
       ],
       "_verified": true,
-      "_sourceNote": "277 total posts, 1,023 following — from public profile, Aug 2026"
+      "_sourceNote": "277 total posts, 1,023 following — from public profile, Aug 2026",
+      "_source": {
+        "url": "https://www.instagram.com/daytraderscom/",
+        "retrieved": "Aug 2026",
+        "metric": "followers, following, post count"
+      }
     },
     {
       "platform": "X",
@@ -47,7 +66,12 @@
         "No consistent posting schedule"
       ],
       "_verified": true,
-      "_sourceNote": "Las Vegas, NV · joined June 2024 · 1,847 following — from public profile, Aug 2026"
+      "_sourceNote": "Las Vegas, NV · joined June 2024 · 1,847 following — from public profile, Aug 2026",
+      "_source": {
+        "url": "https://x.com/DayTraders_com",
+        "retrieved": "Aug 2026",
+        "metric": "followers, following, join date"
+      }
     },
     {
       "platform": "YouTube",
@@ -106,33 +130,54 @@
   ],
   "liveFeedTopPosts": [
     {
-      "platform": "TikTok",
-      "caption": "POV: you find out the activation fee dropped from $99 to $5",
-      "metrics": { "views": 412000, "likes": 38900, "comments": 1200, "shares": 6400 },
+      "platform": "X",
+      "handle": "@DayTraders_com",
+      "caption": "One Last Prediction Before a Champion Is Crowned. Spain vs Argentina — predict the exact score for a chance at a $50K S2F Account.",
+      "metrics": { "views": 7700, "likes": null, "comments": null, "shares": null },
+      "_verified": true,
+      "_source": {
+        "url": "https://x.com/DayTraders_com",
+        "retrieved": "Aug 2026",
+        "note": "Posted Jul 19 2026. View count (7.7K) is real and public; likes/comments/shares weren't visible in the search snippet, shown as null rather than guessed."
+      },
       "whyItWorked": {
-        "hookType": "Curiosity-gap POV opener, text-on-screen in first 1s",
-        "visualStyle": "Selfie-style POV, single cut, trending audio",
-        "cta": "Comment your account size for a personalized price"
+        "hookType": "World Cup Final prediction giveaway, tied to a live global event",
+        "visualStyle": "Text post with flag emojis, no image needed — the hook carries it",
+        "cta": "Comment your prediction + follow to enter"
       }
     },
     {
-      "platform": "Instagram",
-      "caption": "Old price vs new price, side by side — same account, $58 cheaper.",
-      "metrics": { "views": 190000, "likes": 4200, "comments": 310, "shares": 890 },
+      "platform": "X",
+      "handle": "@DayTraders_com",
+      "caption": "One final. One prediction. One chance. Spain vs Argentina — predict the first goal scorer for a $50K S2F Account.",
+      "metrics": { "views": 6300, "likes": null, "comments": null, "shares": null },
+      "_verified": true,
+      "_source": {
+        "url": "https://x.com/DayTraders_com",
+        "retrieved": "Aug 2026",
+        "note": "Posted Jul 19 2026, same World Cup Final giveaway series."
+      },
       "whyItWorked": {
-        "hookType": "Direct comparison, no preamble — numbers as the hook",
-        "visualStyle": "Split-screen carousel, high-contrast red/black brand colors",
-        "cta": "Swipe to see your account's new price"
+        "hookType": "Narrower, more specific prediction ask (first scorer vs. exact score) — lower barrier to participate",
+        "visualStyle": "Text post, flag emojis",
+        "cta": "Comment your first-scorer prediction + follow"
       }
     },
     {
-      "platform": "YouTube",
-      "caption": "We read every rule so you don't get denied a payout",
-      "metrics": { "views": 61000, "likes": 3100, "comments": 540, "shares": 210 },
+      "platform": "X",
+      "handle": "@DayTraders_com",
+      "caption": "The battle for third place begins now. France vs England — predict the exact final score for a $50K S2F Account.",
+      "metrics": { "views": 5400, "likes": null, "comments": null, "shares": null },
+      "_verified": true,
+      "_source": {
+        "url": "https://x.com/DayTraders_com",
+        "retrieved": "Aug 2026",
+        "note": "Posted Jul 18 2026, third-place playoff tie-in — lower views than the Final itself, consistent with the smaller audience for a 3rd-place match."
+      },
       "whyItWorked": {
-        "hookType": "Problem-first hook (\"traders keep getting denied and don't know why\")",
-        "visualStyle": "Talking-head + on-screen rule callouts, longform 11 min",
-        "cta": "Link to rules checklist in description"
+        "hookType": "Same prediction-giveaway format applied to a lower-stakes match — still real engagement, just proportionally smaller",
+        "visualStyle": "Text post, flag emojis",
+        "cta": "Comment your score prediction + follow"
       }
     }
   ],
@@ -321,6 +366,53 @@
         "firm": "Tradeify",
         "reason": "Confirmed real, fast-growing firm; follower counts not found."
       }
+    ]
+  },
+  "contentPerformanceAnalysis": {
+    "_readme": "Built from 12 real posts found via public search of x.com/DayTraders_com (Aug 2026 research pass). Instagram and TikTok are NOT included here — individual post-level data (likes/views on specific posts) wasn't findable for those platforms despite additional searching; only account-level follower counts were verifiable there. No meme-style content was found on the account at all, so that specific hypothesis is neither confirmed nor denied — it's just unproven either way, not disproven.",
+    "allPosts": [
+      { "date": "2026-07-19", "type": "Prediction Giveaway", "caption": "Predict the exact World Cup Final score for a $50K S2F Account", "views": 7700 },
+      { "date": "2025-11-08", "type": "Giveaway Announcement", "caption": "Week 2 of the $5,000,000 Giveaway — 6x $150K + 5x $50K Static Accounts", "views": 7158 },
+      { "date": "2026-07-19", "type": "Prediction Giveaway", "caption": "Predict the World Cup Final first goal scorer for a $50K S2F Account", "views": 6300 },
+      { "date": "2026-07-18", "type": "Prediction Giveaway", "caption": "Predict the France vs England 3rd-place match score for a $50K S2F Account", "views": 5400 },
+      { "date": "2026-07-20", "type": "Giveaway Winners", "caption": "4th of July Giveaway Winners Announced — 12 winners across 3 plans", "views": 1900 },
+      { "date": "recent", "type": "Giveaway Announcement", "caption": "EOD $50K Giveaway Live — 10 winners, $500K in EOD Evaluation Accounts", "views": 1900 },
+      { "date": "2026-07-21", "type": "Winner Spotlight", "caption": "World Cup Final halftime score prediction winner announced", "views": 1200 },
+      { "date": "2026-07-21", "type": "Winner Spotlight", "caption": "World Cup Final match winner announced ($150K S2F Account)", "views": 1200 },
+      { "date": "2026-07-21", "type": "Winner Spotlight", "caption": "World Cup MVP prediction winner announced", "views": 947 },
+      { "date": "recent", "type": "Educational", "caption": "3 Drawdown Types Every Trader Should Know (Trailing / EOD / Static)", "views": 581 },
+      { "date": "2026-01-19", "type": "Value Prop / Brand", "caption": "Generic \"how DayTraders works\" structured-funding value prop post", "views": 417 },
+      { "date": "2026-07-20", "type": "Giveaway Winners (reply/sub-thread)", "caption": "S2L Ultra Plan winners, posted as a reply to the main winners post", "views": 215 }
+    ],
+    "whatWorkedBest": [
+      {
+        "pattern": "Prediction giveaways tied to a huge real-world event",
+        "evidence": "The 3 World Cup Final prediction posts (5.4K–7.7K views) are the single best-performing content type found — all beat every other post by a wide margin.",
+        "why": "Two things stack: (1) a live, massive, real-world moment everyone's already talking about, and (2) a low-effort way to participate (comment a guess) with a real, specific prize."
+      },
+      {
+        "pattern": "Large prize-pool giveaways, even without a cultural tie-in",
+        "evidence": "The $5,000,000 giveaway announcement (Nov 2025) hit 7,158 views on its own — the outright highest of all 12 posts, with no external event riding shotgun.",
+        "why": "Prize size alone can substitute for a cultural moment if it's big enough to feel newsworthy by itself."
+      }
+    ],
+    "whatWorkedLeast": [
+      {
+        "pattern": "Plain educational / how-it-works content",
+        "evidence": "The drawdown-types explainer (581 views) and the generic brand value-prop post (417 views) are the two lowest performers found — roughly 10–18x fewer views than the top giveaway posts.",
+        "why": "No hook, no incentive to engage, no reason to comment or share — it's useful information but reads as a pamphlet, not a post."
+      },
+      {
+        "pattern": "Winner announcements buried in reply threads",
+        "evidence": "The 'S2L Ultra Plan Winners' post (215 views) was published as a reply under the main winners post, not as its own standalone post — it's the single lowest view count found, even lower than plain educational content.",
+        "why": "Replies get a fraction of the reach of a standalone post algorithmically, regardless of how good the content is."
+      }
+    ],
+    "recommendations": [
+      "Lean further into prediction/giveaway formats tied to real, live cultural moments — not just trading news. GTA 6's Nov 19 launch is the next one of this scale (see Trend Radar).",
+      "Don't post educational content standalone. Wrap the same information (e.g. drawdown types) inside a giveaway, quiz, or 'guess which rule' format instead of a plain explainer.",
+      "Never post winner announcements as replies. Each one should be its own standalone post — it's real proof of payout, which is exactly the trust-building content that's hard to fake.",
+      "Test whether meme-style content works at all — there's currently zero data either way since the account hasn't tried it."
     ]
   }
 }
