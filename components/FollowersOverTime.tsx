@@ -54,6 +54,7 @@ export default function FollowersOverTime() {
                 stroke={PLATFORM_COLOR[platform]}
                 strokeWidth={2}
                 dot={{ r: 3 }}
+                connectNulls={false}
               />
             ))}
           </LineChart>
@@ -61,19 +62,20 @@ export default function FollowersOverTime() {
       </div>
       <p className="text-[10px] text-gray-600">
         X and Instagram sit on a much bigger scale than TikTok/LinkedIn, which flattens their lines
-        near the bottom &mdash; that's real, not a chart bug. See the ranked list below for like-for-like
-        comparison by growth rate instead of raw scale.
+        near the bottom &mdash; that's real, not a chart bug. YouTube/TikTok/LinkedIn have a 5th,
+        newer data point (Sep 9); X/Instagram/Facebook don't have a verified number that recent yet,
+        so those 3 lines correctly stop at Aug 28 instead of guessing a continuation.
       </p>
 
       {/* ---- Growth ranking ---- */}
       <div>
         <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-3">
-          Ranked by 4-Week Growth Rate
+          Ranked by Growth Rate (Each Platform's Own Latest Real Data)
         </h2>
         <div className="space-y-2">
           {growthAnalysis.map((g: any, i: number) => {
-            const Icon = g.monthChangePct > 0 ? TrendingUp : g.monthChangePct < 0 ? TrendingDown : Minus;
-            const color = g.monthChangePct > 5 ? "#22C55E" : g.monthChangePct < 0 ? "#D42B3F" : "#999";
+            const Icon = g.totalChangePct > 0 ? TrendingUp : g.totalChangePct < 0 ? TrendingDown : Minus;
+            const color = g.totalChangePct > 5 ? "#22C55E" : g.totalChangePct < 0 ? "#D42B3F" : "#999";
             return (
               <div key={g.platform} className="flex items-center gap-3 bg-[#151517] border border-white/10 rounded-lg px-4 py-3">
                 <div className="text-xs font-bold text-gray-600 w-5">{i + 1}</div>
@@ -83,12 +85,13 @@ export default function FollowersOverTime() {
                 />
                 <div className="font-bold text-sm w-24">{g.platform}</div>
                 <div className="text-xs text-gray-500 w-16">{g.current.toLocaleString()}</div>
+                <div className="text-[9px] text-gray-600 w-16">as of {fmtDate(g.asOf)}</div>
                 <div className="flex items-center gap-1 ml-auto" style={{ color }}>
                   <Icon size={13} />
-                  <span className="font-bold text-sm">{g.monthChangePct > 0 ? "+" : ""}{g.monthChangePct}%</span>
+                  <span className="font-bold text-sm">{g.totalChangePct > 0 ? "+" : ""}{g.totalChangePct}%</span>
                 </div>
                 <div className="text-[10px] text-gray-500 w-32 text-right">
-                  {g.monthChange > 0 ? "+" : ""}{g.monthChange} over 4wk
+                  {g.totalChange > 0 ? "+" : ""}{g.totalChange} over {g.spanWeeks}wk
                 </div>
               </div>
             );
@@ -97,13 +100,16 @@ export default function FollowersOverTime() {
       </div>
 
       {/* ---- Callout on the standout finding ---- */}
-      <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-4">
-        <div className="font-bold text-sm text-green-400 mb-1">Facebook is the real standout</div>
+      <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-4 space-y-2">
+        <div className="font-bold text-sm text-green-400">Facebook is still the biggest standout</div>
         <p className="text-xs text-gray-300 leading-relaxed">
-          +43.7% growth in 4 weeks (2,554 &rarr; 3,670) &mdash; by far the fastest-growing platform,
-          despite not being in the original 5-platform scope. Meanwhile TikTok is essentially flat
-          to slightly down (-0.5% over the same period) even with real numbers now confirmed.
-          Worth asking what's driving Facebook growth specifically before assuming it'll continue.
+          +43.7% over its 3-week span (2,554 &rarr; 3,670) &mdash; no other platform is close, though
+          it hasn't had a newer check-in since Aug 28.
+        </p>
+        <div className="font-bold text-sm text-green-400 pt-1">LinkedIn moved up with the new data point</div>
+        <p className="text-xs text-gray-300 leading-relaxed">
+          +8.7% over 4 weeks (115 &rarr; 125) once the Sep 9 number is included &mdash; small in absolute
+          terms (only +10 followers) but a real, consistent upward trend on a small base.
         </p>
       </div>
     </div>

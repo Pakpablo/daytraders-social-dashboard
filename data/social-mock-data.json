@@ -471,20 +471,21 @@
     ]
   },
   "followerHistory": {
-    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks.",
+    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks. A 5th point (Sep 9, 2026) was added, but only for YouTube/TikTok/LinkedIn, which have a real newer number from individual platform screenshots. X/Instagram/Facebook do NOT have a verified number for that date, so those 3 fields are null - the chart shows a genuine gap there rather than a fabricated continuation.",
     "weeks": [
       { "date": "2026-08-07", "X": 6703, "Instagram": 3670, "Facebook": 2554, "YouTube": 3220, "TikTok": 194, "LinkedIn": 115 },
       { "date": "2026-08-14", "X": 6678, "Instagram": 3677, "Facebook": 2954, "YouTube": 3219, "TikTok": 195, "LinkedIn": 116 },
       { "date": "2026-08-21", "X": 6745, "Instagram": 3732, "Facebook": 3305, "YouTube": 3267, "TikTok": 188, "LinkedIn": 118 },
-      { "date": "2026-08-28", "X": 6772, "Instagram": 3787, "Facebook": 3670, "YouTube": 3279, "TikTok": 193, "LinkedIn": 118 }
+      { "date": "2026-08-28", "X": 6772, "Instagram": 3787, "Facebook": 3670, "YouTube": 3279, "TikTok": 193, "LinkedIn": 118 },
+      { "date": "2026-09-09", "X": null, "Instagram": null, "Facebook": null, "YouTube": 3280, "TikTok": 196, "LinkedIn": 125 }
     ],
     "growthAnalysis": [
-      { "platform": "Facebook", "current": 3670, "weekChange": 365, "weekChangePct": 11.0, "monthChange": 1116, "monthChangePct": 43.7 },
-      { "platform": "Instagram", "current": 3787, "weekChange": 55, "weekChangePct": 1.5, "monthChange": 117, "monthChangePct": 3.2 },
-      { "platform": "LinkedIn", "current": 118, "weekChange": 0, "weekChangePct": 0.0, "monthChange": 3, "monthChangePct": 2.6 },
-      { "platform": "YouTube", "current": 3279, "weekChange": 12, "weekChangePct": 0.4, "monthChange": 59, "monthChangePct": 1.8 },
-      { "platform": "X", "current": 6772, "weekChange": 27, "weekChangePct": 0.4, "monthChange": 69, "monthChangePct": 1.0 },
-      { "platform": "TikTok", "current": 193, "weekChange": 5, "weekChangePct": 2.7, "monthChange": -1, "monthChangePct": -0.5 }
+      { "platform": "Facebook", "current": 3670, "asOf": "2026-08-28", "weekChange": 365, "weekChangePct": 11.0, "totalChange": 1116, "totalChangePct": 43.7, "spanWeeks": 3 },
+      { "platform": "LinkedIn", "current": 125, "asOf": "2026-09-09", "weekChange": 7, "weekChangePct": 5.9, "totalChange": 10, "totalChangePct": 8.7, "spanWeeks": 4 },
+      { "platform": "Instagram", "current": 3787, "asOf": "2026-08-28", "weekChange": 55, "weekChangePct": 1.5, "totalChange": 117, "totalChangePct": 3.2, "spanWeeks": 3 },
+      { "platform": "YouTube", "current": 3280, "asOf": "2026-09-09", "weekChange": 1, "weekChangePct": 0.0, "totalChange": 60, "totalChangePct": 1.9, "spanWeeks": 4 },
+      { "platform": "X", "current": 6772, "asOf": "2026-08-28", "weekChange": 27, "weekChangePct": 0.4, "totalChange": 69, "totalChangePct": 1.0, "spanWeeks": 3 },
+      { "platform": "TikTok", "current": 196, "asOf": "2026-09-09", "weekChange": 3, "weekChangePct": 1.6, "totalChange": 2, "totalChangePct": 1.0, "spanWeeks": 4 }
     ]
   }
 }
