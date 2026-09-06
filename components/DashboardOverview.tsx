@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  Instagram, Youtube, Linkedin, Twitter, Music2,
+  Instagram, Youtube, Linkedin, Twitter, Music2, Facebook,
   Eye, Flame, ExternalLink, Trophy, Users2,
 } from "lucide-react";
 import data from "@/data/social-mock-data.json";
@@ -10,7 +10,7 @@ import data from "@/data/social-mock-data.json";
 // Music2 stands in for TikTok and Twitter stands in for X below —
 // swap for real brand SVGs if you have licensed assets.
 const PLATFORM_ICON: Record<string, any> = {
-  Instagram, X: Twitter, YouTube: Youtube, TikTok: Music2, LinkedIn: Linkedin,
+  Instagram, X: Twitter, YouTube: Youtube, TikTok: Music2, LinkedIn: Linkedin, Facebook,
 };
 
 function fmt(n: number | null) {

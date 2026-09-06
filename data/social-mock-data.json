@@ -11,19 +11,20 @@
       "verified": false
     },
     "netFollowerGrowth7d": {
-      "value": null,
-      "verified": false
+      "value": 464,
+      "verified": true,
+      "note": "Real, computed from the internal tracking sheet: sum of Aug 21 -> Aug 28 change across all 6 platforms. This was a placeholder in every earlier version — now it's genuinely real."
     },
     "bestVerifiedPlatform": {
       "platform": "X",
-      "followers": 6666,
+      "followers": 6772,
       "verified": true,
-      "note": "Highest follower count across all 5 platforms, all verified as of Sep 9 2026."
+      "note": "Largest by follower count. Note: Facebook is growing fastest (+43.7% over 4 weeks) despite being smaller — see Followers Over Time section."
     },
     "combinedVerifiedFollowers": {
-      "value": 12827,
+      "value": 17819,
       "verified": true,
-      "note": "Sum of all 5 platforms, all now verified: Instagram (2560), X (6666), YouTube (3280), TikTok (196), LinkedIn (125)"
+      "note": "Sum across all 6 platforms (Instagram, X, YouTube, TikTok, LinkedIn, Facebook), all verified as of Aug 28 2026."
     },
     "topPostOfWeek": {
       "platform": "Prediction Giveaway (X)",
@@ -38,8 +39,8 @@
     {
       "platform": "Instagram",
       "handle": "@daytraderscom",
-      "followers": 2560,
-      "followerGrowth7d": null,
+      "followers": 3787,
+      "followerGrowth7d": 55,
       "engagementRate": null,
       "postsLast30d": 22,
       "strengths": [
@@ -53,9 +54,9 @@
       "_verified": true,
       "_sourceNote": "277 total posts, 1,023 following — from public profile, Aug 2026",
       "_source": {
-        "url": "https://www.instagram.com/daytraderscom/",
-        "retrieved": "Aug 2026",
-        "metric": "followers, following, post count"
+        "method": "internal tracking sheet (user-provided)",
+        "retrieved": "Aug 28, 2026",
+        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "following": 1023,
       "_postsLast30dVerified": false,
@@ -64,8 +65,8 @@
     {
       "platform": "X",
       "handle": "@DayTraders_com",
-      "followers": 6666,
-      "followerGrowth7d": null,
+      "followers": 6772,
+      "followerGrowth7d": 27,
       "engagementRate": null,
       "postsLast30d": 64,
       "strengths": [
@@ -79,9 +80,9 @@
       "_verified": true,
       "_sourceNote": "Las Vegas, NV · joined June 2024 · 1,847 following — from public profile, Aug 2026",
       "_source": {
-        "url": "https://x.com/DayTraders_com",
-        "retrieved": "Aug 2026",
-        "metric": "followers, following, join date"
+        "method": "internal tracking sheet (user-provided)",
+        "retrieved": "Aug 28, 2026",
+        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "following": 1847,
       "_postsLast30dVerified": false,
@@ -90,8 +91,8 @@
     {
       "platform": "YouTube",
       "handle": "@DayTraders_com",
-      "followers": 3280,
-      "followerGrowth7d": null,
+      "followers": 3279,
+      "followerGrowth7d": 12,
       "engagementRate": null,
       "postsLast30d": 5,
       "strengths": [
@@ -107,18 +108,17 @@
       "following": null,
       "_postsLast30dVerified": false,
       "_source": {
-        "method": "user-provided screenshot",
-        "url": "https://www.youtube.com/@DayTraders_com",
-        "retrieved": "Sep 9, 2026",
-        "note": "Previous estimate was 4200 - off by some. Real number replaces it, not just a badge change."
+        "method": "internal tracking sheet (user-provided)",
+        "retrieved": "Aug 28, 2026",
+        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "_narrativeVerified": false
     },
     {
       "platform": "TikTok",
       "handle": "@daytraders_com",
-      "followers": 196,
-      "followerGrowth7d": null,
+      "followers": 193,
+      "followerGrowth7d": 5,
       "engagementRate": null,
       "postsLast30d": 30,
       "strengths": [
@@ -132,18 +132,17 @@
       "following": 472,
       "_postsLast30dVerified": false,
       "_source": {
-        "method": "user-provided screenshot",
-        "url": "https://www.tiktok.com/@daytraders_com",
-        "retrieved": "Sep 9, 2026",
-        "note": "Previous estimate was 26700 - off by a lot. Real number replaces it, not just a badge change."
+        "method": "internal tracking sheet (user-provided)",
+        "retrieved": "Aug 28, 2026",
+        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "_narrativeVerified": false
     },
     {
       "platform": "LinkedIn",
       "handle": "DayTraders",
-      "followers": 125,
-      "followerGrowth7d": null,
+      "followers": 118,
+      "followerGrowth7d": 0,
       "engagementRate": null,
       "postsLast30d": 8,
       "strengths": [
@@ -159,12 +158,29 @@
       "following": null,
       "_postsLast30dVerified": false,
       "_source": {
-        "method": "user-provided screenshot",
-        "url": "https://www.linkedin.com/company/daytraders-com/",
-        "retrieved": "Sep 9, 2026",
-        "note": "Previous estimate was 2100 - off by a lot. Real number replaces it, not just a badge change."
+        "method": "internal tracking sheet (user-provided)",
+        "retrieved": "Aug 28, 2026",
+        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "_narrativeVerified": false
+    },
+    {
+      "platform": "Facebook",
+      "handle": "DayTraders.com Group",
+      "followers": 3670,
+      "following": null,
+      "followerGrowth7d": 365,
+      "engagementRate": null,
+      "postsLast30d": null,
+      "strengths": [],
+      "improvements": [],
+      "_verified": true,
+      "_narrativeVerified": false,
+      "_source": {
+        "method": "internal tracking sheet (user-provided)",
+        "retrieved": "Aug 28, 2026",
+        "note": "New platform, not in original 5-platform scope — added because real growth data made it worth tracking."
+      }
     }
   ],
   "liveFeedTopPosts": [
@@ -452,6 +468,23 @@
       "Don't post educational content standalone. Wrap the same information (e.g. drawdown types) inside a giveaway, quiz, or 'guess which rule' format instead of a plain explainer.",
       "Never post winner announcements as replies. Each one should be its own standalone post — it's real proof of payout, which is exactly the trust-building content that's hard to fake.",
       "Test whether meme-style content works at all — there's currently zero data either way since the account hasn't tried it."
+    ]
+  },
+  "followerHistory": {
+    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks.",
+    "weeks": [
+      { "date": "2026-08-07", "X": 6703, "Instagram": 3670, "Facebook": 2554, "YouTube": 3220, "TikTok": 194, "LinkedIn": 115 },
+      { "date": "2026-08-14", "X": 6678, "Instagram": 3677, "Facebook": 2954, "YouTube": 3219, "TikTok": 195, "LinkedIn": 116 },
+      { "date": "2026-08-21", "X": 6745, "Instagram": 3732, "Facebook": 3305, "YouTube": 3267, "TikTok": 188, "LinkedIn": 118 },
+      { "date": "2026-08-28", "X": 6772, "Instagram": 3787, "Facebook": 3670, "YouTube": 3279, "TikTok": 193, "LinkedIn": 118 }
+    ],
+    "growthAnalysis": [
+      { "platform": "Facebook", "current": 3670, "weekChange": 365, "weekChangePct": 11.0, "monthChange": 1116, "monthChangePct": 43.7 },
+      { "platform": "Instagram", "current": 3787, "weekChange": 55, "weekChangePct": 1.5, "monthChange": 117, "monthChangePct": 3.2 },
+      { "platform": "LinkedIn", "current": 118, "weekChange": 0, "weekChangePct": 0.0, "monthChange": 3, "monthChangePct": 2.6 },
+      { "platform": "YouTube", "current": 3279, "weekChange": 12, "weekChangePct": 0.4, "monthChange": 59, "monthChangePct": 1.8 },
+      { "platform": "X", "current": 6772, "weekChange": 27, "weekChangePct": 0.4, "monthChange": 69, "monthChangePct": 1.0 },
+      { "platform": "TikTok", "current": 193, "weekChange": 5, "weekChangePct": 2.7, "monthChange": -1, "monthChangePct": -0.5 }
     ]
   }
 }
