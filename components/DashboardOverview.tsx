@@ -59,7 +59,12 @@ export default function DashboardOverview() {
 
       {/* ================= PER-CHANNEL ANALYSIS ================= */}
       <div>
-        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-3">Channel Breakdown</h2>
+        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-1">Channel Breakdown</h2>
+        <p className="text-[10px] text-gray-600 mb-3">
+          Follower counts below are verified. The strengths/improvements bullets are starting
+          impressions, not backed by verified post data yet (X is the exception &mdash; see Content
+          Performance Analysis for real post-level findings there).
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {channels.map((ch) => {
             const Icon = PLATFORM_ICON[ch.platform];

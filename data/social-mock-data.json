@@ -18,12 +18,12 @@
       "platform": "X",
       "followers": 6666,
       "verified": true,
-      "note": "Highest follower count among the platforms with a verified real number (Instagram, X only — YouTube/TikTok/LinkedIn aren't in this comparison since their numbers aren't verified)."
+      "note": "Highest follower count across all 5 platforms, all verified as of Sep 9 2026."
     },
     "combinedVerifiedFollowers": {
-      "value": 9226,
+      "value": 12827,
       "verified": true,
-      "note": "Sum of Instagram (2560) + X (6666) only — real accounts with real numbers. Does NOT include YouTube/TikTok/LinkedIn since those aren't verified, so this understates true total reach."
+      "note": "Sum of all 5 platforms, all now verified: Instagram (2560), X (6666), YouTube (3280), TikTok (196), LinkedIn (125)"
     },
     "topPostOfWeek": {
       "platform": "Prediction Giveaway (X)",
@@ -58,7 +58,8 @@
         "metric": "followers, following, post count"
       },
       "following": 1023,
-      "_postsLast30dVerified": false
+      "_postsLast30dVerified": false,
+      "_narrativeVerified": false
     },
     {
       "platform": "X",
@@ -83,12 +84,13 @@
         "metric": "followers, following, join date"
       },
       "following": 1847,
-      "_postsLast30dVerified": false
+      "_postsLast30dVerified": false,
+      "_narrativeVerified": false
     },
     {
       "platform": "YouTube",
       "handle": "@DayTraders_com",
-      "followers": 4200,
+      "followers": 3280,
       "followerGrowth7d": null,
       "engagementRate": null,
       "postsLast30d": 5,
@@ -100,35 +102,47 @@
         "Upload frequency too low to build algorithmic momentum",
         "Thumbnails underperform vs. category leaders"
       ],
-      "_verified": false,
+      "_verified": true,
       "_sourceNote": "Channel confirmed real (ID: UCDP2o8_mXEb_v6C7rEix6Qw) but subscriber count not retrievable via public search — check youtube.com/@DayTraders_com directly",
       "following": null,
-      "_postsLast30dVerified": false
+      "_postsLast30dVerified": false,
+      "_source": {
+        "method": "user-provided screenshot",
+        "url": "https://www.youtube.com/@DayTraders_com",
+        "retrieved": "Sep 9, 2026",
+        "note": "Previous estimate was 4200 - off by some. Real number replaces it, not just a badge change."
+      },
+      "_narrativeVerified": false
     },
     {
       "platform": "TikTok",
       "handle": "@daytraders_com",
-      "followers": 26700,
+      "followers": 196,
       "followerGrowth7d": null,
       "engagementRate": null,
       "postsLast30d": 30,
       "strengths": [
-        "Fastest-growing channel, strong POV-style hooks",
-        "High share rate on rule-debunking content"
+        "(Unverified) POV-style hook format used in the account bio/description"
       ],
       "improvements": [
-        "Comment reply rate is low, hurting algorithmic push",
-        "Trending-audio usage is inconsistent"
+        "Real follower count (196) suggests this channel needs a growth strategy, not just format tweaks — previous 'fastest-growing' claim was based on a wrong follower estimate and has been removed"
       ],
-      "_verified": false,
+      "_verified": true,
       "_sourceNote": "Handle confirmed real via daytraders.com footer, but TikTok blocks automated access to follower counts — check the app/site directly",
-      "following": null,
-      "_postsLast30dVerified": false
+      "following": 472,
+      "_postsLast30dVerified": false,
+      "_source": {
+        "method": "user-provided screenshot",
+        "url": "https://www.tiktok.com/@daytraders_com",
+        "retrieved": "Sep 9, 2026",
+        "note": "Previous estimate was 26700 - off by a lot. Real number replaces it, not just a badge change."
+      },
+      "_narrativeVerified": false
     },
     {
       "platform": "LinkedIn",
       "handle": "DayTraders",
-      "followers": 2100,
+      "followers": 125,
       "followerGrowth7d": null,
       "engagementRate": null,
       "postsLast30d": 8,
@@ -140,10 +154,17 @@
         "Company page voice reads too corporate vs. founder posts",
         "No consistent content pillar yet"
       ],
-      "_verified": false,
+      "_verified": true,
       "_sourceNote": "Company page confirmed real (linkedin.com/company/daytraders-com) but follower count not retrievable via public search",
       "following": null,
-      "_postsLast30dVerified": false
+      "_postsLast30dVerified": false,
+      "_source": {
+        "method": "user-provided screenshot",
+        "url": "https://www.linkedin.com/company/daytraders-com/",
+        "retrieved": "Sep 9, 2026",
+        "note": "Previous estimate was 2100 - off by a lot. Real number replaces it, not just a badge change."
+      },
+      "_narrativeVerified": false
     }
   ],
   "liveFeedTopPosts": [
