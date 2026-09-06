@@ -1,0 +1,326 @@
+{
+  "_readme": "REAL where noted, PLACEHOLDER elsewhere. Verified via public search (Aug 2026): Instagram and X follower counts are real, pulled from public profile pages. YouTube, TikTok, and LinkedIn handles are confirmed real (found in daytraders.com's own footer) but their follower counts could not be retrieved from public search results and are still placeholders below, marked _verified:false. Engagement rate, reach, and 7-day growth deltas are NOT publicly visible on any platform without account login or API access — those remain placeholders until the real API integrations in lib/socialApis/ are connected.",
+  "overviewStats": {
+    "totalReach": 284000,
+    "engagementRate": 5.2,
+    "netFollowerGrowth7d": 1120,
+    "topPostOfWeek": {
+      "platform": "Instagram",
+      "caption": "Old price vs new price, side by side — same account, $58 cheaper.",
+      "likes": 4200,
+      "comments": 310,
+      "shares": 890
+    }
+  },
+  "channels": [
+    {
+      "platform": "Instagram",
+      "handle": "@daytraderscom",
+      "followers": 2560,
+      "followerGrowth7d": null,
+      "engagementRate": null,
+      "postsLast30d": 22,
+      "strengths": [
+        "Strong carousel performance on pricing comparisons",
+        "High save-rate on educational posts"
+      ],
+      "improvements": [
+        "Reels output is inconsistent week to week",
+        "Bio link click-through is below category average"
+      ],
+      "_verified": true,
+      "_sourceNote": "277 total posts, 1,023 following — from public profile, Aug 2026"
+    },
+    {
+      "platform": "X",
+      "handle": "@DayTraders_com",
+      "followers": 6666,
+      "followerGrowth7d": null,
+      "engagementRate": null,
+      "postsLast30d": 64,
+      "strengths": [
+        "Fast reaction threads to industry news",
+        "Good reply engagement from traders"
+      ],
+      "improvements": [
+        "Low retweet rate outside news-reaction posts",
+        "No consistent posting schedule"
+      ],
+      "_verified": true,
+      "_sourceNote": "Las Vegas, NV · joined June 2024 · 1,847 following — from public profile, Aug 2026"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@DayTraders_com",
+      "followers": 4200,
+      "followerGrowth7d": null,
+      "engagementRate": null,
+      "postsLast30d": 5,
+      "strengths": [
+        "Longform payout-transparency videos retain well past 60%",
+        "Strong comment discussion on rule-explainer videos"
+      ],
+      "improvements": [
+        "Upload frequency too low to build algorithmic momentum",
+        "Thumbnails underperform vs. category leaders"
+      ],
+      "_verified": false,
+      "_sourceNote": "Channel confirmed real (ID: UCDP2o8_mXEb_v6C7rEix6Qw) but subscriber count not retrievable via public search — check youtube.com/@DayTraders_com directly"
+    },
+    {
+      "platform": "TikTok",
+      "handle": "@daytraders_com",
+      "followers": 26700,
+      "followerGrowth7d": null,
+      "engagementRate": null,
+      "postsLast30d": 30,
+      "strengths": [
+        "Fastest-growing channel, strong POV-style hooks",
+        "High share rate on rule-debunking content"
+      ],
+      "improvements": [
+        "Comment reply rate is low, hurting algorithmic push",
+        "Trending-audio usage is inconsistent"
+      ],
+      "_verified": false,
+      "_sourceNote": "Handle confirmed real via daytraders.com footer, but TikTok blocks automated access to follower counts — check the app/site directly"
+    },
+    {
+      "platform": "LinkedIn",
+      "handle": "DayTraders",
+      "followers": 2100,
+      "followerGrowth7d": null,
+      "engagementRate": null,
+      "postsLast30d": 8,
+      "strengths": [
+        "Founder posts outperform company-page posts 3:1",
+        "Good engagement from affiliate/partner audience"
+      ],
+      "improvements": [
+        "Company page voice reads too corporate vs. founder posts",
+        "No consistent content pillar yet"
+      ],
+      "_verified": false,
+      "_sourceNote": "Company page confirmed real (linkedin.com/company/daytraders-com) but follower count not retrievable via public search"
+    }
+  ],
+  "liveFeedTopPosts": [
+    {
+      "platform": "TikTok",
+      "caption": "POV: you find out the activation fee dropped from $99 to $5",
+      "metrics": { "views": 412000, "likes": 38900, "comments": 1200, "shares": 6400 },
+      "whyItWorked": {
+        "hookType": "Curiosity-gap POV opener, text-on-screen in first 1s",
+        "visualStyle": "Selfie-style POV, single cut, trending audio",
+        "cta": "Comment your account size for a personalized price"
+      }
+    },
+    {
+      "platform": "Instagram",
+      "caption": "Old price vs new price, side by side — same account, $58 cheaper.",
+      "metrics": { "views": 190000, "likes": 4200, "comments": 310, "shares": 890 },
+      "whyItWorked": {
+        "hookType": "Direct comparison, no preamble — numbers as the hook",
+        "visualStyle": "Split-screen carousel, high-contrast red/black brand colors",
+        "cta": "Swipe to see your account's new price"
+      }
+    },
+    {
+      "platform": "YouTube",
+      "caption": "We read every rule so you don't get denied a payout",
+      "metrics": { "views": 61000, "likes": 3100, "comments": 540, "shares": 210 },
+      "whyItWorked": {
+        "hookType": "Problem-first hook (\"traders keep getting denied and don't know why\")",
+        "visualStyle": "Talking-head + on-screen rule callouts, longform 11 min",
+        "cta": "Link to rules checklist in description"
+      }
+    }
+  ],
+  "trendRadar": {
+    "activeTrends": [
+      {
+        "name": "Bulk Pricing Comparisons",
+        "description": "Old-price-vs-new-price and per-account bulk discount breakdowns are outperforming single-account promo posts across the category.",
+        "exampleLink": null
+      },
+      {
+        "name": "Micro Futures vs. Standard",
+        "description": "Explainer content comparing micro contract sizing to standard contracts is getting strong save rates from newer traders.",
+        "exampleLink": null
+      },
+      {
+        "name": "DT-Bucks Gamification",
+        "description": "Reward-program explainer and milestone-tracker content is driving above-average comment engagement.",
+        "exampleLink": null
+      },
+      {
+        "name": "Industry M&A Reaction Content",
+        "description": "Real example: creators reacting to FTMO's acquisition of OANDA drove real engagement as \"prop firms are consolidating\" commentary spread across trading TikTok.",
+        "exampleLink": "https://www.tiktok.com/discover/ftmo-trading"
+      },
+      {
+        "name": "\"Prop Firm Denied My Payout\" Callout Videos",
+        "description": "Real, ongoing format: traders posting their own denial/ban stories (e.g. searchable under #apextraderfunding, #ftmo) consistently pull higher comment counts than promotional posts.",
+        "exampleLink": "https://www.tiktok.com/discover/apex-trader-funding-90-off-not-working"
+      }
+    ],
+    "emergingTrends": [
+      {
+        "name": "1-Click Payout Transparency Videos",
+        "description": "Firms filming the actual payout-approval screen in real time are a small but fast-growing format — trust-building through radical transparency.",
+        "exampleLink": null
+      },
+      {
+        "name": "Prop Firm Rule Debunking Reels",
+        "description": "\"Myth vs reality\" style reels correcting misconceptions about drawdown/consistency rules are picking up shares in trader communities.",
+        "exampleLink": null
+      }
+    ],
+    "trendingFormatsAndAudio": [
+      {
+        "name": "POV Trading Setups",
+        "description": "First-person, selfie-style hooks framed as a personal moment (\"POV: you just got funded\") outperform third-person voiceover openers.",
+        "exampleLink": null
+      },
+      {
+        "name": "Split-Screen Strategy Breakdowns",
+        "description": "Side-by-side chart + talking head format continues to hold attention longer than full-screen chart-only explainers.",
+        "exampleLink": null
+      }
+    ],
+    "beyondTrading": [
+      {
+        "name": "GTA 6 Countdown Hype",
+        "description": "GTA 6 launches November 19, 2026 — roughly 10 weeks out. This is arguably the single biggest shared cultural moment on the calendar right now; countdown content, Vice City/Leonida references, and character-switch mechanics are dominating gaming social media and bleeding into mainstream culture broadly.",
+        "exampleLink": "https://www.gamesradar.com/gta-6-guide/"
+      },
+      {
+        "name": "General newsjacking opportunity",
+        "description": "Massively-trending non-niche moments (a GTA6 launch, a viral sports moment, a major awards show) reliably outperform niche content when a brand ties in fast and authentically — worth having a rapid-response process ready for whatever breaks next, not just trading news.",
+        "exampleLink": null
+      }
+    ]
+  },
+  "contentIdeas": [
+    {
+      "title": "The $99 to $5 Reveal",
+      "format": "Reel/Short",
+      "platform": "TikTok",
+      "hookLine": "Wait... the activation fee is HOW much now?",
+      "keyMessaging": "Lead with the number, not the explanation. Let curiosity carry the first 3 seconds before revealing the full pricing change.",
+      "objective": "Direct Conversion"
+    },
+    {
+      "title": "We Got Denied a Payout (On Purpose) — Here's What We Learned",
+      "format": "YouTube Longform",
+      "platform": "YouTube",
+      "hookLine": "We deliberately broke a rule to show you exactly what happens.",
+      "keyMessaging": "Radical transparency angle — walk through a real rule violation and the resulting payout denial to build trust through honesty.",
+      "objective": "Brand Awareness"
+    },
+    {
+      "title": "DT-Bucks Countdown Series",
+      "format": "Carousel",
+      "platform": "Instagram",
+      "hookLine": "You're 12 trading days away from a free account.",
+      "keyMessaging": "Turn the reward program into a weekly countdown series traders want to follow — gamified progress, not just a feature explainer.",
+      "objective": "Direct Conversion"
+    },
+    {
+      "title": "Prop Firm Rules, Debunked",
+      "format": "X Thread",
+      "platform": "X",
+      "hookLine": "5 things traders get wrong about drawdown rules (thread)",
+      "keyMessaging": "Myth vs. reality format, one misconception per tweet, ending with a clear call to check your own account's actual rule.",
+      "objective": "Brand Awareness"
+    },
+    {
+      "title": "Bring a Trader, Earn DT-Bucks",
+      "format": "Reel/Short",
+      "platform": "TikTok",
+      "hookLine": "Your friend's first payout just paid for your next account.",
+      "keyMessaging": "Frame the affiliate program as a story (a real referral's payout) rather than a generic \"refer a friend\" pitch.",
+      "objective": "Affiliate Magnet"
+    },
+    {
+      "title": "Leonida Loadout: If GTA 6 Characters Traded Futures",
+      "format": "Reel/Short",
+      "platform": "TikTok",
+      "hookLine": "Jason and Lucia open a DayTraders account before the heist.",
+      "keyMessaging": "Riffs on the GTA 6 Nov 19 launch hype (Vice City/Leonida aesthetic, character-switch mechanic) without using any copyrighted footage — original animation/live-action styled after the vibe, not a reproduction of Rockstar's actual game or characters.",
+      "objective": "Brand Awareness",
+      "note": "IMPORTANT: do not use actual GTA 6 footage, character likenesses, or music — that's Rockstar/Take-Two's copyrighted IP. This should be an original piece merely inspired by the launch-hype moment, similar to how outlets do \"if it were a trading firm\" style parodies of unrelated pop culture."
+    }
+  ],
+  "competitorBenchmark": {
+    "_readme": "Ranked by real, verified Instagram follower counts found via public search (Aug 2026). Only firms with a directly-confirmed official account and follower count are ranked with numbers. Firms below the ranked list are known real competitors where a reliable public follower count could not be found in this research pass — NOT assumed to be smaller, just unverified.",
+    "verified": [
+      {
+        "rank": 1,
+        "firm": "FTMO",
+        "platform": "Instagram",
+        "handle": "@ftmocom",
+        "followers": 570000,
+        "postsCount": 987,
+        "sourceNote": "By far the largest social presence in the sector — roughly 5x the next competitor.",
+        "link": "https://www.instagram.com/ftmocom/"
+      },
+      {
+        "rank": 2,
+        "firm": "The5ers",
+        "platform": "Instagram",
+        "handle": "@the.5ers",
+        "followers": 117000,
+        "postsCount": 1076,
+        "sourceNote": "Longest-running firm in the group (est. 2016), reflected in a large, mature following.",
+        "link": "https://www.instagram.com/the.5ers/"
+      },
+      {
+        "rank": 3,
+        "firm": "Topstep",
+        "platform": "Instagram",
+        "handle": "@topstep",
+        "followers": 96000,
+        "postsCount": 74,
+        "sourceNote": "High followers relative to a low post count — strong follower-per-post efficiency.",
+        "link": "https://www.instagram.com/topstep/"
+      },
+      {
+        "rank": 4,
+        "firm": "Apex Trader Funding",
+        "platform": "Instagram",
+        "handle": "@apextraderfunding",
+        "followers": 68000,
+        "postsCount": 696,
+        "sourceNote": "Official brand account — note several look-alike/unofficial accounts also exist with smaller followings, don't confuse them.",
+        "link": "https://www.instagram.com/apextraderfunding/"
+      }
+    ],
+    "unverifiedButRealCompetitors": [
+      {
+        "firm": "Funding Pips",
+        "reason": "Confirmed real, fast-growing firm from earlier research; Instagram/TikTok follower counts not found in this search pass."
+      },
+      {
+        "firm": "FundedNext",
+        "reason": "Confirmed real ($261M+ paid per third-party comparison source); follower counts not found."
+      },
+      {
+        "firm": "TakeProfitTrader",
+        "reason": "Confirmed active on Instagram, X, YouTube, LinkedIn per a third-party review; exact follower counts not found."
+      },
+      {
+        "firm": "MyFundedFutures",
+        "reason": "Found a TikTok account (@myfundedfuturesofficial) with ~2,400 followers, but this looks like a secondary account — their main channel's real number is unconfirmed."
+      },
+      {
+        "firm": "Bulenox",
+        "reason": "Confirmed real, established firm; follower counts not found."
+      },
+      {
+        "firm": "Tradeify",
+        "reason": "Confirmed real, fast-growing firm; follower counts not found."
+      }
+    ]
+  }
+}

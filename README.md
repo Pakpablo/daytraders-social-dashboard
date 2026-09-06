@@ -1,10 +1,10 @@
-# Prop Firm Competitor Matrix
+# DayTraders Social Dashboard
 
-Interactive competitive-intelligence dashboard tracking Futures and Forex/CFD proprietary trading firms — pricing, drawdown rules, payout terms, platforms, and Trustpilot reputation, side by side.
+Internal dashboard for DayTraders.com's social channels — Instagram, X, YouTube, TikTok, LinkedIn — covering channel performance, a weekly trend radar, an AI content-idea generator, and a competitor benchmark.
 
 ## Stack
 
-Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4. No backend — data is static JSON read at build time.
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · lucide-react. No backend yet — data is static JSON read at build time.
 
 ## Getting started
 
@@ -17,16 +17,22 @@ Open [http://localhost:3001](http://localhost:3001).
 
 ## Data
 
-`data/firms.json` holds the dataset (20 firms as of Aug 2026), typed by `lib/types.ts`. Fields that couldn't be verified from a live source are `null` rather than guessed — the UI renders those as "—" or "withheld" (Trustpilot scores are shown as withheld for firms where Trustpilot itself has suspended the score after removing fake reviews).
+`data/social-mock-data.json` is **placeholder data for UI development only** — see its `_readme` field. To go live, replace it with data pulled from:
 
-To add or update a firm, edit `data/firms.json` directly — it's validated against the `Firm` type at build time via `lib/data.ts`.
+- Meta Graph API (Instagram)
+- X API v2
+- YouTube Data API v3
+- TikTok for Business API
+- LinkedIn Marketing API
 
-## Features
+The `competitorBenchmark` section names real public prop-firm brands worth tracking, but the example posts under them are illustrative templates, not verified reporting — swap in a real social-listening tool (e.g. Sprout Social, Brandwatch, Social Blade) for real competitor data.
 
-- Sortable, filterable matrix table (search, category, tier, sort by score/fee/split)
-- Click a row to expand full pricing, drawdown, payout, platform, and USP/weakness detail
-- Select up to 3 firms and open a side-by-side comparison modal
-- Summary stat cards (firm count, avg Trustpilot score, cheapest eval, top rated)
+## Pages
+
+- `/overview` — stat cards, per-channel breakdown, live feed of top-performing posts
+- `/trends` — active/emerging trends and trending formats
+- `/ideas` — AI content idea generator (currently static mock ideas)
+- `/competitors` — competitor and industry benchmark
 
 ## Deploy
 

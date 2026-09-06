@@ -1,0 +1,82 @@
+"use client";
+
+import { Lightbulb, Target, Megaphone, Users2, RefreshCw, AlertTriangle } from "lucide-react";
+import { useState } from "react";
+import data from "@/data/social-mock-data.json";
+
+const OBJECTIVE_STYLE: Record<string, { color: string; icon: any }> = {
+  "Direct Conversion": { color: "#D42B3F", icon: Target },
+  "Brand Awareness": { color: "#2563EB", icon: Megaphone },
+  "Affiliate Magnet": { color: "#059669", icon: Users2 },
+};
+
+export default function ContentIdeaGenerator() {
+  const [ideas] = useState(data.contentIdeas as any[]);
+
+  return (
+    <div className="min-h-screen bg-[#0B0B0D] text-white p-6 space-y-6">
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-extrabold flex items-center gap-2">
+            <Lightbulb size={22} className="text-[#D42B3F]" /> AI Content Idea Generator
+          </h1>
+          <p className="text-gray-400 text-sm mt-1">Fresh ideas from trend + performance data — trading-niche and beyond.</p>
+        </div>
+        <button className="flex items-center gap-2 text-xs font-bold bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-3 py-2">
+          <RefreshCw size={13} /> Regenerate
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {ideas.map((idea, i) => {
+          const obj = OBJECTIVE_STYLE[idea.objective];
+          const ObjIcon = obj.icon;
+          return (
+            <div key={i} className="bg-[#151517] border border-white/10 rounded-xl p-5">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="font-bold text-base leading-snug pr-3">{idea.title}</h3>
+                <span
+                  className="flex items-center gap-1 text-[9px] font-bold uppercase tracking-wide px-2 py-1 rounded-full shrink-0"
+                  style={{ background: `${obj.color}22`, color: obj.color }}
+                >
+                  <ObjIcon size={10} /> {idea.objective}
+                </span>
+              </div>
+
+              <div className="flex gap-2 mb-3">
+                <Tag>{idea.format}</Tag>
+                <Tag>{idea.platform}</Tag>
+              </div>
+
+              <div className="space-y-2">
+                <div>
+                  <div className="text-[9px] font-bold uppercase tracking-wide text-[#D42B3F]">Hook Line</div>
+                  <div className="text-sm text-gray-200 italic">&ldquo;{idea.hookLine}&rdquo;</div>
+                </div>
+                <div>
+                  <div className="text-[9px] font-bold uppercase tracking-wide text-[#D42B3F]">Key Messaging</div>
+                  <div className="text-xs text-gray-400 leading-relaxed">{idea.keyMessaging}</div>
+                </div>
+              </div>
+
+              {idea.note && (
+                <div className="mt-3 flex items-start gap-2 bg-amber-500/10 border border-amber-500/30 rounded-lg p-2.5 text-[10px] text-amber-300 leading-relaxed">
+                  <AlertTriangle size={12} className="mt-0.5 shrink-0" />
+                  {idea.note}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function Tag({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="text-[10px] font-semibold text-gray-300 bg-white/5 border border-white/10 rounded-md px-2 py-1">
+      {children}
+    </span>
+  );
+}

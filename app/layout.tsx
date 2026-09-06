@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Prop Firm Dashboard",
+  title: "DayTraders Social Dashboard",
   description:
-    "PAK Points — competitive intelligence dashboard ranking Futures and Forex/CFD prop trading firms.",
+    "Social audit, trend radar, content ideas, and competitor benchmark for DayTraders.com's social channels.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#F5F5F7] text-[#111]">
+      <body className="min-h-full bg-[#0B0B0D] text-white">
         <NavTabs />
         {children}
       </body>
