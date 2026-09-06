@@ -15,7 +15,10 @@ const PLATFORM_COLOR: Record<string, string> = {
 
 function fmtDate(d: string) {
   const dt = new Date(d);
-  return dt.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  // Force UTC so this renders identically on the server (UTC) and any client
+  // timezone — otherwise a date like "2026-08-07" can display as "Aug 6" for
+  // browsers west of UTC, causing a hydration mismatch.
+  return dt.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 }
 
 export default function FollowersOverTime() {
