@@ -23,9 +23,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} bg-[#0B0B0D] antialiased`}
     >
-      <body className="min-h-full bg-[#0B0B0D] text-white">
+      <body className="bg-[#0B0B0D] text-white">
         <NavTabs />
         {children}
       </body>

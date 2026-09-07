@@ -20,7 +20,7 @@ export default function ThisWeeksContent() {
   const { weekOf, summary, posts } = data.thisWeeksContent as any;
 
   return (
-    <div className="min-h-screen bg-[#0B0B0D] text-white p-6 space-y-6">
+    <div className="bg-[#0B0B0D] text-white p-6 space-y-6">
       <div>
         <h1 className="text-2xl font-extrabold flex items-center gap-2">
           <CalendarDays size={22} className="text-[#D42B3F]" /> This Week's Content
