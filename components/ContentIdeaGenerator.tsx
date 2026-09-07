@@ -14,7 +14,7 @@ export default function ContentIdeaGenerator() {
   const [ideas] = useState(data.contentIdeas as any[]);
 
   return (
-    <div className="min-h-screen bg-[#0B0B0D] text-white p-6 space-y-6">
+    <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-extrabold flex items-center gap-2">

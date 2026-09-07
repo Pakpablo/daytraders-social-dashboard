@@ -5,7 +5,7 @@ export default function TrendRadar() {
   const { activeTrends, emergingTrends, trendingFormatsAndAudio, beyondTrading } = data.trendRadar as any;
 
   return (
-    <div className="min-h-screen bg-[#0B0B0D] text-white p-6 space-y-8">
+    <div className="space-y-8">
       <div>
         <h1 className="text-2xl font-extrabold">Weekly Trend Radar</h1>
         <p className="text-gray-400 text-sm mt-1">Macro trends across social — trading-specific and beyond, updated weekly.</p>

@@ -8,8 +8,7 @@ const TABS = [
   { href: "/this-week", label: "This Week" },
   { href: "/followers", label: "Growth" },
   { href: "/performance", label: "Performance" },
-  { href: "/trends", label: "Trend Radar" },
-  { href: "/ideas", label: "Content Ideas" },
+  { href: "/trends", label: "Trends & Ideas" },
   { href: "/competitors", label: "Competitors" },
 ];
 
