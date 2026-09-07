@@ -487,5 +487,75 @@
       { "platform": "X", "current": 6772, "asOf": "2026-08-28", "weekChange": 27, "weekChangePct": 0.4, "totalChange": 69, "totalChangePct": 1.0, "spanWeeks": 3 },
       { "platform": "TikTok", "current": 196, "asOf": "2026-09-09", "weekChange": 3, "weekChangePct": 1.6, "totalChange": 2, "totalChangePct": 1.0, "spanWeeks": 4 }
     ]
+  },
+  "thisWeeksContent": {
+    "_readme": "Pulled directly from the team's Weekly Content Calendar doc (pasted by user). This is the SHORT version for the app — one-line gist per post, not full captions. The doc itself remains the source of truth for exact copy, hashtags, and creative assets.",
+    "weekOf": "Sep 8, 2026",
+    "summary": "7 posts this week, split across 3 pricing-change posts (promo, meme, and a deep-dive explainer), 1 trust-building carousel (real Trustpilot reviews), 1 trading-psychology post, 1 more meme, and 1 engagement poll for LinkedIn/X. Only 1 of 7 is fully Approved — the rest are still Under Review.",
+    "posts": [
+      {
+        "day": "Monday",
+        "category": "Bulk Pricing Promo",
+        "format": "Post",
+        "designer": null,
+        "reviewer": null,
+        "status": "Unlisted",
+        "gist": "15-account bulk order saves $1,246.65 (62% off) — bulk savings built directly into checkout."
+      },
+      {
+        "day": "Tuesday (AM)",
+        "category": "Company News",
+        "format": "Carousel",
+        "designer": "Rassel Hossain",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Approved",
+        "gist": "5 real Trustpilot reviews — social-proof carousel on payouts, support, and trading experience."
+      },
+      {
+        "day": "Tuesday (PM)",
+        "category": "Humorous",
+        "format": "Text + Video",
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "Meme riffing on the new bulk deals (\"who's grabbing the deal?\")."
+      },
+      {
+        "day": "Wednesday",
+        "category": "Education / Promo",
+        "format": "Text + Video",
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "Breaks down the pricing change: $133→$75 per account, activation fee $99→$5."
+      },
+      {
+        "day": "Thursday",
+        "category": "Inspirational",
+        "format": "Text + Image",
+        "designer": "Rassel Hossain",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "Trading psychology/resilience message — staying disciplined through losses and doubt."
+      },
+      {
+        "day": "Friday (AM)",
+        "category": "Humorous",
+        "format": "Text + Video",
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "Meme about the feeling of a \"perfect\" trade going exactly to plan."
+      },
+      {
+        "day": "Friday (PM)",
+        "category": "Education / Engagement",
+        "format": "Poll (LinkedIn & X)",
+        "designer": null,
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "Poll: what's hardest to control — FOMO, revenge trading, overtrading, or moving your stop."
+      }
+    ]
   }
 }
