@@ -19,12 +19,12 @@
       "platform": "X",
       "followers": 6772,
       "verified": true,
-      "note": "Largest by follower count. Note: Facebook is growing fastest (+43.7% over 4 weeks) despite being smaller — see Followers Over Time section."
+      "note": "Largest by follower count, using each platform's latest real number."
     },
     "combinedVerifiedFollowers": {
-      "value": 17819,
+      "value": 17830,
       "verified": true,
-      "note": "Sum across all 6 platforms (Instagram, X, YouTube, TikTok, LinkedIn, Facebook), all verified as of Aug 28 2026."
+      "note": "Sum across all 6 platforms, each platform's OWN latest real number (not all the same date - see per-channel date-stamps)."
     },
     "topPostOfWeek": {
       "platform": "Prediction Giveaway (X)",
@@ -55,12 +55,13 @@
       "_sourceNote": "277 total posts, 1,023 following — from public profile, Aug 2026",
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Aug 28, 2026",
+        "retrieved": "2026-08-28",
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "following": 1023,
       "_postsLast30dVerified": false,
-      "_narrativeVerified": false
+      "_narrativeVerified": false,
+      "_asOf": "2026-08-28"
     },
     {
       "platform": "X",
@@ -81,17 +82,18 @@
       "_sourceNote": "Las Vegas, NV · joined June 2024 · 1,847 following — from public profile, Aug 2026",
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Aug 28, 2026",
+        "retrieved": "2026-08-28",
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "following": 1847,
       "_postsLast30dVerified": false,
-      "_narrativeVerified": false
+      "_narrativeVerified": false,
+      "_asOf": "2026-08-28"
     },
     {
       "platform": "YouTube",
       "handle": "@DayTraders_com",
-      "followers": 3279,
+      "followers": 3280,
       "followerGrowth7d": 12,
       "engagementRate": null,
       "postsLast30d": 5,
@@ -109,15 +111,16 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Aug 28, 2026",
+        "retrieved": "2026-09-09",
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
-      "_narrativeVerified": false
+      "_narrativeVerified": false,
+      "_asOf": "2026-09-09"
     },
     {
       "platform": "TikTok",
       "handle": "@daytraders_com",
-      "followers": 193,
+      "followers": 196,
       "followerGrowth7d": 5,
       "engagementRate": null,
       "postsLast30d": 30,
@@ -133,15 +136,16 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Aug 28, 2026",
+        "retrieved": "2026-09-09",
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
-      "_narrativeVerified": false
+      "_narrativeVerified": false,
+      "_asOf": "2026-09-09"
     },
     {
       "platform": "LinkedIn",
       "handle": "DayTraders",
-      "followers": 118,
+      "followers": 125,
       "followerGrowth7d": 0,
       "engagementRate": null,
       "postsLast30d": 8,
@@ -159,10 +163,11 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Aug 28, 2026",
+        "retrieved": "2026-09-09",
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
-      "_narrativeVerified": false
+      "_narrativeVerified": false,
+      "_asOf": "2026-09-09"
     },
     {
       "platform": "Facebook",
@@ -176,9 +181,10 @@
       "improvements": [],
       "_verified": true,
       "_narrativeVerified": false,
+      "_asOf": "2026-08-28",
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Aug 28, 2026",
+        "retrieved": "2026-08-28",
         "note": "New platform, not in original 5-platform scope — added because real growth data made it worth tracking."
       }
     }

@@ -36,7 +36,7 @@ export default function DashboardOverview() {
         <StatCard icon={Eye} label="Total Reach" value={fmt(overviewStats.totalReach.value)} verified={overviewStats.totalReach.verified} />
         <StatCard
           icon={Users2}
-          label="Verified Followers (IG+X)"
+          label="Verified Followers (All 6)"
           value={fmt(overviewStats.combinedVerifiedFollowers.value)}
           verified={overviewStats.combinedVerifiedFollowers.verified}
         />
@@ -62,7 +62,7 @@ export default function DashboardOverview() {
         <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-1">Channel Breakdown</h2>
         <p className="text-[10px] text-gray-600 mb-3">
           Follower counts below are verified. The strengths/improvements bullets are starting
-          impressions, not backed by verified post data yet (X is the exception &mdash; see Content
+          impressions, not backed by verified post data yet (X is the exception — see Content
           Performance Analysis for real post-level findings there).
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -97,6 +97,9 @@ export default function DashboardOverview() {
                   <div className="ml-auto text-right">
                     <div className="font-extrabold text-sm">{fmt(ch.followers)}</div>
                     <div className="text-[10px] text-gray-500">followers</div>
+                    {(ch as any)._asOf && (
+                      <div className="text-[8px] text-gray-600">*as of {(ch as any)._asOf}</div>
+                    )}
                   </div>
                 </div>
 
