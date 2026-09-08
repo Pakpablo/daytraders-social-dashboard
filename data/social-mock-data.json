@@ -61,7 +61,8 @@
       "following": 1023,
       "_postsLast30dVerified": false,
       "_narrativeVerified": false,
-      "_asOf": "2026-08-28"
+      "_asOf": "2026-08-28",
+      "url": "https://www.instagram.com/daytraderscom/"
     },
     {
       "platform": "X",
@@ -88,7 +89,8 @@
       "following": 1847,
       "_postsLast30dVerified": false,
       "_narrativeVerified": false,
-      "_asOf": "2026-08-28"
+      "_asOf": "2026-08-28",
+      "url": "https://x.com/DayTraders_com"
     },
     {
       "platform": "YouTube",
@@ -115,7 +117,8 @@
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-09"
+      "_asOf": "2026-09-09",
+      "url": "https://www.youtube.com/@DayTraders_com"
     },
     {
       "platform": "TikTok",
@@ -140,7 +143,8 @@
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-09"
+      "_asOf": "2026-09-09",
+      "url": "https://www.tiktok.com/@daytraders_com"
     },
     {
       "platform": "LinkedIn",
@@ -167,7 +171,8 @@
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-09"
+      "_asOf": "2026-09-09",
+      "url": "https://www.linkedin.com/company/daytraders-com/"
     },
     {
       "platform": "Facebook",
@@ -182,6 +187,7 @@
       "_verified": true,
       "_narrativeVerified": false,
       "_asOf": "2026-08-28",
+      "url": null,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
         "retrieved": "2026-08-28",

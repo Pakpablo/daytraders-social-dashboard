@@ -1,5 +1,5 @@
-import FollowersOverTime from "@/components/FollowersOverTime";
+import SocialMedia from "@/components/SocialMedia";
 
 export default function Page() {
-  return <FollowersOverTime />;
+  return <SocialMedia />;
 }

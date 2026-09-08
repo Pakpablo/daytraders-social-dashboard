@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Instagram, Youtube, Linkedin, Twitter, Music2, Facebook,
   Eye, Flame, ExternalLink, Trophy, Users2,
@@ -59,77 +57,51 @@ export default function DashboardOverview() {
 
       {/* ================= PER-CHANNEL ANALYSIS ================= */}
       <div>
-        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-1">Channel Breakdown</h2>
-        <p className="text-[10px] text-gray-600 mb-3">
-          Follower counts below are verified. The strengths/improvements bullets are starting
-          impressions, not backed by verified post data yet (X is the exception — see Content
-          Performance Analysis for real post-level findings there).
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {channels.map((ch) => {
+        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-3">Channels at a Glance</h2>
+        <div className="bg-[#151517] border border-white/10 rounded-xl divide-y divide-white/5">
+          {[...channels].sort((a, b) => b.followers - a.followers).map((ch) => {
             const Icon = PLATFORM_ICON[ch.platform];
             return (
-              <div key={ch.platform} className="bg-[#151517] border border-white/10 rounded-xl p-4">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-lg bg-[#D42B3F]/15 flex items-center justify-center">
-                    <Icon size={18} className="text-[#D42B3F]" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-sm flex items-center gap-1.5">
-                      {ch.platform}
-                      {(ch as any)._verified ? (
-                        <a
-                          href={(ch as any)._source?.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          className="text-[8px] font-bold text-green-400 bg-green-400/10 hover:bg-green-400/20 rounded px-1.5 py-0.5 flex items-center gap-0.5"
-                          title={`Source: ${(ch as any)._source?.url} · verified ${(ch as any)._source?.retrieved}`}
-                        >
-                          VERIFIED <ExternalLink size={7} />
-                        </a>
-                      ) : (
-                        <span className="text-[8px] font-bold text-amber-400 bg-amber-400/10 rounded px-1.5 py-0.5">EST.</span>
-                      )}
-                    </div>
-                    <div className="text-xs text-gray-500">{ch.handle}</div>
-                  </div>
-                  <div className="ml-auto text-right">
-                    <div className="font-extrabold text-sm">{fmt(ch.followers)}</div>
-                    <div className="text-[10px] text-gray-500">followers</div>
-                    {(ch as any)._asOf && (
-                      <div className="text-[8px] text-gray-600">*as of {(ch as any)._asOf}</div>
-                    )}
-                  </div>
+              <div key={ch.platform} className="flex items-center gap-3 px-4 py-3">
+                <div className="w-8 h-8 rounded-lg bg-[#D42B3F]/15 flex items-center justify-center shrink-0">
+                  <Icon size={15} className="text-[#D42B3F]" />
                 </div>
-
-                <div className="grid grid-cols-2 gap-2 mb-3 text-center">
-                  <div className="bg-white/5 rounded-lg py-2">
-                    <div className="font-bold text-sm">{ch.engagementRate == null ? "—" : `${ch.engagementRate}%`}</div>
-                    <div className="text-[9px] text-gray-500">ENGAGEMENT</div>
-                  </div>
-                  <div className="bg-white/5 rounded-lg py-2">
-                    <div className="font-bold text-sm">{fmt((ch as any).following)}</div>
-                    <div className="text-[9px] text-gray-500">FOLLOWING{(ch as any).following == null && " (unverified)"}</div>
-                  </div>
+                <div className="w-24 shrink-0">
+                  <div className="font-bold text-sm">{ch.platform}</div>
                 </div>
-
-                <div className="space-y-1.5">
-                  {ch.strengths.map((s, i) => (
-                    <div key={i} className="flex gap-2 text-xs text-gray-300">
-                      <span className="text-green-400">+</span> {s}
-                    </div>
-                  ))}
-                  {ch.improvements.map((s, i) => (
-                    <div key={i} className="flex gap-2 text-xs text-gray-400">
-                      <span className="text-[#D42B3F]">&#8594;</span> {s}
-                    </div>
-                  ))}
+                <div className="text-xs text-gray-500 flex-1 truncate hidden sm:block">{ch.handle}</div>
+                <div className="text-right">
+                  <span className="font-extrabold text-sm">{fmt(ch.followers)}</span>
+                  <span className="text-[10px] text-gray-500 ml-1">followers</span>
                 </div>
+                {(ch as any)._asOf && (
+                  <div className="text-[8px] text-gray-600 w-20 text-right hidden md:block">*as of {(ch as any)._asOf}</div>
+                )}
+                {(ch as any)._verified ? (
+                  <span className="text-[8px] font-bold text-green-400 bg-green-400/10 rounded px-1.5 py-0.5 shrink-0">VERIFIED</span>
+                ) : (
+                  <span className="text-[8px] font-bold text-amber-400 bg-amber-400/10 rounded px-1.5 py-0.5 shrink-0">EST.</span>
+                )}
+                {(ch as any).url ? (
+                  <a
+                    href={(ch as any).url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-7 h-7 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center shrink-0"
+                    title={`Open ${ch.platform}`}
+                  >
+                    <ExternalLink size={12} className="text-gray-400" />
+                  </a>
+                ) : (
+                  <div className="w-7 h-7 shrink-0" />
+                )}
               </div>
             );
           })}
         </div>
+        <p className="text-[10px] text-gray-600 mt-2">
+          Full breakdown (engagement, following, strengths &amp; improvements) lives on the Social Media page.
+        </p>
       </div>
 
       {/* ================= LIVE FEED ================= */}
