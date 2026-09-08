@@ -16,7 +16,7 @@ export default function CompetitorBenchmark() {
           <Binoculars size={22} className="text-[#D42B3F]" /> Competitor &amp; Industry Benchmark
         </h1>
         <p className="text-gray-400 text-sm mt-1">
-          Ranked by real, verified Instagram follower counts (Aug 2026 research pass).
+          Ranked by real, verified Instagram follower counts (Sep 2026 research pass).
         </p>
       </div>
 

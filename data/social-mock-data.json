@@ -365,7 +365,7 @@
     }
   ],
   "competitorBenchmark": {
-    "_readme": "Ranked by real, verified Instagram follower counts found via public search (Aug 2026). Only firms with a directly-confirmed official account and follower count are ranked with numbers. Firms below the ranked list are known real competitors where a reliable public follower count could not be found in this research pass — NOT assumed to be smaller, just unverified.",
+    "_readme": "Ranked by real, verified Instagram follower counts (Sep 2026 research pass). FTMO/The5ers/Topstep/Apex were verified in an earlier pass and not re-checked this time (noted per-entry); the other 6 are freshly verified or found to still lack a credible official number.",
     "verified": [
       {
         "rank": 1,
@@ -373,65 +373,86 @@
         "platform": "Instagram",
         "handle": "@ftmocom",
         "followers": 570000,
-        "postsCount": 987,
-        "sourceNote": "By far the largest social presence in the sector — roughly 5x the next competitor.",
+        "sourceNote": "Previously verified, not re-checked this pass.",
         "link": "https://www.instagram.com/ftmocom/"
       },
       {
         "rank": 2,
+        "firm": "Funding Pips",
+        "platform": "Instagram",
+        "handle": "@fundingpips",
+        "followers": 394000,
+        "sourceNote": "Official account, 576 posts. Data ~19 days old — fresh.",
+        "link": "https://www.instagram.com/fundingpips/"
+      },
+      {
+        "rank": 3,
+        "firm": "FundedNext",
+        "platform": "Instagram",
+        "handle": "@fundednext",
+        "followers": 270000,
+        "sourceNote": "Official main account (separate regional/futures sub-accounts exist with smaller followings — don't confuse them).",
+        "link": "https://www.instagram.com/fundednext/"
+      },
+      {
+        "rank": 4,
         "firm": "The5ers",
         "platform": "Instagram",
         "handle": "@the.5ers",
         "followers": 117000,
-        "postsCount": 1076,
-        "sourceNote": "Longest-running firm in the group (est. 2016), reflected in a large, mature following.",
+        "sourceNote": "Previously verified, not re-checked this pass.",
         "link": "https://www.instagram.com/the.5ers/"
       },
       {
-        "rank": 3,
+        "rank": 5,
         "firm": "Topstep",
         "platform": "Instagram",
         "handle": "@topstep",
         "followers": 96000,
-        "postsCount": 74,
-        "sourceNote": "High followers relative to a low post count — strong follower-per-post efficiency.",
+        "sourceNote": "Previously verified, not re-checked this pass.",
         "link": "https://www.instagram.com/topstep/"
       },
       {
-        "rank": 4,
+        "rank": 6,
+        "firm": "TakeProfitTrader",
+        "platform": "Instagram",
+        "handle": "@takeprofittrader",
+        "followers": 86000,
+        "sourceNote": "Official account confirmed via their own site's structured data.",
+        "link": "https://www.instagram.com/takeprofittrader/"
+      },
+      {
+        "rank": 7,
         "firm": "Apex Trader Funding",
         "platform": "Instagram",
         "handle": "@apextraderfunding",
         "followers": 68000,
-        "postsCount": 696,
-        "sourceNote": "Official brand account — note several look-alike/unofficial accounts also exist with smaller followings, don't confuse them.",
+        "sourceNote": "Previously verified, not re-checked this pass.",
         "link": "https://www.instagram.com/apextraderfunding/"
+      },
+      {
+        "rank": 8,
+        "firm": "MyFundedFutures",
+        "platform": "Instagram",
+        "handle": "@myfundedfutures",
+        "followers": 41000,
+        "sourceNote": "Used the fresher of two conflicting sources (41K from a 6-day-old review site vs. 45K from a 2-year-stale direct search hit).",
+        "link": "https://www.instagram.com/myfundedfutures/"
+      },
+      {
+        "rank": 9,
+        "firm": "Tradeify",
+        "platform": "Instagram",
+        "handle": "@tradeifyfunding",
+        "followers": 38000,
+        "sourceNote": "Official account confirmed via their own site's structured data, though the follower count itself is ~550 days old — could be stale.",
+        "link": "https://www.instagram.com/tradeifyfunding/"
       }
     ],
     "unverifiedButRealCompetitors": [
       {
-        "firm": "Funding Pips",
-        "reason": "Confirmed real, fast-growing firm from earlier research; Instagram/TikTok follower counts not found in this search pass."
-      },
-      {
-        "firm": "FundedNext",
-        "reason": "Confirmed real ($261M+ paid per third-party comparison source); follower counts not found."
-      },
-      {
-        "firm": "TakeProfitTrader",
-        "reason": "Confirmed active on Instagram, X, YouTube, LinkedIn per a third-party review; exact follower counts not found."
-      },
-      {
-        "firm": "MyFundedFutures",
-        "reason": "Found a TikTok account (@myfundedfuturesofficial) with ~2,400 followers, but this looks like a secondary account — their main channel's real number is unconfirmed."
-      },
-      {
         "firm": "Bulenox",
-        "reason": "Confirmed real, established firm; follower counts not found."
-      },
-      {
-        "firm": "Tradeify",
-        "reason": "Confirmed real, fast-growing firm; follower counts not found."
+        "reason": "Searched specifically — only found small reseller/affiliate accounts (largest was 1,453 followers), no official Bulenox brand account with a credible follower count turned up. Confirmed real, established firm; just no verifiable social number."
       }
     ]
   },
