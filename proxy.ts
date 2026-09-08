@@ -3,6 +3,8 @@ import { verifySessionToken, SESSION_COOKIE_NAME } from "./lib/auth";
 
 // Place this file at the project ROOT (same level as package.json),
 // not inside app/ or lib/ — Next.js requires that exact location.
+// (Next.js 16 renamed the "middleware" file convention to "proxy" —
+// migrated via `npx @next/codemod middleware-to-proxy`.)
 
 export const config = {
   matcher: [
@@ -16,7 +18,7 @@ export const config = {
   ],
 };
 
-export async function middleware(req: NextRequest) {
+export async function proxy(req: NextRequest) {
   const token = req.cookies.get(SESSION_COOKIE_NAME)?.value;
   const session = token ? await verifySessionToken(token) : null;
 

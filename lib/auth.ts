@@ -7,14 +7,26 @@ import { kv } from "@vercel/kv";
  * 1. Set SESSION_SECRET in your Vercel env vars — any long random string
  *    (e.g. run: openssl rand -base64 32)
  * 2. Set AUTH_USERS in your Vercel env vars, format:
- *    username1:bcryptHash1:Full Name 1,username2:bcryptHash2:Full Name 2
- *    Generate each bcryptHash by running scripts/hash-password.mjs locally
+ *    username1:base64Hash1:Full Name 1,username2:base64Hash2:Full Name 2
+ *    Generate each base64Hash by running scripts/hash-password.mjs locally
  *    with the real password — passwords are never stored in plaintext,
  *    and nobody (including Claude) ever sees or invents them.
+ *
+ *    IMPORTANT: the script outputs the bcrypt hash BASE64-ENCODED, not the
+ *    raw hash. Store the base64 form, not the raw "$2a$12$..." string —
+ *    Next.js's env loader (dotenv-expand) treats a literal "$2a" / "$12" in
+ *    an env var as a shell-style variable reference and silently replaces
+ *    it with an empty string, which corrupts a raw bcrypt hash. Base64
+ *    encoding sidesteps this entirely (no `$` in its alphabet).
  * 3. Add the Vercel KV integration to this project (Storage tab in the
  *    Vercel dashboard -> Create Database -> KV) — this is where login
  *    history is stored. Vercel wires the required env vars automatically
- *    once connected.
+ *    once connected. NOTE: Vercel KV is deprecated as of late 2025 — if
+ *    "KV" isn't offered under Storage anymore, look for a Redis option
+ *    under Marketplace Database Providers (Upstash) instead, and confirm
+ *    it sets KV_REST_API_URL / KV_REST_API_TOKEN (the vars this file's
+ *    @vercel/kv client expects) — Vercel's Redis marketplace integration
+ *    generally does, for @vercel/kv backward-compatibility, but verify.
  */
 
 const SESSION_SECRET = new TextEncoder().encode(process.env.SESSION_SECRET ?? "");
@@ -33,7 +45,10 @@ function parseUsers(): { username: string; hash: string; name: string }[] {
     .split(",")
     .filter(Boolean)
     .map((entry) => {
-      const [username, hash, name] = entry.split(":");
+      const [username, encodedHash, name] = entry.split(":");
+      // The hash is stored base64-encoded (see AUTH SETUP above) so that a
+      // raw bcrypt hash's "$2a$12$..." never touches env-var parsing.
+      const hash = encodedHash ? Buffer.from(encodedHash, "base64").toString("utf-8") : "";
       return { username, hash, name: name ?? username };
     });
 }
@@ -84,11 +99,22 @@ const LOG_KEY = "login_log";
 const MAX_LOG_ENTRIES = 2000; // keep the log from growing unbounded
 
 export async function recordLogin(entry: LoginLogEntry) {
-  await kv.lpush(LOG_KEY, JSON.stringify(entry));
-  await kv.ltrim(LOG_KEY, 0, MAX_LOG_ENTRIES - 1);
+  // Best-effort audit log — never let a KV outage or missing config block
+  // an otherwise-valid login. Errors here are logged, not thrown.
+  try {
+    await kv.lpush(LOG_KEY, JSON.stringify(entry));
+    await kv.ltrim(LOG_KEY, 0, MAX_LOG_ENTRIES - 1);
+  } catch (err) {
+    console.error("recordLogin: failed to write to KV", err);
+  }
 }
 
 export async function getLoginLog(limit = 200): Promise<LoginLogEntry[]> {
-  const raw = await kv.lrange(LOG_KEY, 0, limit - 1);
-  return raw.map((r) => (typeof r === "string" ? JSON.parse(r) : r));
+  try {
+    const raw = await kv.lrange(LOG_KEY, 0, limit - 1);
+    return raw.map((r) => (typeof r === "string" ? JSON.parse(r) : r));
+  } catch (err) {
+    console.error("getLoginLog: failed to read from KV", err);
+    return [];
+  }
 }
