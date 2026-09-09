@@ -77,6 +77,19 @@ export async function verifySessionToken(token: string): Promise<SessionPayload 
 export const SESSION_COOKIE_NAME = SESSION_COOKIE;
 
 /**
+ * Server Component helper - reads the session cookie via next/headers and
+ * returns the logged-in user's info, or null if not logged in. Use this in
+ * the layout/nav to display who's currently signed in.
+ */
+export async function getCurrentUser(): Promise<SessionPayload | null> {
+  const { cookies } = await import("next/headers");
+  const cookieStore = await cookies();
+  const token = cookieStore.get(SESSION_COOKIE_NAME)?.value;
+  if (!token) return null;
+  return verifySessionToken(token);
+}
+
+/**
  * Pulls the real client IP on Vercel. x-forwarded-for can contain a list
  * ("client, proxy1, proxy2") — the first entry is the real client.
  */

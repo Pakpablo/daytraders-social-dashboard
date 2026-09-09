@@ -32,7 +32,10 @@ export async function POST(req: NextRequest) {
     secure: true,
     sameSite: "lax",
     path: "/",
-    maxAge: 60 * 60 * 12, // 12 hours, matches SESSION_TTL_HOURS in lib/auth.ts
+    // No maxAge/expires set on purpose: this makes it a browser SESSION
+    // cookie, cleared automatically when the browser (not just the tab)
+    // closes. The JWT itself still expires after 12h as a backstop even
+    // if the browser stays open (see SESSION_TTL_HOURS in lib/auth.ts).
   });
   return res;
 }

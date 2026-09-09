@@ -12,12 +12,12 @@ const TABS = [
   { href: "/competitors", label: "Competitors" },
 ];
 
-export default function NavTabs() {
+export default function NavTabs({ children }: { children?: React.ReactNode }) {
   const pathname = usePathname();
 
   return (
     <nav className="border-b border-white/10 bg-[#0B0B0D]">
-      <div className="mx-auto flex max-w-6xl gap-1 overflow-x-auto px-4 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center gap-1 overflow-x-auto px-4 sm:px-6">
         {TABS.map((tab) => {
           const active = pathname === tab.href;
           return (
@@ -34,6 +34,7 @@ export default function NavTabs() {
             </Link>
           );
         })}
+        {children && <div className="ml-auto shrink-0 pl-4">{children}</div>}
       </div>
     </nav>
   );

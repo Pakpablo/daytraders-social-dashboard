@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import NavTabs from "@/components/NavTabs";
+import UserBadge from "@/components/UserBadge";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,7 +27,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} bg-[#0B0B0D] antialiased`}
     >
       <body className="bg-[#0B0B0D] text-white">
-        <NavTabs />
+        <NavTabs>
+          <UserBadge />
+        </NavTabs>
         {children}
       </body>
     </html>
