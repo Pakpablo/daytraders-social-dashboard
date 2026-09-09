@@ -1,14 +1,12 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-
 export default function LogoutButton() {
-  const router = useRouter();
-
   async function handleLogout() {
     await fetch("/api/auth/logout", { method: "POST" });
-    router.push("/login");
-    router.refresh();
+    // Hard navigation, same reasoning as the login page - guarantees a
+    // fresh request that reflects the now-cleared session cookie, rather
+    // than a client-side transition that could serve stale cached content.
+    window.location.href = "/login";
   }
 
   return (

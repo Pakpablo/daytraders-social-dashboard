@@ -1,10 +1,9 @@
 "use client";
 
 import { Suspense, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 function LoginForm() {
-  const router = useRouter();
   const params = useSearchParams();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -22,15 +21,20 @@ function LoginForm() {
       body: JSON.stringify({ username, password }),
     });
 
-    setLoading(false);
-
     if (res.ok) {
-      router.push(params.get("from") ?? "/overview");
-      router.refresh();
-    } else {
-      const body = await res.json().catch(() => ({}));
-      setError(body.error ?? "Invalid username or password.");
+      // Deliberately a HARD navigation (not router.push), and we don't turn
+      // loading back off first - this forces a real full-page request with
+      // the fresh cookie attached, instead of a client-side transition that
+      // can reuse a stale pre-login cache and require a manual refresh to
+      // actually show the dashboard. The disabled/loading button stays as
+      // visual feedback right up until the new page takes over.
+      window.location.href = params.get("from") ?? "/overview";
+      return;
     }
+
+    setLoading(false);
+    const body = await res.json().catch(() => ({}));
+    setError(body.error ?? "Invalid username or password.");
   }
 
   return (
