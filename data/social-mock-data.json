@@ -19,12 +19,12 @@
       "platform": "X",
       "followers": 6772,
       "verified": true,
-      "note": "Largest by follower count, using each platform's latest real number."
+      "note": "Largest by follower/member count across all 7 platforms."
     },
     "combinedVerifiedFollowers": {
-      "value": 17830,
+      "value": 23355,
       "verified": true,
-      "note": "Sum across all 6 platforms, each platform's OWN latest real number (not all the same date - see per-channel date-stamps)."
+      "note": "Sum across all 7 platforms (added Discord members), each platform's own latest real number."
     },
     "topPostOfWeek": {
       "platform": "Prediction Giveaway (X)",
@@ -192,6 +192,27 @@
         "method": "internal tracking sheet (user-provided)",
         "retrieved": "2026-08-28",
         "note": "New platform, not in original 5-platform scope — added because real growth data made it worth tracking."
+      }
+    },
+    {
+      "platform": "Discord",
+      "handle": "DayTraders Community",
+      "followers": 5525,
+      "following": null,
+      "followerGrowth7d": null,
+      "engagementRate": null,
+      "postsLast30d": null,
+      "strengths": [],
+      "improvements": [],
+      "_verified": true,
+      "_narrativeVerified": false,
+      "_asOf": "2026-09-09",
+      "url": "https://discord.com/invite/daytraders",
+      "_source": {
+        "method": "public search + Discord's own invite page",
+        "url": "https://discord.com/invite/daytraders",
+        "retrieved": "Sep 9, 2026",
+        "note": "Description on the invite page literally reads \"Community for DayTraders.com!\" — confirms this is the official server, not a fan-made one."
       }
     }
   ],

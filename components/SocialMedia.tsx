@@ -2,7 +2,7 @@
 
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from "recharts";
 import {
-  TrendingUp, TrendingDown, Minus, Instagram, Youtube, Linkedin, Twitter, Music2, Facebook, ExternalLink,
+  TrendingUp, TrendingDown, Minus, Instagram, Youtube, Linkedin, Twitter, Music2, Facebook, MessagesSquare, ExternalLink,
 } from "lucide-react";
 import data from "@/data/social-mock-data.json";
 
@@ -15,8 +15,11 @@ const PLATFORM_COLOR: Record<string, string> = {
   LinkedIn: "#0A66C2",
 };
 
+// Discord is intentionally NOT in PLATFORM_COLOR above - it has no weekly
+// history data (only a single current snapshot), so it's excluded from the
+// table/chart but still needs an icon for the Full Channel Breakdown below.
 const PLATFORM_ICON: Record<string, any> = {
-  Instagram, X: Twitter, YouTube: Youtube, TikTok: Music2, LinkedIn: Linkedin, Facebook,
+  Instagram, X: Twitter, YouTube: Youtube, TikTok: Music2, LinkedIn: Linkedin, Facebook, Discord: MessagesSquare,
 };
 
 function fmtDate(d: string) {
