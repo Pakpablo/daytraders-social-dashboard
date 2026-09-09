@@ -6,7 +6,7 @@ import { ShieldCheck, ShieldX } from "lucide-react";
 // Restrict this page to specific usernames, even though everyone else is
 // already logged in past the general gate. Edit this list to whoever should
 // be able to see the access log (IP addresses are sensitive - keep this short).
-const ADMIN_USERNAMES = ["pablo", "abi"];
+const ADMIN_USERNAMES = ["pablo"];
 
 export default async function AccessLogsPage() {
   const cookieStore = await cookies();
