@@ -25,7 +25,7 @@ export default function DashboardOverview() {
       <div>
         <h1 className="text-2xl font-extrabold">Social Audit &amp; Live Feed</h1>
         <p className="text-gray-400 text-sm mt-1">
-          DayTraders.com &middot; Instagram, X, YouTube, TikTok, LinkedIn
+          DayTraders.com &middot; {channels.map((ch) => ch.platform).join(", ")}
         </p>
       </div>
 
@@ -34,7 +34,7 @@ export default function DashboardOverview() {
         <StatCard icon={Eye} label="Total Reach" value={fmt(overviewStats.totalReach.value)} verified={overviewStats.totalReach.verified} />
         <StatCard
           icon={Users2}
-          label="Verified Followers (All 6)"
+          label={`Verified Followers (All ${channels.length})`}
           value={fmt(overviewStats.combinedVerifiedFollowers.value)}
           verified={overviewStats.combinedVerifiedFollowers.verified}
         />

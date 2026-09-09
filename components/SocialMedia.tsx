@@ -47,7 +47,7 @@ export default function SocialMedia() {
       <div>
         <h1 className="text-2xl font-extrabold">Social Media</h1>
         <p className="text-gray-400 text-sm mt-1">
-          Follower history + full channel breakdown, all 6 platforms.
+          Follower history (6 platforms with weekly data) + full channel breakdown ({channels.length} platforms).
         </p>
         <span className="inline-block mt-2 text-[9px] font-bold text-green-400 bg-green-400/10 rounded px-2 py-1">
           VERIFIED &middot; INTERNAL SOURCE
