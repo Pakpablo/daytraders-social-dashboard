@@ -4,13 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const TABS = [
-  { href: "/overview", label: "Overview" },
+  { href: "/overview", label: "Home" },
+  { href: "/newsletter", label: "Weekly Newsletter" },
   { href: "/this-week", label: "This Week" },
   { href: "/followers", label: "Social Media" },
   { href: "/performance", label: "Performance" },
   { href: "/trends", label: "Trends & Ideas" },
   { href: "/competitors", label: "Competitors" },
-  { href: "/newsletter", label: "Weekly Briefing" },
 ];
 
 export default function NavTabs({ children }: { children?: React.ReactNode }) {
