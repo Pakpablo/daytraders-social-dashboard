@@ -717,5 +717,72 @@
       "context": "DJ flagged a caution on this one directly in the channel: be careful with how we use Rockstar/GTA 6's actual imagery — IP-inspired only, not a reproduction.",
       "source": "Marketing channel"
     }
-  ]
+  ],
+  "weeklyNewsletter": {
+    "_readme": "Transcribed directly from the real 'Weekly Team Briefing' PDF (Draft #1, Sept 7-11, 2026), provided by the user. Not researched/verified externally - this is first-party internal content, same as pasting it straight from the source doc.",
+    "dateRange": "SEPT 7–11, 2026",
+    "draftLabel": "DRAFT #1",
+    "audience": "FOR MARKETING & SUPPORT TEAMS",
+    "subtitle": "Marketing · Support · Backend & Others — this week's numbers, shoutouts, and what's next.",
+    "headerStats": [
+      { "value": "4.6★", "label": "Trustpilot rating (= vs last wk)" },
+      { "value": "100%", "label": "🎉 New Sept. high — CSAT 5.0 / 5" },
+      { "value": "Post-launch scaling", "label": "Volume up across Support & Marketing" }
+    ],
+    "weeklyShoutout": [
+      { "name": "Abi", "team": "Marketing", "reason": "new docs, stepped up to lead." },
+      { "name": "Achim", "team": "Support", "reason": "steady teamwork." },
+      { "name": "Kha-Yen", "team": "Leadership", "reason": "guidance across teams." }
+    ],
+    "heyTaco": {
+      "received": [
+        { "name": "Achim", "count": 17 },
+        { "name": "Pablo A.", "count": 15 },
+        { "name": "Rassel H.", "count": 6 }
+      ],
+      "given": [
+        { "name": "Pablo A.", "count": 7 },
+        { "name": "Abi", "count": 7 },
+        { "name": "Peter", "count": 6 }
+      ]
+    },
+    "marketing": {
+      "intro": "This week's campaigns, giveaways, and what's coming up.",
+      "topPost": "[Placeholder metric] — Aug 31–Sept 4 Top Reel: XX.XK Views | High conversion on $40 pricing. Swap in real analytics once confirmed.",
+      "currentGiveaways": [
+        "5x $25K S2F — ended",
+        "New: 5x $50K Static accounts",
+        "Starts Wed, Sept 9"
+      ],
+      "comingUp": [
+        "Ongoing affiliate outreach",
+        "Trading video competition — more info next week"
+      ]
+    },
+    "supportBackendRadar": [
+      "Bulk Bundles = Max 15 Accounts Strictly Applies",
+      "Onyx update: traders can now create & save custom Bracket Order Templates.",
+      "Rithmic fix: root cause of unexpected account deactivations identified & fully resolved."
+    ],
+    "coreRulesChecklist": [
+      "Eval: $40 + $5 fee = $45 total",
+      "DT Wallet / DT Bucks active",
+      "Trailing/Static: no daily hard breach"
+    ],
+    "recurringTicket": {
+      "title": "NinjaTrader Connection Issues",
+      "description": "high ticket volume from traders unable to get the trade copier online and fully connected/working."
+    },
+    "reminders": [
+      "If you don't have a DT hat, let your manager know.",
+      "Remember to fill in the Happy Hour poll.",
+      "Not US-based? You can get a day off in compensation — US-based teammates had Monday off for the holiday."
+    ],
+    "callToAction": {
+      "prompt": "Wins, shoutouts, or questions for next week?",
+      "instruction": "DM Pablo on Slack by Thursday EOD.",
+      "buttonText": "DM PABLO ON SLACK",
+      "buttonSubtext": "Featured in next Friday's edition"
+    }
+  }
 }
