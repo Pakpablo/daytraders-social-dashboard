@@ -45,6 +45,12 @@ function LoginForm() {
       <h1 className="text-xl font-extrabold mb-1">DayTraders Social Dashboard</h1>
       <p className="text-gray-400 text-sm mb-6">Sign in to continue</p>
 
+      {params.get("reason") === "idle" && (
+        <div className="mb-4 text-xs text-amber-300 bg-amber-500/10 border border-amber-500/30 rounded-lg px-3 py-2">
+          You were signed out after 30 minutes of inactivity. Sign back in to continue.
+        </div>
+      )}
+
       <label className="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-1.5">
         Username
       </label>

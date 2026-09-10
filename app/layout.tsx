@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import NavTabs from "@/components/NavTabs";
 import UserBadge from "@/components/UserBadge";
+import IdleTimeout from "@/components/IdleTimeout";
+import { getCurrentUser } from "@/lib/auth";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,7 +22,13 @@ export const metadata: Metadata = {
     "Social audit, trend radar, content ideas, and competitor benchmark for DayTraders.com's social channels.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  // Gated the same way UserBadge is: idle-logout only makes sense once
+  // someone is actually logged in, so it never fires on the login page
+  // itself (which would otherwise loop back to /login?reason=idle for a
+  // visitor who was never signed in).
+  const user = await getCurrentUser();
+
   return (
     <html
       lang="en"
@@ -30,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <NavTabs>
           <UserBadge />
         </NavTabs>
+        {user && <IdleTimeout />}
         {children}
       </body>
     </html>
