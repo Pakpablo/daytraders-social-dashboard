@@ -84,9 +84,9 @@
       "_source": {
         "method": "internal tracking sheet (user-provided)",
         "retrieved": "2026-08-28",
-        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
+        "note": "Following count from internal Daily Log sheet (Sep 9, 2026) - previously an estimate from public search."
       },
-      "following": 1847,
+      "following": 2720,
       "_postsLast30dVerified": false,
       "_narrativeVerified": false,
       "_asOf": "2026-08-28",
@@ -593,7 +593,7 @@
     ]
   },
   "contentPerformanceAnalysis": {
-    "_readme": "Built from 12 real posts found via public search of x.com/DayTraders_com (Aug 2026 research pass). Instagram and TikTok are NOT included here — individual post-level data (likes/views on specific posts) wasn't findable for those platforms despite additional searching; only account-level follower counts were verifiable there. No meme-style content was found on the account at all, so that specific hypothesis is neither confirmed nor denied — it's just unproven either way, not disproven.",
+    "_readme": "Two real datasets now: 'allPosts' (12 posts, X only, found via public search in the July World Cup period) and 'multiPlatformPosts' (55 rows / 16 distinct posts, Aug 29-Sep 7, pulled directly from the team's internal Weekly Content Performance sheet across X/Instagram/Facebook/YouTube/TikTok/LinkedIn - far richer, first-party data). Findings above are informed by both. Posts marked adsRun:true had paid promotion behind them - not directly comparable to organic reach.",
     "allPosts": [
       { "date": "2026-07-19", "type": "Prediction Giveaway", "caption": "Predict the exact World Cup Final score for a $50K S2F Account", "views": 7700 },
       { "date": "2025-11-08", "type": "Giveaway Announcement", "caption": "Week 2 of the $5,000,000 Giveaway — 6x $150K + 5x $50K Static Accounts", "views": 7158 },
@@ -611,37 +611,127 @@
     "whatWorkedBest": [
       {
         "pattern": "Prediction giveaways tied to a huge real-world event",
-        "evidence": "The 3 World Cup Final prediction posts (5.4K–7.7K views) are the single best-performing content type found — all beat every other post by a wide margin.",
-        "why": "Two things stack: (1) a live, massive, real-world moment everyone's already talking about, and (2) a low-effort way to participate (comment a guess) with a real, specific prize."
+        "evidence": "The 3 World Cup Final prediction posts (5.4K-7.7K views) are still the single best organic format found on X to date.",
+        "why": "A live, massive, real-world moment everyone's already talking about, plus a low-effort way to participate (comment a guess) with a real, specific prize."
       },
       {
-        "pattern": "Large prize-pool giveaways, even without a cultural tie-in",
-        "evidence": "The $5,000,000 giveaway announcement (Nov 2025) hit 7,158 views on its own — the outright highest of all 12 posts, with no external event riding shotgun.",
-        "why": "Prize size alone can substitute for a cultural moment if it's big enough to feel newsworthy by itself."
+        "pattern": "Coordinated launch-day pushes (with ad spend behind them)",
+        "evidence": "The Aug 30 launch thread hit 8.0K reach on Instagram and 4.5K on X — the highest reach found in the internal Weekly Content Performance sheet. Marked \"Ads Run\" in the source data, so this isn't pure organic reach.",
+        "why": "Combining a real product change (new pricing) with paid promotion and a coordinated multi-post push clearly worked — but the ad spend is doing real work here, not just the content."
+      },
+      {
+        "pattern": "Memes and relatable content, organically",
+        "evidence": "\"Meme / Relatable\" is the top PURELY ORGANIC category in the internal sheet (939 avg reach), ahead of every other non-ads-run category.",
+        "why": "Low-effort-to-consume, funny, and not asking anything of the viewer — people engage without needing to care about pricing details."
       }
     ],
     "whatWorkedLeast": [
       {
-        "pattern": "Plain educational / how-it-works content",
-        "evidence": "The drawdown-types explainer (581 views) and the generic brand value-prop post (417 views) are the two lowest performers found — roughly 10–18x fewer views than the top giveaway posts.",
-        "why": "No hook, no incentive to engage, no reason to comment or share — it's useful information but reads as a pamphlet, not a post."
+        "pattern": "Educational / trading-psychology content",
+        "evidence": "Lowest-reach category in the internal sheet (235 avg) — confirms the same finding from the earlier X-only research pass (581 views there too). Two independent datasets now agree on this.",
+        "why": "No hook, no incentive to engage — useful information but reads as a lesson, not a post."
       },
       {
-        "pattern": "Winner announcements buried in reply threads",
-        "evidence": "The 'S2L Ultra Plan Winners' post (215 views) was published as a reply under the main winners post, not as its own standalone post — it's the single lowest view count found, even lower than plain educational content.",
-        "why": "Replies get a fraction of the reach of a standalone post algorithmically, regardless of how good the content is."
+        "pattern": "LinkedIn, across every content type",
+        "evidence": "LinkedIn averaged just 18 reach per post across 4 posts — by far the lowest of any platform, and 4 of the 5 lowest-performing posts overall in the entire dataset were on LinkedIn.",
+        "why": "Likely an audience-fit problem more than a content problem — the same posts that do fine on X/IG are landing on an audience that isn't there for this content."
+      },
+      {
+        "pattern": "Winner-announcement posts, consistently",
+        "evidence": "\"Giveaway Winners\" averaged 424 reach across 8 posts — solidly mid-to-low, well behind the giveaway ANNOUNCEMENT posts that preceded them (739 avg).",
+        "why": "The announcement has the hook (a prize, a chance to win); the winner post is just closure — real but less inherently shareable."
       }
     ],
     "recommendations": [
-      "Lean further into prediction/giveaway formats tied to real, live cultural moments — not just trading news. GTA 6's Nov 19 launch is the next one of this scale (see Trend Radar).",
-      "Don't post educational content standalone. Wrap the same information (e.g. drawdown types) inside a giveaway, quiz, or 'guess which rule' format instead of a plain explainer.",
-      "Never post winner announcements as replies. Each one should be its own standalone post — it's real proof of payout, which is exactly the trust-building content that's hard to fake.",
-      "Test whether meme-style content works at all — there's currently zero data either way since the account hasn't tried it."
+      "Lean further into prediction/giveaway formats tied to real, live cultural moments — not just trading news. GTA 6's Nov 19 launch is the next one of this scale.",
+      "Don't post educational content standalone — two independent datasets now agree this underperforms. Wrap the same information inside a giveaway, quiz, or meme format instead.",
+      "Re-evaluate LinkedIn's role — reposting the same content that works on X/IG isn't working there. Either build LinkedIn-native content or deprioritize it.",
+      "Separate ad-boosted performance from organic performance in future reporting — the Aug 30 launch numbers are real, but conflating \"ads run\" reach with organic reach overstates what content alone can do."
+    ],
+    "multiPlatformPosts": [
+      { "date": "2026-08-29", "postGroup": "2026-08-29-1", "platform": "X", "category": "Giveaway", "format": "Static Image", "reach": 1400, "likes": 8, "comments": 4, "link": "https://x.com/DayTraders_com/status/2093551213673320749", "overview": "Flash Giveaway - $375K total funding, 15 x $25K Static Accounts, ending Aug 29", "adsRun": false },
+      { "date": "2026-08-29", "postGroup": "2026-08-29-1", "platform": "Instagram", "category": "Giveaway", "format": "Static Image", "reach": 748, "likes": 14, "comments": 4, "link": "https://www.instagram.com/p/DcnC9-wlOce/", "overview": "Flash Giveaway - $375K total funding, 15 x $25K Static Accounts, ending Aug 29", "adsRun": false },
+      { "date": "2026-08-29", "postGroup": "2026-08-29-1", "platform": "Facebook", "category": "Giveaway", "format": "Static Image", "reach": 70, "likes": 3, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Flash Giveaway - $375K total funding, 15 x $25K Static Accounts, ending Aug 29", "adsRun": false },
+      { "date": "2026-08-29", "postGroup": "2026-08-29-2", "platform": "X", "category": "Promotional / Teaser", "format": "Static Image", "reach": 2224, "likes": 14, "comments": 16, "link": "x.com/DayTraders_com/status/2093694444210159879", "overview": "Teases a major DayTraders update launching Aug 30, highlighting lower all-in pricing, simpler access, and more value.", "adsRun": false },
+      { "date": "2026-08-29", "postGroup": "2026-08-29-2", "platform": "Instagram", "category": "Promotional / Teaser", "format": "Static Image", "reach": 438, "likes": 15, "comments": 6, "link": "https://www.instagram.com/p/DcoD8r2gdZ6/", "overview": "Teases a major DayTraders update launching Aug 30, highlighting lower all-in pricing, simpler access, and more value.", "adsRun": false },
+      { "date": "2026-08-29", "postGroup": "2026-08-29-2", "platform": "Facebook", "category": "Promotional / Teaser", "format": "Static Image", "reach": 92, "likes": 3, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Teases a major DayTraders update launching Aug 30, highlighting lower all-in pricing, simpler access, and more value.", "adsRun": false },
+      { "date": "2026-08-29", "postGroup": "2026-08-29-2", "platform": "LinkedIn", "category": "Promotional / Teaser", "format": "Static Image", "reach": 19, "likes": 0, "comments": 0, "link": "https://www.linkedin.com/feed/update/", "overview": "Teases a major DayTraders update launching Aug 30, highlighting lower all-in pricing, simpler access, and more value.", "adsRun": false },
+      { "date": "2026-08-30", "postGroup": "2026-08-30-1", "platform": "X", "category": "Promotional / Teaser", "format": "Only Text", "reach": 1689, "likes": 15, "comments": 2, "link": "https://x.com/DayTraders_com/status/2093764293296845083", "overview": "Teases lower all-in pricing and more opportunities for traders, encouraging users to watch for the Aug 30 update.", "adsRun": false },
+      { "date": "2026-08-30", "postGroup": "2026-08-30-2", "platform": "X", "category": "Promotional / Launch(Ads Run)", "format": "Thread / Carousel", "reach": 4482, "likes": 17, "comments": 15, "link": "https://x.com/DayTraders_com/status/2094095507581001994", "overview": "Combined performance of all 6 posts in the thread. Promoted DayTraders new $40 starting price, $5 activation fee, DT-Buck rewards, transparent pricing, fast payouts, support, and overall value proposition.", "adsRun": true },
+      { "date": "2026-08-30", "postGroup": "2026-08-30-2", "platform": "Instagram", "category": "Promotional / Launch(Ads Run)", "format": "Thread / Carousel", "reach": 8000, "likes": 36, "comments": 6, "link": "https://www.instagram.com/p/Dcq6nHZAVa6/", "overview": "Combined performance of all 6 posts in the thread. Promoted DayTraders new $40 starting price, $5 activation fee, DT-Buck rewards, transparent pricing, fast payouts, support, and overall value proposition.", "adsRun": true },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-1", "platform": "X", "category": "Pricing / Promotional(Ads Run)", "format": "Static Image", "reach": 924, "likes": 24, "comments": 2, "link": "x.com/DayTraders_com/status/209444240744134762", "overview": "Promotes volume-based pricing, highlighting lower per-account costs when buying multiple 50K Trailing accounts, plus a $5 activation fee.", "adsRun": true },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-1", "platform": "Instagram", "category": "Pricing / Promotional(Ads Run)", "format": "Static Image", "reach": 253, "likes": 4, "comments": 0, "link": "https://www.instagram.com/p/DctQBHcAfdb/", "overview": "Promotes volume-based pricing, highlighting lower per-account costs when buying multiple 50K Trailing accounts, plus a $5 activation fee.", "adsRun": true },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-1", "platform": "Facebook", "category": "Pricing / Promotional(Ads Run)", "format": "Static Image", "reach": 4117, "likes": 2, "comments": 1, "link": "https://www.facebook.com/permalink.php", "overview": "Promotes volume-based pricing, highlighting lower per-account costs when buying multiple 50K Trailing accounts, plus a $5 activation fee.", "adsRun": true },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-1", "platform": "LinkedIn", "category": "Pricing / Promotional(Ads Run)", "format": "Static Image", "reach": 12, "likes": 0, "comments": 0, "link": "https://www.linkedin.com/feed/update/", "overview": "Promotes volume-based pricing, highlighting lower per-account costs when buying multiple 50K Trailing accounts, plus a $5 activation fee.", "adsRun": true },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-2", "platform": "X", "category": "Giveaway Winners", "format": "Static Image", "reach": 1200, "likes": 26, "comments": 6, "link": "x.com/DayTraders_com/status/2094431093630111826", "overview": "Announces the 5 winners of the $25K S2F account giveaway and congratulates the winners.", "adsRun": false },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-2", "platform": "Instagram", "category": "Giveaway Winners", "format": "Static Image", "reach": 657, "likes": 23, "comments": 4, "link": "https://www.instagram.com/p/DctS6xRgf4k/", "overview": "Announces the 5 winners of the $25K S2F account giveaway and congratulates the winners.", "adsRun": false },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-2", "platform": "Facebook", "category": "Giveaway Winners", "format": "Static Image", "reach": 63, "likes": 0, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Announces the 5 winners of the $25K S2F account giveaway and congratulates the winners.", "adsRun": false },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-2", "platform": "LinkedIn", "category": "Giveaway Winners", "format": "Static Image", "reach": 20, "likes": 0, "comments": 0, "link": "https://www.linkedin.com/feed/update/", "overview": "Announces the 5 winners of the $25K S2F account giveaway and congratulates the winners.", "adsRun": false },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-3", "platform": "X", "category": "Giveaway Winners", "format": "Static Image", "reach": 921, "likes": 28, "comments": 4, "link": "x.com/DayTraders_com/status/2094465365900435888", "overview": "Announces the winner of the $375K Flash Giveaway, featuring one trader winning 15 x $25K Static Funded Accounts.", "adsRun": false },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-3", "platform": "Instagram", "category": "Giveaway Winners", "format": "Static Image", "reach": 435, "likes": 15, "comments": 2, "link": "https://www.instagram.com/p/Dctis4CAaqG/", "overview": "Announces the winner of the $375K Flash Giveaway, featuring one trader winning 15 x $25K Static Funded Accounts.", "adsRun": false },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-3", "platform": "Facebook", "category": "Giveaway Winners", "format": "Static Image", "reach": 76, "likes": 0, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Announces the winner of the $375K Flash Giveaway, featuring one trader winning 15 x $25K Static Funded Accounts.", "adsRun": false },
+      { "date": "2026-08-31", "postGroup": "2026-08-31-3", "platform": "LinkedIn", "category": "Giveaway Winners", "format": "Static Image", "reach": 21, "likes": 0, "comments": 0, "link": "https://www.linkedin.com/feed/update/", "overview": "Announces the winner of the $375K Flash Giveaway, featuring one trader winning 15 x $25K Static Funded Accounts.", "adsRun": false },
+      { "date": "2026-09-01", "postGroup": "2026-09-01-1", "platform": "X", "category": "Pricing / Promotional", "format": "Static Image", "reach": 1200, "likes": 36, "comments": 3, "link": "https://x.com/DayTraders_com/status/2094782882086793253", "overview": "Highlights transparent all-in pricing for different account sizes with a flat $5 activation fee and no hidden costs.", "adsRun": false },
+      { "date": "2026-09-01", "postGroup": "2026-09-01-1", "platform": "Instagram", "category": "Pricing / Promotional", "format": "Static Image", "reach": 1500, "likes": 0, "comments": 11, "link": "https://www.instagram.com/p/DcvzTh2AYQc/", "overview": "Highlights transparent all-in pricing for different account sizes with a flat $5 activation fee and no hidden costs.", "adsRun": false },
+      { "date": "2026-09-01", "postGroup": "2026-09-01-1", "platform": "Facebook", "category": "Pricing / Promotional", "format": "Static Image", "reach": 46, "likes": 0, "comments": 0, "link": "https://www.facebook.com/share/p/19Qmddt9Bi/", "overview": "Highlights transparent all-in pricing for different account sizes with a flat $5 activation fee and no hidden costs.", "adsRun": false },
+      { "date": "2026-09-01", "postGroup": "2026-09-01-2", "platform": "X", "category": "Meme / Relatable", "format": "Video", "reach": 780, "likes": 14, "comments": 0, "link": "https://x.com/DayTraders_com/status/2094792189155094603", "overview": "Humorous POV about overtrading, comparing repeated trades after a loss to competing in an Olympic sport.", "adsRun": false },
+      { "date": "2026-09-01", "postGroup": "2026-09-01-2", "platform": "Instagram", "category": "Meme / Relatable", "format": "Video", "reach": 523, "likes": 21, "comments": 0, "link": "https://www.instagram.com/reel/Dcv3vLWiVD7/", "overview": "Humorous POV about overtrading, comparing repeated trades after a loss to competing in an Olympic sport.", "adsRun": false },
+      { "date": "2026-09-01", "postGroup": "2026-09-01-2", "platform": "Facebook", "category": "Meme / Relatable", "format": "Video", "reach": 1300, "likes": 10, "comments": 0, "link": "https://www.facebook.com/reel/2602186010201981", "overview": "Humorous POV about overtrading, comparing repeated trades after a loss to competing in an Olympic sport.", "adsRun": false },
+      { "date": "2026-09-01", "postGroup": "2026-09-01-2", "platform": "YouTube", "category": "Meme / Relatable", "format": "Video", "reach": 2065, "likes": 11, "comments": 1, "link": "https://www.youtube.com/shorts/JIZARRFwwUg", "overview": "Humorous POV about overtrading, comparing repeated trades after a loss to competing in an Olympic sport.", "adsRun": false },
+      { "date": "2026-09-01", "postGroup": "2026-09-01-2", "platform": "TikTok", "category": "Meme / Relatable", "format": "Video", "reach": 27, "likes": 1, "comments": 0, "link": "https://www.tiktok.com/@daytraders_com/video/7680574532662447373", "overview": "Humorous POV about overtrading, comparing repeated trades after a loss to competing in an Olympic sport.", "adsRun": false },
+      { "date": "2026-09-02", "postGroup": "2026-09-02-1", "platform": "X", "category": "Educational / Trading Psychology", "format": "Video", "reach": 814, "likes": 12, "comments": 1, "link": "x.com/DayTraders_com/status/2095165046804590722", "overview": "Explains why traders can fail despite having a decent strategy, focusing on behavioral issues like revenge trading, ignoring drawdown, and changing strategies after losses.", "adsRun": false },
+      { "date": "2026-09-02", "postGroup": "2026-09-02-1", "platform": "Instagram", "category": "Educational / Trading Psychology", "format": "Video", "reach": 167, "likes": 4, "comments": 3, "link": "https://www.instagram.com/p/DcyWko0gSNn/", "overview": "Explains why traders can fail despite having a decent strategy, focusing on behavioral issues like revenge trading, ignoring drawdown, and changing strategies after losses.", "adsRun": false },
+      { "date": "2026-09-02", "postGroup": "2026-09-02-1", "platform": "Facebook", "category": "Educational / Trading Psychology", "format": "Video", "reach": 59, "likes": 1, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Explains why traders can fail despite having a decent strategy, focusing on behavioral issues like revenge trading, ignoring drawdown, and changing strategies after losses.", "adsRun": false },
+      { "date": "2026-09-02", "postGroup": "2026-09-02-1", "platform": "YouTube", "category": "Educational / Trading Psychology", "format": "Video", "reach": 22, "likes": 1, "comments": 0, "link": "https://www.youtube.com/shorts/nbXl26mQV30", "overview": "Explains why traders can fail despite having a decent strategy, focusing on behavioral issues like revenge trading, ignoring drawdown, and changing strategies after losses.", "adsRun": false },
+      { "date": "2026-09-02", "postGroup": "2026-09-02-1", "platform": "TikTok", "category": "Educational / Trading Psychology", "format": "Video", "reach": 115, "likes": 2, "comments": 0, "link": "https://vt.tiktok.com/ZSqAM3JJJ/", "overview": "Explains why traders can fail despite having a decent strategy, focusing on behavioral issues like revenge trading, ignoring drawdown, and changing strategies after losses.", "adsRun": false },
+      { "date": "2026-09-03", "postGroup": "2026-09-03-1", "platform": "X", "category": "Promotional / Pricing", "format": "Thread / Carousel", "reach": 1085, "likes": 15, "comments": 8, "link": "x.com/DayTraders_com/status/2095505537505104002", "overview": "Explains the new bulk pricing tiers, showing how traders can save more when purchasing multiple accounts, with discounts applied automatically at checkout.", "adsRun": false },
+      { "date": "2026-09-03", "postGroup": "2026-09-03-1", "platform": "Instagram", "category": "Promotional / Pricing", "format": "Thread / Carousel", "reach": 331, "likes": 6, "comments": 1, "link": "https://www.instagram.com/p/Dc07o0aARp3/", "overview": "Explains the new bulk pricing tiers, showing how traders can save more when purchasing multiple accounts, with discounts applied automatically at checkout.", "adsRun": false },
+      { "date": "2026-09-03", "postGroup": "2026-09-03-1", "platform": "Facebook", "category": "Promotional / Pricing", "format": "Thread / Carousel", "reach": 52, "likes": 1, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Explains the new bulk pricing tiers, showing how traders can save more when purchasing multiple accounts, with discounts applied automatically at checkout.", "adsRun": false },
+      { "date": "2026-09-03", "postGroup": "2026-09-03-2", "platform": "X", "category": "Promotional / Pricing", "format": "Static Image", "reach": 1113, "likes": 19, "comments": 5, "link": "x.com/DayTraders_com/status/2095525841153470639", "overview": "Compares the old and new prices for 50K Trail, 300K Trail, 25K Trail, 50K Static, and 50K EOD accounts, highlighting lower all-in pricing and additional savings when purchasing multiple accounts.", "adsRun": false },
+      { "date": "2026-09-03", "postGroup": "2026-09-03-2", "platform": "Instagram", "category": "Promotional / Pricing", "format": "Static Image", "reach": 378, "likes": 4, "comments": 0, "link": "https://www.instagram.com/p/Dc1E7K8AVUa/", "overview": "Compares the old and new prices for 50K Trail, 300K Trail, 25K Trail, 50K Static, and 50K EOD accounts, highlighting lower all-in pricing and additional savings when purchasing multiple accounts.", "adsRun": false },
+      { "date": "2026-09-03", "postGroup": "2026-09-03-2", "platform": "Facebook", "category": "Promotional / Pricing", "format": "Static Image", "reach": 32, "likes": 0, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Compares the old and new prices for 50K Trail, 300K Trail, 25K Trail, 50K Static, and 50K EOD accounts, highlighting lower all-in pricing and additional savings when purchasing multiple accounts.", "adsRun": false },
+      { "date": "2026-09-04", "postGroup": "2026-09-04-1", "platform": "X", "category": "Trading Meme / Humor", "format": "Video", "reach": 610, "likes": 9, "comments": 1, "link": "x.com/DayTraders_com/status/2095876410309626247", "overview": "A relatable trading meme about the emotional journey of getting the first payout, showing the cycle of passing, resetting, repeating, and finally reaching the first payout.", "adsRun": false },
+      { "date": "2026-09-04", "postGroup": "2026-09-04-1", "platform": "Instagram", "category": "Trading Meme / Humor", "format": "Video", "reach": 400, "likes": 13, "comments": 0, "link": "https://www.instagram.com/reel/Dc3jEC2lDnV/", "overview": "A relatable trading meme about the emotional journey of getting the first payout, showing the cycle of passing, resetting, repeating, and finally reaching the first payout.", "adsRun": false },
+      { "date": "2026-09-04", "postGroup": "2026-09-04-1", "platform": "Facebook", "category": "Trading Meme / Humor", "format": "Video", "reach": 311, "likes": 2, "comments": 0, "link": "https://www.facebook.com/share/r/1EepLuUytf/", "overview": "A relatable trading meme about the emotional journey of getting the first payout, showing the cycle of passing, resetting, repeating, and finally reaching the first payout.", "adsRun": false },
+      { "date": "2026-09-04", "postGroup": "2026-09-04-1", "platform": "YouTube", "category": "Trading Meme / Humor", "format": "Video", "reach": 123, "likes": 0, "comments": 0, "link": "https://www.youtube.com/shorts/FxheemlPj5c", "overview": "A relatable trading meme about the emotional journey of getting the first payout, showing the cycle of passing, resetting, repeating, and finally reaching the first payout.", "adsRun": false },
+      { "date": "2026-09-04", "postGroup": "2026-09-04-1", "platform": "TikTok", "category": "Trading Meme / Humor", "format": "Video", "reach": 1035, "likes": 98, "comments": 1, "link": "https://vt.tiktok.com/ZSqArsgXQ/", "overview": "A relatable trading meme about the emotional journey of getting the first payout, showing the cycle of passing, resetting, repeating, and finally reaching the first payout.", "adsRun": false },
+      { "date": "2026-09-04", "postGroup": "2026-09-04-2", "platform": "X", "category": "Promotional / Pricing", "format": "Static Image", "reach": 2677, "likes": 30, "comments": 8, "link": "x.com/DayTraders_com/status/2095912739336315060", "overview": "Promotes the activation fee reduction from $99 to $5, highlighting the 95% fee reduction and additional automatic bulk savings when purchasing multiple accounts.", "adsRun": false },
+      { "date": "2026-09-04", "postGroup": "2026-09-04-2", "platform": "Instagram", "category": "Promotional / Pricing", "format": "Static Image", "reach": 578, "likes": 11, "comments": 1, "link": "https://www.instagram.com/p/Dc30_Z8gSOM/", "overview": "Promotes the activation fee reduction from $99 to $5, highlighting the 95% fee reduction and additional automatic bulk savings when purchasing multiple accounts.", "adsRun": false },
+      { "date": "2026-09-04", "postGroup": "2026-09-04-2", "platform": "Facebook", "category": "Promotional / Pricing", "format": "Static Image", "reach": 37, "likes": 1, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Promotes the activation fee reduction from $99 to $5, highlighting the 95% fee reduction and additional automatic bulk savings when purchasing multiple accounts.", "adsRun": false },
+      { "date": "2026-09-05", "postGroup": "2026-09-05-1", "platform": "X", "category": "Promotional / Rewards", "format": "Static Image", "reach": 948, "likes": 11, "comments": 1, "link": "x.com/DayTraders_com/status/2095980224244760604", "overview": "Promotes the DT-Bucks rewards program, explaining how traders earn 1 DT-Buck per trading day and can redeem accumulated DT-Bucks for Static, EOD, or Trail accounts.", "adsRun": false },
+      { "date": "2026-09-05", "postGroup": "2026-09-05-1", "platform": "Instagram", "category": "Promotional / Rewards", "format": "Static Image", "reach": 241, "likes": 5, "comments": 1, "link": "https://www.instagram.com/p/Dc4TWeajkZ4/", "overview": "Promotes the DT-Bucks rewards program, explaining how traders earn 1 DT-Buck per trading day and can redeem accumulated DT-Bucks for Static, EOD, or Trail accounts.", "adsRun": false },
+      { "date": "2026-09-05", "postGroup": "2026-09-05-1", "platform": "Facebook", "category": "Promotional / Rewards", "format": "Static Image", "reach": 58, "likes": 0, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Promotes the DT-Bucks rewards program, explaining how traders earn 1 DT-Buck per trading day and can redeem accumulated DT-Bucks for Static, EOD, or Trail accounts.", "adsRun": false },
+      { "date": "2026-09-07", "postGroup": "2026-09-07-2", "platform": "X", "category": "Promotional / Pricing", "format": "Static Image", "reach": 1064, "likes": 16, "comments": 1, "link": "x.com/DayTraders_com/status/2096958298834813009", "overview": "Promotes the 15-account package, highlighting $750 pricing versus $1,996.65, $1,246.65 in upfront savings, and up to $2,000 withdrawals with a 100% profit split on funded 50K Pro accounts.", "adsRun": false },
+      { "date": "2026-09-07", "postGroup": "2026-09-07-2", "platform": "Instagram", "category": "Promotional / Pricing", "format": "Static Image", "reach": 227, "likes": 5, "comments": 0, "link": "https://www.instagram.com/p/Dc_QPXTgZls/", "overview": "Promotes the 15-account package, highlighting $750 pricing versus $1,996.65, $1,246.65 in upfront savings, and up to $2,000 withdrawals with a 100% profit split on funded 50K Pro accounts.", "adsRun": false },
+      { "date": "2026-09-07", "postGroup": "2026-09-07-2", "platform": "Facebook", "category": "Promotional / Pricing", "format": "Static Image", "reach": 29, "likes": 0, "comments": 0, "link": "https://www.facebook.com/permalink.php", "overview": "Promotes the 15-account package, highlighting $750 pricing versus $1,996.65, $1,246.65 in upfront savings, and up to $2,000 withdrawals with a 100% profit split on funded 50K Pro accounts.", "adsRun": false }
+    ],
+    "categoryBreakdown": [
+      { "category": "Promotional / Launch(Ads Run)", "avgReach": 6241, "count": 2, "adsRun": true },
+      { "category": "Pricing / Promotional(Ads Run)", "avgReach": 1326, "count": 4, "adsRun": true },
+      { "category": "Meme / Relatable", "avgReach": 939, "count": 5, "adsRun": false },
+      { "category": "Pricing / Promotional", "avgReach": 915, "count": 3, "adsRun": false },
+      { "category": "Promotional / Teaser", "avgReach": 892, "count": 5, "adsRun": false },
+      { "category": "Giveaway", "avgReach": 739, "count": 3, "adsRun": false },
+      { "category": "Promotional / Pricing", "avgReach": 634, "count": 12, "adsRun": false },
+      { "category": "Trading Meme / Humor", "avgReach": 496, "count": 5, "adsRun": false },
+      { "category": "Giveaway Winners", "avgReach": 424, "count": 8, "adsRun": false },
+      { "category": "Promotional / Rewards", "avgReach": 416, "count": 3, "adsRun": false },
+      { "category": "Educational / Trading Psychology", "avgReach": 235, "count": 5, "adsRun": false }
+    ],
+    "platformBreakdown": [
+      { "platform": "X", "avgReach": 1446, "count": 16 },
+      { "platform": "Instagram", "avgReach": 992, "count": 15 },
+      { "platform": "YouTube", "avgReach": 737, "count": 3 },
+      { "platform": "Facebook", "avgReach": 453, "count": 14 },
+      { "platform": "TikTok", "avgReach": 392, "count": 3 },
+      { "platform": "LinkedIn", "avgReach": 18, "count": 4 }
     ]
   },
   "followerHistory": {
-    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks. A 5th point (Sep 9, 2026) was added, but only for YouTube/TikTok/LinkedIn, which have a real newer number from individual platform screenshots. X/Instagram/Facebook do NOT have a verified number for that date, so those 3 fields are null - the chart shows a genuine gap there rather than a fabricated continuation.",
+    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks. A 5th point (Sep 9, 2026) was added, but only for YouTube/TikTok/LinkedIn, which have a real newer number from individual platform screenshots. X/Instagram/Facebook do NOT have a verified number for that date, so those 3 fields are null - the chart shows a genuine gap there rather than a fabricated continuation. Extended backward with 2 earlier weeks (Jul 24, Jul 31) found in the real Google Sheet source.",
     "weeks": [
+      { "date": "2026-07-24", "X": 6694, "Instagram": 3662, "Facebook": 1729, "YouTube": 3228, "TikTok": 193, "LinkedIn": 113, "Discord": null },
+      { "date": "2026-07-31", "X": 6706, "Instagram": 3668, "Facebook": 2147, "YouTube": 3230, "TikTok": 191, "LinkedIn": 115, "Discord": null },
       { "date": "2026-08-07", "X": 6703, "Instagram": 3670, "Facebook": 2554, "YouTube": 3220, "TikTok": 194, "LinkedIn": 115, "Discord": null },
       { "date": "2026-08-14", "X": 6678, "Instagram": 3677, "Facebook": 2954, "YouTube": 3219, "TikTok": 195, "LinkedIn": 116, "Discord": null },
       { "date": "2026-08-21", "X": 6745, "Instagram": 3732, "Facebook": 3305, "YouTube": 3267, "TikTok": 188, "LinkedIn": 118, "Discord": null },
@@ -649,12 +739,12 @@
       { "date": "2026-09-09", "X": null, "Instagram": null, "Facebook": null, "YouTube": 3280, "TikTok": 196, "LinkedIn": 125, "Discord": 5525 }
     ],
     "growthAnalysis": [
-      { "platform": "Facebook", "current": 3670, "asOf": "2026-08-28", "weekChange": 365, "weekChangePct": 11.0, "totalChange": 1116, "totalChangePct": 43.7, "spanWeeks": 3 },
-      { "platform": "LinkedIn", "current": 125, "asOf": "2026-09-09", "weekChange": 7, "weekChangePct": 5.9, "totalChange": 10, "totalChangePct": 8.7, "spanWeeks": 4 },
-      { "platform": "Instagram", "current": 3787, "asOf": "2026-08-28", "weekChange": 55, "weekChangePct": 1.5, "totalChange": 117, "totalChangePct": 3.2, "spanWeeks": 3 },
-      { "platform": "YouTube", "current": 3280, "asOf": "2026-09-09", "weekChange": 1, "weekChangePct": 0.0, "totalChange": 60, "totalChangePct": 1.9, "spanWeeks": 4 },
-      { "platform": "X", "current": 6772, "asOf": "2026-08-28", "weekChange": 27, "weekChangePct": 0.4, "totalChange": 69, "totalChangePct": 1.0, "spanWeeks": 3 },
-      { "platform": "TikTok", "current": 196, "asOf": "2026-09-09", "weekChange": 3, "weekChangePct": 1.6, "totalChange": 2, "totalChangePct": 1.0, "spanWeeks": 4 }
+      { "platform": "Facebook", "current": 3670, "asOf": "2026-08-28", "weekChange": 365, "weekChangePct": 11.0, "totalChange": 1941, "totalChangePct": 112.3, "spanWeeks": 5 },
+      { "platform": "LinkedIn", "current": 125, "asOf": "2026-09-09", "weekChange": 7, "weekChangePct": 5.9, "totalChange": 12, "totalChangePct": 10.6, "spanWeeks": 6 },
+      { "platform": "Instagram", "current": 3787, "asOf": "2026-08-28", "weekChange": 55, "weekChangePct": 1.5, "totalChange": 125, "totalChangePct": 3.4, "spanWeeks": 5 },
+      { "platform": "YouTube", "current": 3280, "asOf": "2026-09-09", "weekChange": 1, "weekChangePct": 0.0, "totalChange": 52, "totalChangePct": 1.6, "spanWeeks": 6 },
+      { "platform": "TikTok", "current": 196, "asOf": "2026-09-09", "weekChange": 3, "weekChangePct": 1.6, "totalChange": 3, "totalChangePct": 1.6, "spanWeeks": 6 },
+      { "platform": "X", "current": 6772, "asOf": "2026-08-28", "weekChange": 27, "weekChangePct": 0.4, "totalChange": 78, "totalChangePct": 1.2, "spanWeeks": 5 }
     ]
   },
   "thisWeeksContent": {
