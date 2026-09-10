@@ -37,6 +37,26 @@ function fmt(n: number | null) {
   return `${n}`;
 }
 
+/**
+ * Fills gaps in a platform's weekly series using the nearest known real
+ * value (forward-fill first, then backward-fill for leading gaps like
+ * Discord's, which only has a value in the LAST column). Returns each
+ * cell tagged with whether it's real or carried-over, so the UI can show
+ * a visual difference instead of pretending a filled value was verified.
+ */
+function fillSeries(values: (number | null)[]): { value: number | null; real: boolean }[] {
+  const filled: { value: number | null; real: boolean }[] = values.map((v) => ({ value: v, real: v != null }));
+  // forward-fill
+  for (let i = 1; i < filled.length; i++) {
+    if (filled[i].value == null) filled[i].value = filled[i - 1].value;
+  }
+  // backward-fill any still-null leading entries (e.g. Discord)
+  for (let i = filled.length - 2; i >= 0; i--) {
+    if (filled[i].value == null) filled[i].value = filled[i + 1].value;
+  }
+  return filled;
+}
+
 export default function SocialMedia() {
   const { weeks, growthAnalysis } = data.followerHistory as any;
   const { channels } = data as any;
@@ -74,22 +94,43 @@ export default function SocialMedia() {
               </tr>
             </thead>
             <tbody>
-              {platforms.map((platform) => (
-                <tr key={platform} className="border-b border-white/5 last:border-0">
-                  <td className="py-2.5 px-4 font-bold flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full inline-block" style={{ background: PLATFORM_COLOR[platform] }} />
-                    {platform}
-                  </td>
-                  {chartData.map((w: any) => (
-                    <td key={w.date} className="text-right py-2.5 px-3 text-gray-300 font-mono text-xs">
-                      {fmt(w[platform])}
+              {platforms.map((platform) => {
+                const series = fillSeries(chartData.map((w: any) => w[platform]));
+                return (
+                  <tr key={platform} className="border-b border-white/5 last:border-0">
+                    <td className="py-2.5 px-4 font-bold flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full inline-block" style={{ background: PLATFORM_COLOR[platform] }} />
+                      {platform}
                     </td>
-                  ))}
-                </tr>
-              ))}
+                    {series.map((cell, i) => (
+                      <td key={chartData[i].date} className={`text-right py-2.5 px-3 font-mono text-xs ${cell.real ? "text-gray-300" : "text-gray-500 italic"}`}>
+                        {fmt(cell.value)}{!cell.real && cell.value != null ? "*" : ""}
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })}
+              <tr className="bg-white/5">
+                <td className="py-2.5 px-4 font-extrabold text-white">Total</td>
+                {chartData.map((w: any, colIndex: number) => {
+                  const total = platforms.reduce((sum, platform) => {
+                    const series = fillSeries(chartData.map((wk: any) => wk[platform]));
+                    return sum + (series[colIndex].value ?? 0);
+                  }, 0);
+                  return (
+                    <td key={w.date} className="text-right py-2.5 px-3 font-extrabold text-white text-xs">
+                      {fmt(total)}
+                    </td>
+                  );
+                })}
+              </tr>
             </tbody>
           </table>
         </div>
+        <p className="text-[10px] text-gray-600 mt-2">
+          * = no real number for that date, showing the nearest known value instead (carried
+          forward/backward) so the table isn't full of dashes. Not a new data point.
+        </p>
       </div>
 
       {/* ==================================================== */}
