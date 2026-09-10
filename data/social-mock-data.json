@@ -351,7 +351,8 @@
       "platform": "TikTok",
       "hookLine": "Wait... the activation fee is HOW much now?",
       "keyMessaging": "Lead with the number, not the explanation. Let curiosity carry the first 3 seconds before revealing the full pricing change.",
-      "objective": "Direct Conversion"
+      "objective": "Direct Conversion",
+      "ideaSource": { "type": "trend-active", "label": "Bulk Pricing Comparisons" }
     },
     {
       "title": "We Got Denied a Payout (On Purpose) — Here's What We Learned",
@@ -359,7 +360,8 @@
       "platform": "YouTube",
       "hookLine": "We deliberately broke a rule to show you exactly what happens.",
       "keyMessaging": "Radical transparency angle — walk through a real rule violation and the resulting payout denial to build trust through honesty.",
-      "objective": "Brand Awareness"
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "trend-active", "label": "\"Prop Firm Denied My Payout\" Callout Videos" }
     },
     {
       "title": "DT-Bucks Countdown Series",
@@ -367,7 +369,8 @@
       "platform": "Instagram",
       "hookLine": "You're 12 trading days away from a free account.",
       "keyMessaging": "Turn the reward program into a weekly countdown series traders want to follow — gamified progress, not just a feature explainer.",
-      "objective": "Direct Conversion"
+      "objective": "Direct Conversion",
+      "ideaSource": { "type": "trend-active", "label": "DT-Bucks Gamification" }
     },
     {
       "title": "Prop Firm Rules, Debunked",
@@ -375,7 +378,8 @@
       "platform": "X",
       "hookLine": "5 things traders get wrong about drawdown rules (thread)",
       "keyMessaging": "Myth vs. reality format, one misconception per tweet, ending with a clear call to check your own account's actual rule.",
-      "objective": "Brand Awareness"
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "trend-emerging", "label": "Prop Firm Rule Debunking Reels" }
     },
     {
       "title": "Bring a Trader, Earn DT-Bucks",
@@ -383,7 +387,8 @@
       "platform": "TikTok",
       "hookLine": "Your friend's first payout just paid for your next account.",
       "keyMessaging": "Frame the affiliate program as a story (a real referral's payout) rather than a generic \"refer a friend\" pitch.",
-      "objective": "Affiliate Magnet"
+      "objective": "Affiliate Magnet",
+      "ideaSource": { "type": "trend-active", "label": "DT-Bucks Gamification" }
     },
     {
       "title": "Leonida Loadout: If GTA 6 Characters Traded Futures",
@@ -393,7 +398,7 @@
       "keyMessaging": "Riffs on the GTA 6 Nov 19 launch hype (Vice City/Leonida aesthetic, character-switch mechanic) without using any copyrighted footage — original animation/live-action styled after the vibe, not a reproduction of Rockstar's actual game or characters.",
       "objective": "Brand Awareness",
       "note": "IMPORTANT: do not use actual GTA 6 footage, character likenesses, or music — that's Rockstar/Take-Two's copyrighted IP. This should be an original piece merely inspired by the launch-hype moment, similar to how outlets do \"if it were a trading firm\" style parodies of unrelated pop culture.",
-      "basedOnMarketingIdea": "gta6-content"
+      "ideaSource": { "type": "marketing-idea", "label": "GTA 6 Tie-In Content", "credit": ["Rassel"] }
     },
     {
       "title": "A Day in the Life (Not a Sales Pitch)",
@@ -402,7 +407,7 @@
       "hookLine": "5am alarm. Charts up by 6. This is what funded trading actually looks like.",
       "keyMessaging": "Show the real daily rhythm of being a trader — morning routine, headspace before the open, a real win or loss — with zero mention of pricing, accounts, or features. The product stays invisible; the person is the whole story.",
       "objective": "Brand Awareness",
-      "basedOnMarketingIdea": "lifestyle-over-product"
+      "ideaSource": { "type": "marketing-idea", "label": "Make It About the Trader, Not the Product", "credit": ["Kha-Yen", "Martin"] }
     },
     {
       "title": "Things Only Funded Traders Understand",
@@ -411,7 +416,61 @@
       "hookLine": "You'll only get this if you've ever stared at a red candle at 2am.",
       "keyMessaging": "A relatable list built entirely on trader identity and in-jokes — the emotional rollercoaster, the discipline, the quiet 2am wins — no product mention at all. Pure \"this is who we are,\" not \"here's what we sell.\"",
       "objective": "Brand Awareness",
-      "basedOnMarketingIdea": "lifestyle-over-product"
+      "ideaSource": { "type": "marketing-idea", "label": "Make It About the Trader, Not the Product", "credit": ["Kha-Yen", "Martin"] }
+    },
+    {
+      "title": "60 Seconds: Micro vs. Standard",
+      "format": "Reel/Short",
+      "platform": "TikTok",
+      "hookLine": "You've been overthinking contract size. Here's the whole thing in 60 seconds.",
+      "keyMessaging": "Fast, visual size comparison (literally show the two contracts side by side) for newer traders deciding which to start with — no jargon, no pitch.",
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "trend-active", "label": "Micro Futures vs. Standard" }
+    },
+    {
+      "title": "Watch This Payout Get Approved, Live",
+      "format": "YouTube Longform",
+      "platform": "YouTube",
+      "hookLine": "No cuts, no edits — just hit submit and watch what happens.",
+      "keyMessaging": "Real-time screen recording of a payout request going from submitted to approved, unedited. Radical transparency format, riding the same wave as the industry's 1-click payout transparency trend.",
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "trend-emerging", "label": "1-Click Payout Transparency Videos" }
+    },
+    {
+      "title": "POV: Your First Green Day",
+      "format": "Reel/Short",
+      "platform": "Instagram",
+      "hookLine": "POV: the account finally turns green and you don't know whether to celebrate or hold your breath.",
+      "keyMessaging": "First-person, selfie-style POV format (per the trending-format data) capturing the specific emotional beat of a first winning day — relatable, not promotional.",
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "trend-format", "label": "POV Trading Setups" }
+    },
+    {
+      "title": "The Trading Aura Battle",
+      "format": "Reel/Short",
+      "platform": "TikTok",
+      "hookLine": "Two traders. One chart. Only one has aura.",
+      "keyMessaging": "Riffs on the real Aura Battle format (staredowns, poses, mock-serious judging) but the \"battle\" is who stays calmer through a red candle — aura through composure, not flexing. Fun, not a sales pitch.",
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "pop-culture", "label": "Aura Farming & Aura Battles" }
+    },
+    {
+      "title": "My First Payout (Unfiltered Reaction)",
+      "format": "Text + Video",
+      "platform": "Instagram",
+      "hookLine": "This is the actual, unedited reaction to seeing the first payout hit.",
+      "keyMessaging": "Same structure as the \"My American Girl Doll\" nostalgia format — raw, unfiltered joy at a milestone moment, not a polished testimonial. The rawness is the point.",
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "pop-culture", "label": "\"My American Girl Doll\" Nostalgia Reveal" }
+    },
+    {
+      "title": "Predict the Next Big Move, Win an Account",
+      "format": "X Thread",
+      "platform": "X",
+      "hookLine": "Comment your prediction. Best call wins a funded account.",
+      "keyMessaging": "Directly built from real performance data, not a guess: prediction-giveaway posts are this account's single best-performing format on X (5.4K-7.7K views vs. 400-600 for plain educational posts — see Content Performance Analysis). This applies the same mechanic to a fresh, current topical hook instead of reusing the World Cup angle.",
+      "objective": "Direct Conversion",
+      "ideaSource": { "type": "performance-data", "label": "Prediction giveaways are the top-performing format found in Content Performance Analysis" }
     }
   ],
   "competitorBenchmark": {

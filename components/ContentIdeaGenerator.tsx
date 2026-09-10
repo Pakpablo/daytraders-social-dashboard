@@ -1,6 +1,6 @@
 "use client";
 
-import { Lightbulb, Target, Megaphone, Users2, RefreshCw, AlertTriangle, Hash } from "lucide-react";
+import { Lightbulb, Target, Megaphone, Users2, RefreshCw, AlertTriangle, Hash, Radar, Sparkles, Clapperboard, Globe2, BarChart3 } from "lucide-react";
 import { useState } from "react";
 import data from "@/data/social-mock-data.json";
 
@@ -10,9 +10,16 @@ const OBJECTIVE_STYLE: Record<string, { color: string; icon: any }> = {
   "Affiliate Magnet": { color: "#059669", icon: Users2 },
 };
 
-function sourceIdeaFor(id: string) {
-  return (data.marketingChannelIdeas as any[]).find((mi) => mi.id === id);
-}
+// One entry per possible ideaSource.type - covers every place an AI-generated
+// idea could have come from, so nothing ever ships unsourced.
+const SOURCE_STYLE: Record<string, { icon: any; color: string; prefix: string }> = {
+  "marketing-idea": { icon: Hash, color: "#D42B3F", prefix: "From #marketing-ideas" },
+  "trend-active": { icon: Radar, color: "#D42B3F", prefix: "From Trend Radar (Active)" },
+  "trend-emerging": { icon: Sparkles, color: "#2563EB", prefix: "From Trend Radar (Emerging)" },
+  "trend-format": { icon: Clapperboard, color: "#059669", prefix: "From Trend Radar (Format)" },
+  "pop-culture": { icon: Globe2, color: "#7C3AED", prefix: "From Pop Culture Trends" },
+  "performance-data": { icon: BarChart3, color: "#EA580C", prefix: "From Content Performance Analysis" },
+};
 
 export default function ContentIdeaGenerator() {
   const [ideas] = useState(data.contentIdeas as any[]);
@@ -41,14 +48,18 @@ export default function ContentIdeaGenerator() {
           const ObjIcon = obj.icon;
           return (
             <div key={i} className="bg-[#151517] border border-white/10 rounded-xl p-5">
-              {idea.basedOnMarketingIdea && (() => {
-                const src = sourceIdeaFor(idea.basedOnMarketingIdea);
-                return src ? (
-                  <div className="flex items-center gap-1.5 mb-3 text-[10px] font-bold text-[#D42B3F] bg-[#D42B3F]/10 rounded-lg px-2.5 py-1.5 w-fit">
-                    <Hash size={11} />
-                    From #marketing-ideas &mdash; {src.submittedBy.join(" & ")}
+              {idea.ideaSource && (() => {
+                const style = SOURCE_STYLE[idea.ideaSource.type];
+                const SrcIcon = style.icon;
+                return (
+                  <div
+                    className="flex items-center gap-1.5 mb-3 text-[10px] font-bold rounded-lg px-2.5 py-1.5 w-fit"
+                    style={{ color: style.color, background: `${style.color}1a` }}
+                  >
+                    <SrcIcon size={11} />
+                    {style.prefix} &mdash; {idea.ideaSource.credit ? idea.ideaSource.credit.join(" & ") : idea.ideaSource.label}
                   </div>
-                ) : null;
+                );
               })()}
               <div className="flex items-start justify-between mb-3">
                 <h3 className="font-bold text-base leading-snug pr-3">{idea.title}</h3>
