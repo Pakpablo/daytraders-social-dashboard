@@ -323,14 +323,24 @@
     ],
     "beyondTrading": [
       {
+        "name": "Aura Farming & Aura Battles",
+        "description": "The single biggest cultural moment happening right now, not trading-related at all. \"Aura farming\" (projecting effortless coolness) has been building since 2024, but exploded into organized \"aura battles\" in Aug 2026 — live public contests (poses, staredowns, dance-offs) that started in Mexico City on Aug 20 and spread across Latin America within days. Crowds judge the winner. There's even prize money at some events now.",
+        "exampleLink": "https://www.techtimes.com/articles/325474/20260825/aura-farming-went-tiktok-meme-organized-street-sport-across-latin-america.htm"
+      },
+      {
         "name": "GTA 6 Countdown Hype",
-        "description": "GTA 6 launches November 19, 2026 — roughly 10 weeks out. This is arguably the single biggest shared cultural moment on the calendar right now; countdown content, Vice City/Leonida references, and character-switch mechanics are dominating gaming social media and bleeding into mainstream culture broadly.",
+        "description": "GTA 6 launches November 19, 2026 — about 10 weeks out. Countdown content, Vice City/Leonida references, and character-switch mechanics are dominating gaming social media and bleeding into mainstream culture broadly.",
         "exampleLink": "https://www.gamesradar.com/gta-6-guide/"
       },
       {
-        "name": "General newsjacking opportunity",
-        "description": "Massively-trending non-niche moments (a GTA6 launch, a viral sports moment, a major awards show) reliably outperform niche content when a brand ties in fast and authentically — worth having a rapid-response process ready for whatever breaks next, not just trading news.",
-        "exampleLink": null
+        "name": "\"My American Girl Doll\" Nostalgia Reveal",
+        "description": "A Sept 2026 TikTok format: creators dig up an old, unfiltered childhood video of themselves reacting with pure joy to a prized possession, then recreate that same raw excitement as an adult unboxing something today. Runs entirely on the contrast between kid-you and adult-you having the exact same reaction.",
+        "exampleLink": "https://newengen.com/insights/september-tiktok-trends/"
+      },
+      {
+        "name": "\"Down Goes the Whiskey\" Roast-Stitch Format",
+        "description": "A viral audio (originally an airline-safety-style jingle) that's mutated into a stitch format where creators write their own roast verses over the beat, one punchline per line. The joke has completely outgrown the song it started from — a good example of how fast a format can detach from its original source.",
+        "exampleLink": "https://newengen.com/insights/september-tiktok-trends/"
       }
     ]
   },

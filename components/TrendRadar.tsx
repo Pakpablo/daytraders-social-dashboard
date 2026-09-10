@@ -14,7 +14,7 @@ export default function TrendRadar() {
       <TrendSection icon={Radar} title="Current Active Trends" items={activeTrends} color="#D42B3F" />
       <TrendSection icon={Sparkles} title="Emerging Trends to Watch" items={emergingTrends} color="#2563EB" />
       <TrendSection icon={Clapperboard} title="Trending Formats & Audio" items={trendingFormatsAndAudio} color="#059669" />
-      <TrendSection icon={Globe2} title="Beyond Trading — Big Cultural Moments" items={beyondTrading} color="#7C3AED" />
+      <TrendSection icon={Globe2} title="Pop Culture Right Now — Not Trading-Related" items={beyondTrading} color="#7C3AED" />
     </div>
   );
 }

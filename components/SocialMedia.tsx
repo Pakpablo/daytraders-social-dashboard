@@ -182,7 +182,7 @@ export default function SocialMedia() {
           data yet (X is the exception &mdash; see Content Performance Analysis for real findings there).
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {channels.map((ch: any) => {
+          {[...channels].sort((a: any, b: any) => b.followers - a.followers).map((ch: any) => {
             const Icon = PLATFORM_ICON[ch.platform];
             return (
               <div key={ch.platform} className="bg-[#151517] border border-white/10 rounded-xl p-4">
