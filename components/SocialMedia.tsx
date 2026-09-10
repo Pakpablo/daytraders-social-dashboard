@@ -13,11 +13,12 @@ const PLATFORM_COLOR: Record<string, string> = {
   YouTube: "#FF0000",
   TikTok: "#69C9D0",
   LinkedIn: "#0A66C2",
+  Discord: "#5865F2",
 };
 
-// Discord is intentionally NOT in PLATFORM_COLOR above - it has no weekly
-// history data (only a single current snapshot), so it's excluded from the
-// table/chart but still needs an icon for the Full Channel Breakdown below.
+// Discord only has ONE real data point (Sep 9) instead of a full weekly
+// history like the other 6 - it still shows up in the table/chart below,
+// just with a dash for every earlier date instead of a fabricated number.
 const PLATFORM_ICON: Record<string, any> = {
   Instagram, X: Twitter, YouTube: Youtube, TikTok: Music2, LinkedIn: Linkedin, Facebook, Discord: MessagesSquare,
 };
@@ -47,7 +48,7 @@ export default function SocialMedia() {
       <div>
         <h1 className="text-2xl font-extrabold">Social Media</h1>
         <p className="text-gray-400 text-sm mt-1">
-          Follower history (6 platforms with weekly data) + full channel breakdown ({channels.length} platforms).
+          Follower history (7 platforms &mdash; Discord only has one data point so far) + full channel breakdown ({channels.length} platforms).
         </p>
         <span className="inline-block mt-2 text-[9px] font-bold text-green-400 bg-green-400/10 rounded px-2 py-1">
           VERIFIED &middot; INTERNAL SOURCE

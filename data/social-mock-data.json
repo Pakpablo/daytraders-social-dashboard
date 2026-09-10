@@ -537,11 +537,11 @@
   "followerHistory": {
     "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks. A 5th point (Sep 9, 2026) was added, but only for YouTube/TikTok/LinkedIn, which have a real newer number from individual platform screenshots. X/Instagram/Facebook do NOT have a verified number for that date, so those 3 fields are null - the chart shows a genuine gap there rather than a fabricated continuation.",
     "weeks": [
-      { "date": "2026-08-07", "X": 6703, "Instagram": 3670, "Facebook": 2554, "YouTube": 3220, "TikTok": 194, "LinkedIn": 115 },
-      { "date": "2026-08-14", "X": 6678, "Instagram": 3677, "Facebook": 2954, "YouTube": 3219, "TikTok": 195, "LinkedIn": 116 },
-      { "date": "2026-08-21", "X": 6745, "Instagram": 3732, "Facebook": 3305, "YouTube": 3267, "TikTok": 188, "LinkedIn": 118 },
-      { "date": "2026-08-28", "X": 6772, "Instagram": 3787, "Facebook": 3670, "YouTube": 3279, "TikTok": 193, "LinkedIn": 118 },
-      { "date": "2026-09-09", "X": null, "Instagram": null, "Facebook": null, "YouTube": 3280, "TikTok": 196, "LinkedIn": 125 }
+      { "date": "2026-08-07", "X": 6703, "Instagram": 3670, "Facebook": 2554, "YouTube": 3220, "TikTok": 194, "LinkedIn": 115, "Discord": null },
+      { "date": "2026-08-14", "X": 6678, "Instagram": 3677, "Facebook": 2954, "YouTube": 3219, "TikTok": 195, "LinkedIn": 116, "Discord": null },
+      { "date": "2026-08-21", "X": 6745, "Instagram": 3732, "Facebook": 3305, "YouTube": 3267, "TikTok": 188, "LinkedIn": 118, "Discord": null },
+      { "date": "2026-08-28", "X": 6772, "Instagram": 3787, "Facebook": 3670, "YouTube": 3279, "TikTok": 193, "LinkedIn": 118, "Discord": null },
+      { "date": "2026-09-09", "X": null, "Instagram": null, "Facebook": null, "YouTube": 3280, "TikTok": 196, "LinkedIn": 125, "Discord": 5525 }
     ],
     "growthAnalysis": [
       { "platform": "Facebook", "current": 3670, "asOf": "2026-08-28", "weekChange": 365, "weekChangePct": 11.0, "totalChange": 1116, "totalChangePct": 43.7, "spanWeeks": 3 },
