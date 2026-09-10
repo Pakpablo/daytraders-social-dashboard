@@ -1,8 +1,8 @@
 "use client";
 
-import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer, BarChart, Bar, Cell, PieChart, Pie } from "recharts";
 import {
-  TrendingUp, TrendingDown, Minus, Instagram, Youtube, Linkedin, Twitter, Music2, Facebook, MessagesSquare, ExternalLink,
+  TrendingUp, TrendingDown, Minus, Instagram, Youtube, Linkedin, Twitter, Music2, Facebook, MessagesSquare, ExternalLink, PieChart as PieChartIcon,
 } from "lucide-react";
 import data from "@/data/social-mock-data.json";
 
@@ -57,6 +57,13 @@ function fillSeries(values: (number | null)[]): { value: number | null; real: bo
   return filled;
 }
 
+function pctChange(current: number | null, previous: number | null): string | null {
+  if (current == null || previous == null || previous === 0) return null;
+  const pct = ((current - previous) / previous) * 100;
+  const sign = pct > 0 ? "+" : "";
+  return `${sign}${pct.toFixed(1)}%`;
+}
+
 export default function SocialMedia() {
   const { weeks, growthAnalysis } = data.followerHistory as any;
   const { channels } = data as any;
@@ -102,34 +109,55 @@ export default function SocialMedia() {
                       <span className="w-2 h-2 rounded-full inline-block" style={{ background: PLATFORM_COLOR[platform] }} />
                       {platform}
                     </td>
-                    {series.map((cell, i) => (
-                      <td key={chartData[i].date} className={`text-right py-2.5 px-3 font-mono text-xs ${cell.real ? "text-gray-300" : "text-gray-500 italic"}`}>
-                        {fmt(cell.value)}{!cell.real && cell.value != null ? "*" : ""}
-                      </td>
-                    ))}
+                    {series.map((cell, i) => {
+                      const change = i > 0 ? pctChange(cell.value, series[i - 1].value) : null;
+                      const isUp = change?.startsWith("+");
+                      return (
+                        <td key={chartData[i].date} className={`text-right py-2.5 px-3 font-mono text-xs ${cell.real ? "text-gray-300" : "text-gray-500 italic"}`}>
+                          <div>{fmt(cell.value)}{!cell.real && cell.value != null ? "*" : ""}</div>
+                          {change && (
+                            <div className={`text-[9px] font-sans font-bold ${isUp ? "text-green-400" : change === "+0.0%" || change === "0.0%" ? "text-gray-600" : "text-[#D42B3F]"}`}>
+                              {change}
+                            </div>
+                          )}
+                        </td>
+                      );
+                    })}
                   </tr>
                 );
               })}
               <tr className="bg-white/5">
                 <td className="py-2.5 px-4 font-extrabold text-white">Total</td>
-                {chartData.map((w: any, colIndex: number) => {
-                  const total = platforms.reduce((sum, platform) => {
-                    const series = fillSeries(chartData.map((wk: any) => wk[platform]));
-                    return sum + (series[colIndex].value ?? 0);
-                  }, 0);
-                  return (
-                    <td key={w.date} className="text-right py-2.5 px-3 font-extrabold text-white text-xs">
-                      {fmt(total)}
-                    </td>
+                {(() => {
+                  const totals = chartData.map((w: any, colIndex: number) =>
+                    platforms.reduce((sum, platform) => {
+                      const series = fillSeries(chartData.map((wk: any) => wk[platform]));
+                      return sum + (series[colIndex].value ?? 0);
+                    }, 0)
                   );
-                })}
+                  return chartData.map((w: any, colIndex: number) => {
+                    const change = colIndex > 0 ? pctChange(totals[colIndex], totals[colIndex - 1]) : null;
+                    const isUp = change?.startsWith("+");
+                    return (
+                      <td key={w.date} className="text-right py-2.5 px-3 font-extrabold text-white text-xs">
+                        <div>{fmt(totals[colIndex])}</div>
+                        {change && (
+                          <div className={`text-[9px] font-normal ${isUp ? "text-green-400" : "text-[#D42B3F]"}`}>
+                            {change}
+                          </div>
+                        )}
+                      </td>
+                    );
+                  });
+                })()}
               </tr>
             </tbody>
           </table>
         </div>
         <p className="text-[10px] text-gray-600 mt-2">
           * = no real number for that date, showing the nearest known value instead (carried
-          forward/backward) so the table isn't full of dashes. Not a new data point.
+          forward/backward) so the table isn't full of dashes. Not a new data point. Small numbers
+          under each cell are week-over-week % change (green = up, red = down).
         </p>
       </div>
 
@@ -170,11 +198,71 @@ export default function SocialMedia() {
         </p>
       </div>
 
+      {/* ---- Follower share pie chart (new visual) ---- */}
+      <div>
+        <div className="flex items-center gap-2 mb-3">
+          <PieChartIcon size={15} className="text-gray-400" />
+          <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400">Follower Share Right Now</h2>
+        </div>
+        <div className="bg-[#151517] border border-white/10 rounded-xl p-4 flex flex-col md:flex-row items-center gap-4" style={{ minHeight: 260 }}>
+          <div style={{ width: 220, height: 220 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={channels.map((ch: any) => ({ name: ch.platform, value: ch.followers }))}
+                  dataKey="value"
+                  nameKey="name"
+                  innerRadius={55}
+                  outerRadius={95}
+                  paddingAngle={2}
+                >
+                  {channels.map((ch: any, i: number) => (
+                    <Cell key={i} fill={PLATFORM_COLOR[ch.platform] ?? "#888"} />
+                  ))}
+                </Pie>
+                <Tooltip contentStyle={{ background: "#151517", border: "1px solid #333", borderRadius: 8, fontSize: 12 }} />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="flex-1 grid grid-cols-2 gap-2 w-full">
+            {[...channels].sort((a: any, b: any) => b.followers - a.followers).map((ch: any) => {
+              const total = channels.reduce((s: number, c: any) => s + c.followers, 0);
+              const share = ((ch.followers / total) * 100).toFixed(1);
+              return (
+                <div key={ch.platform} className="flex items-center gap-2 text-xs">
+                  <span className="w-2 h-2 rounded-full shrink-0" style={{ background: PLATFORM_COLOR[ch.platform] ?? "#888" }} />
+                  <span className="text-gray-300 flex-1">{ch.platform}</span>
+                  <span className="font-bold text-gray-400">{share}%</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       {/* ---- Growth ranking ---- */}
       <div>
         <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-3">
           Ranked by Growth Rate (Each Platform's Own Latest Real Data)
         </h2>
+        <div className="bg-[#151517] border border-white/10 rounded-xl p-4 mb-3" style={{ height: 220 }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={growthAnalysis} layout="vertical" margin={{ left: 10, right: 20 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#ffffff10" horizontal={false} />
+              <XAxis type="number" stroke="#666" fontSize={10} tickFormatter={(v) => `${v}%`} />
+              <YAxis type="category" dataKey="platform" stroke="#999" fontSize={11} width={70} />
+              <Tooltip
+                contentStyle={{ background: "#0B0B0D", border: "1px solid #333", borderRadius: 8, fontSize: 12 }}
+                formatter={(v: number) => [`${v > 0 ? "+" : ""}${v}%`, "Growth"]}
+              />
+              <Bar dataKey="totalChangePct" radius={[0, 4, 4, 0]}>
+                {growthAnalysis.map((g: any, i: number) => (
+                  <Cell key={i} fill={g.totalChangePct >= 0 ? "#22C55E" : "#D42B3F"} />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
         <div className="space-y-2">
           {growthAnalysis.map((g: any, i: number) => {
             const Icon = g.totalChangePct > 0 ? TrendingUp : g.totalChangePct < 0 ? TrendingDown : Minus;
@@ -247,6 +335,16 @@ export default function SocialMedia() {
                     <div className="font-extrabold text-sm">{fmt(ch.followers)}</div>
                     <div className="text-[10px] text-gray-500">followers</div>
                     {ch._asOf && <div className="text-[8px] text-gray-600">*as of {ch._asOf}</div>}
+                    {(() => {
+                      const g = growthAnalysis.find((g: any) => g.platform === ch.platform);
+                      if (!g) return null;
+                      const up = g.totalChangePct >= 0;
+                      return (
+                        <div className={`text-[9px] font-bold mt-0.5 ${up ? "text-green-400" : "text-[#D42B3F]"}`}>
+                          {up ? "+" : ""}{g.totalChangePct}% / {g.spanWeeks}wk
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
 
