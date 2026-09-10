@@ -471,6 +471,33 @@
       "keyMessaging": "Directly built from real performance data, not a guess: prediction-giveaway posts are this account's single best-performing format on X (5.4K-7.7K views vs. 400-600 for plain educational posts — see Content Performance Analysis). This applies the same mechanic to a fresh, current topical hook instead of reusing the World Cup angle.",
       "objective": "Direct Conversion",
       "ideaSource": { "type": "performance-data", "label": "Prediction giveaways are the top-performing format found in Content Performance Analysis" }
+    },
+    {
+      "title": "This Is What Financial Freedom Actually Looks Like",
+      "format": "Reel/Short",
+      "platform": "Instagram",
+      "hookLine": "Not a yacht. Not a private jet. Just... not checking your bank account with dread.",
+      "keyMessaging": "Ground \"financial freedom\" in a small, relatable, unglamorous moment — paying a bill without stress, saying yes to dinner out — instead of a flashy image. DT is the vehicle, never the headline.",
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "marketing-idea", "label": "Sell Freedom, Not Just Trading", "credit": ["Martin", "Abi"] }
+    },
+    {
+      "title": "Trade From Anywhere",
+      "format": "Reel/Short",
+      "platform": "TikTok",
+      "hookLine": "My office today is a hammock. Yesterday it was my kitchen table.",
+      "keyMessaging": "Covers both \"freedom of traveling the world\" and \"freedom from the rat race\" in one format — show the actual portability of the lifestyle (laptop + charts, different backdrop each time) as proof, identity-first.",
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "marketing-idea", "label": "Sell Freedom, Not Just Trading", "credit": ["Martin", "Abi"] }
+    },
+    {
+      "title": "Nobody Tells You What Time to Wake Up",
+      "format": "Carousel",
+      "platform": "Instagram",
+      "hookLine": "No boss. No clock-in. No one asking where you were at 9am.",
+      "keyMessaging": "Leans into \"freedom from societal bounds\" — trading as rejecting a conventional schedule/expectation, framed entirely as identity and autonomy, not a product pitch.",
+      "objective": "Brand Awareness",
+      "ideaSource": { "type": "marketing-idea", "label": "Sell Freedom, Not Just Trading", "credit": ["Martin", "Abi"] }
     }
   ],
   "competitorBenchmark": {
@@ -715,6 +742,14 @@
       "submittedBy": ["Rassel"],
       "quote": "We should ride the GTA 6 hype with some content.",
       "context": "DJ flagged a caution on this one directly in the channel: be careful with how we use Rockstar/GTA 6's actual imagery — IP-inspired only, not a reproduction.",
+      "source": "Marketing channel"
+    },
+    {
+      "id": "freedom-identity-selling",
+      "title": "Sell Freedom, Not Just Trading",
+      "submittedBy": ["Martin", "Abi"],
+      "quote": "The focus of this type of content should be on selling them a new identity which is freedom from something, and DT is the vehicle they can ride on to get it.",
+      "context": "Four angles proposed: Financial Freedom, Freedom of Traveling the World, Freedom from the Rat Race, Freedom from Societal Bounds. Plan is to nail the script for each first, then send to Martin/Kha-Yen in the marketing channel for review before production.",
       "source": "Marketing channel"
     }
   ],
