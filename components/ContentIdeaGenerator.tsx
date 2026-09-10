@@ -22,7 +22,16 @@ const SOURCE_STYLE: Record<string, { icon: any; color: string; prefix: string }>
 };
 
 export default function ContentIdeaGenerator() {
-  const [ideas] = useState(data.contentIdeas as any[]);
+  const [ideas] = useState(
+    // Marketing-channel-sourced ideas always show first, so credited team
+    // ideas get top billing over AI's own trend-based picks - everything
+    // else keeps its original order after that.
+    [...(data.contentIdeas as any[])].sort((a, b) => {
+      const aFirst = a.ideaSource?.type === "marketing-idea" ? 0 : 1;
+      const bFirst = b.ideaSource?.type === "marketing-idea" ? 0 : 1;
+      return aFirst - bFirst;
+    })
+  );
 
   return (
     <div className="space-y-6">
