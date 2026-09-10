@@ -1,6 +1,6 @@
 "use client";
 
-import { Lightbulb, Target, Megaphone, Users2, RefreshCw, AlertTriangle } from "lucide-react";
+import { Lightbulb, Target, Megaphone, Users2, RefreshCw, AlertTriangle, Hash } from "lucide-react";
 import { useState } from "react";
 import data from "@/data/social-mock-data.json";
 
@@ -9,6 +9,10 @@ const OBJECTIVE_STYLE: Record<string, { color: string; icon: any }> = {
   "Brand Awareness": { color: "#2563EB", icon: Megaphone },
   "Affiliate Magnet": { color: "#059669", icon: Users2 },
 };
+
+function sourceIdeaFor(id: string) {
+  return (data.marketingChannelIdeas as any[]).find((mi) => mi.id === id);
+}
 
 export default function ContentIdeaGenerator() {
   const [ideas] = useState(data.contentIdeas as any[]);
@@ -37,6 +41,15 @@ export default function ContentIdeaGenerator() {
           const ObjIcon = obj.icon;
           return (
             <div key={i} className="bg-[#151517] border border-white/10 rounded-xl p-5">
+              {idea.basedOnMarketingIdea && (() => {
+                const src = sourceIdeaFor(idea.basedOnMarketingIdea);
+                return src ? (
+                  <div className="flex items-center gap-1.5 mb-3 text-[10px] font-bold text-[#D42B3F] bg-[#D42B3F]/10 rounded-lg px-2.5 py-1.5 w-fit">
+                    <Hash size={11} />
+                    From #marketing-ideas &mdash; {src.submittedBy.join(" & ")}
+                  </div>
+                ) : null;
+              })()}
               <div className="flex items-start justify-between mb-3">
                 <h3 className="font-bold text-base leading-snug pr-3">{idea.title}</h3>
                 <span

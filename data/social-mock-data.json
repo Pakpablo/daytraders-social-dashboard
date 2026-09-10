@@ -392,7 +392,26 @@
       "hookLine": "Jason and Lucia open a DayTraders account before the heist.",
       "keyMessaging": "Riffs on the GTA 6 Nov 19 launch hype (Vice City/Leonida aesthetic, character-switch mechanic) without using any copyrighted footage — original animation/live-action styled after the vibe, not a reproduction of Rockstar's actual game or characters.",
       "objective": "Brand Awareness",
-      "note": "IMPORTANT: do not use actual GTA 6 footage, character likenesses, or music — that's Rockstar/Take-Two's copyrighted IP. This should be an original piece merely inspired by the launch-hype moment, similar to how outlets do \"if it were a trading firm\" style parodies of unrelated pop culture."
+      "note": "IMPORTANT: do not use actual GTA 6 footage, character likenesses, or music — that's Rockstar/Take-Two's copyrighted IP. This should be an original piece merely inspired by the launch-hype moment, similar to how outlets do \"if it were a trading firm\" style parodies of unrelated pop culture.",
+      "basedOnMarketingIdea": "gta6-content"
+    },
+    {
+      "title": "A Day in the Life (Not a Sales Pitch)",
+      "format": "Reel/Short",
+      "platform": "Instagram",
+      "hookLine": "5am alarm. Charts up by 6. This is what funded trading actually looks like.",
+      "keyMessaging": "Show the real daily rhythm of being a trader — morning routine, headspace before the open, a real win or loss — with zero mention of pricing, accounts, or features. The product stays invisible; the person is the whole story.",
+      "objective": "Brand Awareness",
+      "basedOnMarketingIdea": "lifestyle-over-product"
+    },
+    {
+      "title": "Things Only Funded Traders Understand",
+      "format": "Carousel",
+      "platform": "Instagram",
+      "hookLine": "You'll only get this if you've ever stared at a red candle at 2am.",
+      "keyMessaging": "A relatable list built entirely on trader identity and in-jokes — the emotional rollercoaster, the discipline, the quiet 2am wins — no product mention at all. Pure \"this is who we are,\" not \"here's what we sell.\"",
+      "objective": "Brand Awareness",
+      "basedOnMarketingIdea": "lifestyle-over-product"
     }
   ],
   "competitorBenchmark": {
@@ -621,5 +640,23 @@
         "gist": "Poll: what's hardest to control — FOMO, revenge trading, overtrading, or moving your stop."
       }
     ]
-  }
+  },
+  "marketingChannelIdeas": [
+    {
+      "id": "lifestyle-over-product",
+      "title": "Make It About the Trader, Not the Product",
+      "submittedBy": ["Kha-Yen Bataineh", "Martin Montano"],
+      "quote": "We should make it about the trader, not the product, so they can identify themselves with it. We've been so focused on the product... I'd rather have our brand stand for something more than just a product.",
+      "context": "From a marketing channel discussion — the team agreed the brand has been leaning too hard on account features/pricing, and should shift toward trader identity and lifestyle instead.",
+      "source": "Marketing channel"
+    },
+    {
+      "id": "gta6-content",
+      "title": "GTA 6 Tie-In Content",
+      "submittedBy": ["Rassel Hossain"],
+      "quote": "We should ride the GTA 6 hype with some content.",
+      "context": "DJ flagged a caution on this one directly in the channel: be careful with how we use Rockstar/GTA 6's actual imagery — IP-inspired only, not a reproduction.",
+      "source": "Marketing channel"
+    }
+  ]
 }
