@@ -20,7 +20,7 @@ export default function ThisWeeksContent() {
   const { weekOf, summary, posts } = data.thisWeeksContent as any;
 
   return (
-    <div className="bg-[#0B0B0D] text-white p-6 space-y-6">
+    <div className="min-h-screen bg-[#0B0B0D] text-white p-6 space-y-6">
       <div>
         <h1 className="text-2xl font-extrabold flex items-center gap-2">
           <CalendarDays size={22} className="text-[#D42B3F]" /> This Week's Content
@@ -42,7 +42,8 @@ export default function ThisWeeksContent() {
           return (
             <div key={i} className="bg-[#151517] border border-white/10 rounded-lg p-3.5">
               <div className="flex items-center flex-wrap gap-2 mb-2">
-                <span className="font-bold text-sm w-28 shrink-0">{p.day}</span>
+                <span className="font-bold text-sm shrink-0">{p.day}</span>
+                {p.date && <span className="text-[10px] text-gray-500 shrink-0">{p.date}</span>}
                 <span
                   className="text-[9px] font-bold uppercase tracking-wide rounded px-2 py-0.5"
                   style={{ background: `${catColor}20`, color: catColor }}

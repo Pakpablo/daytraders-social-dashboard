@@ -80,10 +80,18 @@ export default function WeeklyNewsletter() {
           <p className="text-[11px] text-gray-500 mb-4">{n.marketing.intro}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div>
-              <div className="text-xs font-bold text-amber-400 mb-1.5">&#127942; Top Post</div>
+              <div className="text-xs font-bold text-amber-400 mb-1.5">
+                &#127942; Top Post{n.marketing.topPostPlatform && ` (${n.marketing.topPostPlatform})`}
+              </div>
               <p className="text-xs text-gray-300 leading-relaxed">
-                {n.marketing.topPost.split("Swap in")[0]}
-                <i className="text-gray-500">Swap in{n.marketing.topPost.split("Swap in")[1]}</i>
+                {n.marketing.topPost.includes("Swap in") ? (
+                  <>
+                    {n.marketing.topPost.split("Swap in")[0]}
+                    <i className="text-gray-500">Swap in{n.marketing.topPost.split("Swap in")[1]}</i>
+                  </>
+                ) : (
+                  n.marketing.topPost
+                )}
               </p>
             </div>
             <div>

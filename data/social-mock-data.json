@@ -748,7 +748,7 @@
     ]
   },
   "thisWeeksContent": {
-    "_readme": "Pulled directly from the real 'Weekly Post Contents (14 Sep To 18 Sep)' Google Doc, provided by the user. Wednesday's DT-Bucks numbers were verified against the confirmed pricing sheet (25k Static $40, 50k Trail $70, 25k EOD $80) - all three match, confirming the earlier pricing correction was applied correctly.",
+    "_readme": "Pulled directly from the real 'Weekly Post Contents (14 Sep To 18 Sep)' Google Doc, provided by the user. Wednesday's DT-Bucks numbers were verified against the confirmed pricing sheet (25k Static $40, 50k Trail $70, 25k EOD $80) - all three match, confirming the earlier pricing correction was applied correctly. Every post now has an exact calendar date. Wednesday was revised again per a live Slack thread (Sep 14) after the team decided the original 3 products skewed too expensive - now using the 3 cheapest options instead, still verified accurate against pricing.",
     "weekOf": "Sep 14, 2026",
     "summary": "7 posts this week. Strong identity/freedom angle running Monday-Tuesday (financial independence, global community) tying directly into the 'sell freedom, not the product' marketing idea. Wednesday is the corrected DT-Bucks post, now verified accurate against the real pricing sheet. Two meme posts (Tue, Fri) and one psychology-driven educational post (Thu) round it out.",
     "posts": [
@@ -759,7 +759,8 @@
         "designer": "Rassel Hossain",
         "reviewer": "Kha-Yen Bataineh",
         "status": "Under Review",
-        "gist": "\"Your Journey. Our Capital.\" — frames DayTraders as the vehicle for financial independence, not a product pitch. Directly reflects the Martin/Abi freedom-identity marketing idea."
+        "gist": "\"Your Journey. Our Capital.\" — frames DayTraders as the vehicle for financial independence, not a product pitch. Directly reflects the Martin/Abi freedom-identity marketing idea.",
+        "date": "2026-09-14"
       },
       {
         "day": "Tuesday",
@@ -768,7 +769,8 @@
         "designer": "Unlisted",
         "reviewer": "Unlisted",
         "status": "Unlisted",
-        "gist": "\"40+ countries. One global trading community.\" — positions DayTraders as a worldwide trader community, \"built for traders, by traders.\""
+        "gist": "\"40+ countries. One global trading community.\" — positions DayTraders as a worldwide trader community, \"built for traders, by traders.\"",
+        "date": "2026-09-15"
       },
       {
         "day": "Tuesday (Meme)",
@@ -777,7 +779,8 @@
         "designer": "Unlisted",
         "reviewer": "Unlisted",
         "status": "Unlisted",
-        "gist": "\"POV: you and your trading partner take the same trade\" — relatable bathroom-break-stop-loss meme, asks followers to tag their trading partner."
+        "gist": "\"POV: you and your trading partner take the same trade\" — relatable bathroom-break-stop-loss meme, asks followers to tag their trading partner.",
+        "date": "2026-09-15"
       },
       {
         "day": "Wednesday",
@@ -785,8 +788,9 @@
         "format": "Text + Image",
         "designer": "Rakib (video) / Abi (checked)",
         "reviewer": "Kha-Yen Bataineh",
-        "status": "Corrected & Re-verified",
-        "gist": "The corrected DT-Bucks post: 40 days→$40→25K Static, 70 days→$70→50K Trail, 80 days→$80→25K EOD. All 3 numbers verified against the confirmed pricing sheet — accurate."
+        "status": "Revised (top 3 cheapest) — video update confirmed by DJ",
+        "gist": "REVISED per Slack thread (Sep 14): switched to the 3 cheapest products after Kha-Yen flagged \"80 trading days is too much\" — now 40 days→$40→25K Static, 70 days→$50→50K Static, 55 days→$55→25K Trail. All 3 verified against the pricing sheet. Rakib confirmed asking DJ to update the video to match.",
+        "date": "2026-09-16"
       },
       {
         "day": "Thursday",
@@ -795,7 +799,8 @@
         "designer": "Dajuan Davis",
         "reviewer": "Kha-Yen Bataineh",
         "status": "Under Review",
-        "gist": "\"What looks like fearlessness is often preparation\" — motocross-rider analogy for risk management: know your entry, stop loss, max acceptable loss, and plan before every trade."
+        "gist": "\"What looks like fearlessness is often preparation\" — motocross-rider analogy for risk management: know your entry, stop loss, max acceptable loss, and plan before every trade.",
+        "date": "2026-09-17"
       },
       {
         "day": "Friday",
@@ -804,7 +809,8 @@
         "designer": "Unlisted",
         "reviewer": "Unlisted",
         "status": "Unlisted",
-        "gist": "\"Trade with capital. Keep your profits.\" — no profit splits, you keep what you make. Simple value-prop close to the week."
+        "gist": "\"Trade with capital. Keep your profits.\" — no profit splits, you keep what you make. Simple value-prop close to the week.",
+        "date": "2026-09-18"
       },
       {
         "day": "Friday (Meme)",
@@ -813,7 +819,8 @@
         "designer": "Unlisted",
         "reviewer": "Unlisted",
         "status": "Unlisted",
-        "gist": "\"POV: you finally find the perfect A+ setup\" — confidence 100%, risk management questionable, NQ personally attacks the trade. Includes a real trading-platform screen recording."
+        "gist": "\"POV: you finally find the perfect A+ setup\" — confidence 100%, risk management questionable, NQ personally attacks the trade. Includes a real trading-platform screen recording.",
+        "date": "2026-09-18"
       }
     ]
   },
@@ -844,9 +851,9 @@
     }
   ],
   "weeklyNewsletter": {
-    "_readme": "Transcribed directly from the real 'Weekly Team Briefing' PDF (Draft #1, Sept 7-11, 2026), provided by the user. Not researched/verified externally - this is first-party internal content, same as pasting it straight from the source doc.",
+    "_readme": "Transcribed from the updated 'Weekly Team Briefing' PDF (Sept 7-11, 2026) - a more complete version of the same week, with real HeyTaco numbers and a real top-post metric replacing the earlier placeholders.",
     "dateRange": "SEPT 7–11, 2026",
-    "draftLabel": "DRAFT #1",
+    "draftLabel": "FINAL",
     "audience": "FOR MARKETING & SUPPORT TEAMS",
     "subtitle": "Marketing · Support · Backend & Others — this week's numbers, shoutouts, and what's next.",
     "headerStats": [
@@ -857,31 +864,33 @@
     "weeklyShoutout": [
       { "name": "Abi", "team": "Marketing", "reason": "new docs, stepped up to lead." },
       { "name": "Achim", "team": "Support", "reason": "steady teamwork." },
-      { "name": "Kha-Yen", "team": "Leadership", "reason": "guidance across teams." }
+      { "name": "Kha-Yen", "team": "Leadership", "reason": "guidance across teams." },
+      { "name": "Whole Team", "team": "Cross-functional alignment", "reason": "huge step up in team collaboration across Marketing, Support, and Backend." }
     ],
     "heyTaco": {
       "received": [
-        { "name": "Achim", "count": 17 },
-        { "name": "Pablo A.", "count": 15 },
-        { "name": "Rassel H.", "count": 6 }
+        { "name": "Pablo Ancizar", "count": 52 },
+        { "name": "Kha-Yen", "count": 31 },
+        { "name": "Sebastian", "count": 19 }
       ],
       "given": [
-        { "name": "Pablo A.", "count": 7 },
-        { "name": "Abi", "count": 7 },
-        { "name": "Peter", "count": 6 }
+        { "name": "Martin", "count": 20 },
+        { "name": "Achim", "count": 17 },
+        { "name": "Kha-Yen", "count": 16 }
       ]
     },
     "marketing": {
       "intro": "This week's campaigns, giveaways, and what's coming up.",
-      "topPost": "[Placeholder metric] — Aug 31–Sept 4 Top Reel: XX.XK Views | High conversion on $40 pricing. Swap in real analytics once confirmed.",
+      "topPost": "18.6K views — highest-performing organic post of the week (Instagram). Real number, no longer a placeholder.",
+      "topPostPlatform": "IG",
       "currentGiveaways": [
         "5x $25K S2F — ended",
         "New: 5x $50K Static accounts",
-        "Starts Wed, Sept 9"
+        "Started Sept 10 — live now"
       ],
       "comingUp": [
         "Ongoing affiliate outreach",
-        "Trading video competition — more info next week"
+        "ArcTrader Setup Challenge — more info next week"
       ]
     },
     "supportBackendRadar": [
@@ -890,9 +899,10 @@
       "Rithmic fix: root cause of unexpected account deactivations identified & fully resolved."
     ],
     "coreRulesChecklist": [
-      "Eval: $40 + $5 fee = $45 total",
-      "DT Wallet / DT Bucks active",
-      "Trailing/Static: no daily hard breach"
+      "Eval: $40 + $5 activation fee = $45 total",
+      "DT Wallet / DT Bucks rewards active",
+      "Trailing/Static: no daily hard breach",
+      "Bulk discounts apply to Evals only (excludes S2F and S2L accounts)"
     ],
     "recurringTicket": {
       "title": "NinjaTrader Connection Issues",
