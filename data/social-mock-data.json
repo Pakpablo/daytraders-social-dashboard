@@ -323,24 +323,24 @@
     ],
     "beyondTrading": [
       {
-        "name": "Aura Farming & Aura Battles",
-        "description": "The single biggest cultural moment happening right now, not trading-related at all. \"Aura farming\" (projecting effortless coolness) has been building since 2024, but exploded into organized \"aura battles\" in Aug 2026 — live public contests (poses, staredowns, dance-offs) that started in Mexico City on Aug 20 and spread across Latin America within days. Crowds judge the winner. There's even prize money at some events now.",
-        "exampleLink": "https://www.techtimes.com/articles/325474/20260825/aura-farming-went-tiktok-meme-organized-street-sport-across-latin-america.htm"
+        "name": "iPhone Fold vs. Samsung's Foldables",
+        "description": "Apple is entering the foldable phone market for the first time, expected to launch late 2026. Samsung (7 generations into foldables, just released the Galaxy Z Fold8) isn't standing still — both companies are converging on a similar 4:3 inner-screen design, setting up the biggest smartphone rivalry storyline of the year.",
+        "exampleLink": "https://www.tomsguide.com/phones/apples-foldable-iphone-flip-tipped-for-release-in-2026-with-a-familiar-design-and-iphone-17-air-features"
       },
       {
         "name": "GTA 6 Countdown Hype",
-        "description": "GTA 6 launches November 19, 2026 — about 10 weeks out. Countdown content, Vice City/Leonida references, and character-switch mechanics are dominating gaming social media and bleeding into mainstream culture broadly.",
+        "description": "GTA 6 launches November 19, 2026 — about 9 weeks out. Countdown content, Vice City/Leonida references, and character-switch mechanics are dominating gaming social media and bleeding into mainstream culture broadly.",
         "exampleLink": "https://www.gamesradar.com/gta-6-guide/"
       },
       {
-        "name": "\"My American Girl Doll\" Nostalgia Reveal",
-        "description": "A Sept 2026 TikTok format: creators dig up an old, unfiltered childhood video of themselves reacting with pure joy to a prized possession, then recreate that same raw excitement as an adult unboxing something today. Runs entirely on the contrast between kid-you and adult-you having the exact same reaction.",
-        "exampleLink": "https://newengen.com/insights/september-tiktok-trends/"
+        "name": "NFL Season Kickoff (Week 1)",
+        "description": "The 2026 NFL season just started (Sept 9). Defending champs Seattle opened by beating New England; Giants upset the Cowboys in new head coach John Harbaugh's debut. Injury news (Tua Tagovailoa, Kyler Murray, A.J. Brown) and fantasy football waiver-wire content are dominating sports social media right now.",
+        "exampleLink": "https://en.wikipedia.org/wiki/2026_NFL_season"
       },
       {
-        "name": "\"Down Goes the Whiskey\" Roast-Stitch Format",
-        "description": "A viral audio (originally an airline-safety-style jingle) that's mutated into a stitch format where creators write their own roast verses over the beat, one punchline per line. The joke has completely outgrown the song it started from — a good example of how fast a format can detach from its original source.",
-        "exampleLink": "https://newengen.com/insights/september-tiktok-trends/"
+        "name": "AI Insiders Warning About AI Risk",
+        "description": "A serious, fast-moving story, not a lighthearted trend: a former OpenAI/Anthropic researcher publicly resigned this week warning AI companies are \"gambling with our lives,\" and the post went viral (100M+ views). Other AI safety researchers have echoed the concern publicly, and it's now drawing Congressional attention. Included here because it's genuinely dominating tech conversation right now — not a suggested content angle. Handle with care given the subject matter and that it involves real people and real companies (including Anthropic, who builds the AI this dashboard runs on).",
+        "exampleLink": "https://www.bloomberg.com/news/articles/2026-09-10/silicon-valley-escalates-warnings-about-existential-risks-of-ai-mtvyorsp"
       }
     ]
   },
@@ -748,72 +748,72 @@
     ]
   },
   "thisWeeksContent": {
-    "_readme": "Pulled directly from the team's Weekly Content Calendar doc (pasted by user). This is the SHORT version for the app — one-line gist per post, not full captions. The doc itself remains the source of truth for exact copy, hashtags, and creative assets.",
-    "weekOf": "Sep 8, 2026",
-    "summary": "7 posts this week, split across 3 pricing-change posts (promo, meme, and a deep-dive explainer), 1 trust-building carousel (real Trustpilot reviews), 1 trading-psychology post, 1 more meme, and 1 engagement poll for LinkedIn/X. Only 1 of 7 is fully Approved — the rest are still Under Review.",
+    "_readme": "Pulled directly from the real 'Weekly Post Contents (14 Sep To 18 Sep)' Google Doc, provided by the user. Wednesday's DT-Bucks numbers were verified against the confirmed pricing sheet (25k Static $40, 50k Trail $70, 25k EOD $80) - all three match, confirming the earlier pricing correction was applied correctly.",
+    "weekOf": "Sep 14, 2026",
+    "summary": "7 posts this week. Strong identity/freedom angle running Monday-Tuesday (financial independence, global community) tying directly into the 'sell freedom, not the product' marketing idea. Wednesday is the corrected DT-Bucks post, now verified accurate against the real pricing sheet. Two meme posts (Tue, Fri) and one psychology-driven educational post (Thu) round it out.",
     "posts": [
       {
         "day": "Monday",
-        "category": "Bulk Pricing Promo",
-        "format": "Post",
-        "designer": null,
-        "reviewer": null,
-        "status": "Unlisted",
-        "gist": "15-account bulk order saves $1,246.65 (62% off) — bulk savings built directly into checkout."
-      },
-      {
-        "day": "Tuesday (AM)",
-        "category": "Company News",
-        "format": "Carousel",
-        "designer": "Rassel Hossain",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Approved",
-        "gist": "5 real Trustpilot reviews — social-proof carousel on payouts, support, and trading experience."
-      },
-      {
-        "day": "Tuesday (PM)",
-        "category": "Humorous",
-        "format": "Text + Video",
-        "designer": "Dajuan Davis",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "Meme riffing on the new bulk deals (\"who's grabbing the deal?\")."
-      },
-      {
-        "day": "Wednesday",
-        "category": "Education / Promo",
-        "format": "Text + Video",
-        "designer": "Dajuan Davis",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "Breaks down the pricing change: $133→$75 per account, activation fee $99→$5."
-      },
-      {
-        "day": "Thursday",
-        "category": "Inspirational",
+        "category": "Financial Independence / Promo",
         "format": "Text + Image",
         "designer": "Rassel Hossain",
         "reviewer": "Kha-Yen Bataineh",
         "status": "Under Review",
-        "gist": "Trading psychology/resilience message — staying disciplined through losses and doubt."
+        "gist": "\"Your Journey. Our Capital.\" — frames DayTraders as the vehicle for financial independence, not a product pitch. Directly reflects the Martin/Abi freedom-identity marketing idea."
       },
       {
-        "day": "Friday (AM)",
+        "day": "Tuesday",
+        "category": "Community / Global Reach",
+        "format": "Text + Image",
+        "designer": "Unlisted",
+        "reviewer": "Unlisted",
+        "status": "Unlisted",
+        "gist": "\"40+ countries. One global trading community.\" — positions DayTraders as a worldwide trader community, \"built for traders, by traders.\""
+      },
+      {
+        "day": "Tuesday (Meme)",
         "category": "Humorous",
-        "format": "Text + Video",
+        "format": "Text + Image",
+        "designer": "Unlisted",
+        "reviewer": "Unlisted",
+        "status": "Unlisted",
+        "gist": "\"POV: you and your trading partner take the same trade\" — relatable bathroom-break-stop-loss meme, asks followers to tag their trading partner."
+      },
+      {
+        "day": "Wednesday",
+        "category": "DT-Bucks Rewards / Promo",
+        "format": "Text + Image",
+        "designer": "Rakib (video) / Abi (checked)",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Corrected & Re-verified",
+        "gist": "The corrected DT-Bucks post: 40 days→$40→25K Static, 70 days→$70→50K Trail, 80 days→$80→25K EOD. All 3 numbers verified against the confirmed pricing sheet — accurate."
+      },
+      {
+        "day": "Thursday",
+        "category": "Educational / Trading Psychology",
+        "format": "Text + Image",
         "designer": "Dajuan Davis",
         "reviewer": "Kha-Yen Bataineh",
         "status": "Under Review",
-        "gist": "Meme about the feeling of a \"perfect\" trade going exactly to plan."
+        "gist": "\"What looks like fearlessness is often preparation\" — motocross-rider analogy for risk management: know your entry, stop loss, max acceptable loss, and plan before every trade."
       },
       {
-        "day": "Friday (PM)",
-        "category": "Education / Engagement",
-        "format": "Poll (LinkedIn & X)",
-        "designer": null,
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "Poll: what's hardest to control — FOMO, revenge trading, overtrading, or moving your stop."
+        "day": "Friday",
+        "category": "Profit Retention / Promo",
+        "format": "Text + Image",
+        "designer": "Unlisted",
+        "reviewer": "Unlisted",
+        "status": "Unlisted",
+        "gist": "\"Trade with capital. Keep your profits.\" — no profit splits, you keep what you make. Simple value-prop close to the week."
+      },
+      {
+        "day": "Friday (Meme)",
+        "category": "Humorous",
+        "format": "Text + Video",
+        "designer": "Unlisted",
+        "reviewer": "Unlisted",
+        "status": "Unlisted",
+        "gist": "\"POV: you finally find the perfect A+ setup\" — confidence 100%, risk management questionable, NQ personally attacks the trade. Includes a real trading-platform screen recording."
       }
     ]
   },
