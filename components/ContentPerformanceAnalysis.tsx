@@ -217,7 +217,7 @@ export default function ContentPerformanceAnalysis() {
                     <span className="text-[8px] font-bold text-amber-400 bg-amber-400/10 rounded px-1.5 py-0.5">ADS RUN</span>
                   )}
                 </div>
-                <p className="text-xs text-gray-300 mb-3 leading-relaxed">{group[0].overview}</p>
+                <p className="text-sm text-white font-semibold mb-3 leading-relaxed">{group[0].overview}</p>
                 <div className="space-y-1.5">
                   {[...group].sort((x: any, y: any) => y.reach - x.reach).map((post: any, j: number) => {
                     const color = PLATFORM_COLOR[post.platform] ?? "#888";
@@ -230,9 +230,8 @@ export default function ContentPerformanceAnalysis() {
                         rel="noreferrer"
                         className="flex items-center gap-2 hover:bg-white/5 rounded-lg px-1.5 py-1 -mx-1.5 group"
                       >
-                        <span className="text-xs font-bold w-16 shrink-0 flex items-center gap-1" style={{ color }}>
+                        <span className="text-xs font-bold w-24 shrink-0 truncate" style={{ color }}>
                           {post.platform}
-                          {isWinner && <span title="Best performer for this post">&#127942;</span>}
                         </span>
                         <div className="flex-1 h-4 bg-white/5 rounded overflow-hidden">
                           <div
@@ -240,6 +239,7 @@ export default function ContentPerformanceAnalysis() {
                             style={{ width: `${Math.max(4, (post.reach / maxReach) * 100)}%`, background: color }}
                           />
                         </div>
+                        {isWinner && <span className="text-sm shrink-0" title="Best performer for this post">&#127942;</span>}
                         <span className="text-xs font-bold text-gray-300 w-16 text-right shrink-0">{fmt(post.reach)}</span>
                         <span className="text-[10px] text-gray-500 w-20 text-right shrink-0">{post.likes}&#9825; {post.comments}&#128172;</span>
                         <ExternalLink size={9} className="text-gray-600 shrink-0 opacity-0 group-hover:opacity-100" />
