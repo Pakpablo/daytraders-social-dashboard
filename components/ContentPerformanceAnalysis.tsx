@@ -6,19 +6,28 @@ function fmt(n: number) {
   return `${n}`;
 }
 
+const PLATFORM_COLOR: Record<string, string> = {
+  X: "#1DA1F2",
+  Instagram: "#E1306C",
+  Facebook: "#1877F2",
+  YouTube: "#FF0000",
+  TikTok: "#69C9D0",
+  LinkedIn: "#0A66C2",
+};
+
 export default function ContentPerformanceAnalysis() {
   const a = data.contentPerformanceAnalysis as any;
   const p = data.realPlatformAnalytics as any;
   const sorted = [...a.allPosts].sort((x: any, y: any) => y.views - x.views);
   const maxViews = sorted[0].views;
 
-  // Group the new multi-platform posts by their post group (same content, cross-posted)
+  // Group the multi-platform posts by post group (same content, cross-posted) for side-by-side comparison
   const groups: Record<string, any[]> = {};
   a.multiPlatformPosts.forEach((post: any) => {
     (groups[post.postGroup] ??= []).push(post);
   });
   const groupList = Object.values(groups).sort(
-    (g1: any, g2: any) => Math.max(...g2.map((post: any) => post.reach)) - Math.max(...g1.map((post: any) => post.reach))
+    (g1: any, g2: any) => Math.max(...(g2 as any[]).map((post: any) => post.reach)) - Math.max(...(g1 as any[]).map((post: any) => post.reach))
   );
 
   return (
@@ -162,10 +171,10 @@ export default function ContentPerformanceAnalysis() {
           <h2 className="text-sm font-bold uppercase tracking-wide text-gray-300">By Platform</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {a.platformBreakdown.map((p: any, i: number) => (
+          {a.platformBreakdown.map((platform: any, i: number) => (
             <div key={i} className="bg-[#151517] border border-white/10 rounded-xl p-3 text-center">
-              <div className="text-lg font-extrabold">{fmt(p.avgReach)}</div>
-              <div className="text-[10px] text-gray-500">{p.platform} &middot; avg reach &middot; {p.count} posts</div>
+              <div className="text-lg font-extrabold">{fmt(platform.avgReach)}</div>
+              <div className="text-[10px] text-gray-500">{platform.platform} &middot; avg reach &middot; {platform.count} posts</div>
             </div>
           ))}
         </div>
@@ -187,40 +196,60 @@ export default function ContentPerformanceAnalysis() {
         </div>
       </div>
 
-      {/* ---- Multi-platform posts, grouped by post, cross-platform comparison ---- */}
+      {/* ---- Multi-platform posts, grouped by post, visual cross-platform comparison ---- */}
       <div>
-        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-300 mb-3">
+        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-300 mb-1">
           Recent Posts, Cross-Platform (Aug 29&ndash;Sep 7)
         </h2>
+        <p className="text-[10px] text-gray-600 mb-3">
+          Bars are scaled within each post so the longest bar is always that post's best-performing platform &mdash; not comparable across different posts.
+        </p>
         <div className="space-y-3">
-          {groupList.map((group: any, i: number) => (
-            <div key={i} className="bg-[#151517] border border-white/10 rounded-xl p-4">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-bold text-gray-500">{group[0].date}</span>
-                <span className="text-[9px] font-semibold text-gray-500 bg-white/5 rounded px-2 py-0.5">{group[0].category}</span>
-                {group[0].adsRun && (
-                  <span className="text-[8px] font-bold text-amber-400 bg-amber-400/10 rounded px-1.5 py-0.5">ADS RUN</span>
-                )}
+          {groupList.map((group: any, i: number) => {
+            const maxReach = Math.max(...group.map((post: any) => post.reach));
+            const winner = group.find((post: any) => post.reach === maxReach);
+            return (
+              <div key={i} className="bg-[#151517] border border-white/10 rounded-xl p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xs font-bold text-gray-500">{group[0].date}</span>
+                  <span className="text-[9px] font-semibold text-gray-500 bg-white/5 rounded px-2 py-0.5">{group[0].category}</span>
+                  {group[0].adsRun && (
+                    <span className="text-[8px] font-bold text-amber-400 bg-amber-400/10 rounded px-1.5 py-0.5">ADS RUN</span>
+                  )}
+                </div>
+                <p className="text-xs text-gray-300 mb-3 leading-relaxed">{group[0].overview}</p>
+                <div className="space-y-1.5">
+                  {[...group].sort((x: any, y: any) => y.reach - x.reach).map((post: any, j: number) => {
+                    const color = PLATFORM_COLOR[post.platform] ?? "#888";
+                    const isWinner = post === winner && group.length > 1;
+                    return (
+                      <a
+                        key={j}
+                        href={post.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2 hover:bg-white/5 rounded-lg px-1.5 py-1 -mx-1.5 group"
+                      >
+                        <span className="text-xs font-bold w-16 shrink-0 flex items-center gap-1" style={{ color }}>
+                          {post.platform}
+                          {isWinner && <span title="Best performer for this post">&#127942;</span>}
+                        </span>
+                        <div className="flex-1 h-4 bg-white/5 rounded overflow-hidden">
+                          <div
+                            className="h-full rounded"
+                            style={{ width: `${Math.max(4, (post.reach / maxReach) * 100)}%`, background: color }}
+                          />
+                        </div>
+                        <span className="text-xs font-bold text-gray-300 w-16 text-right shrink-0">{fmt(post.reach)}</span>
+                        <span className="text-[10px] text-gray-500 w-20 text-right shrink-0">{post.likes}&#9825; {post.comments}&#128172;</span>
+                        <ExternalLink size={9} className="text-gray-600 shrink-0 opacity-0 group-hover:opacity-100" />
+                      </a>
+                    );
+                  })}
+                </div>
               </div>
-              <p className="text-xs text-gray-300 mb-3 leading-relaxed">{group[0].overview}</p>
-              <div className="flex flex-wrap gap-2">
-                {group.map((p: any, j: number) => (
-                  <a
-                    key={j}
-                    href={p.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1.5 bg-white/5 hover:bg-white/10 rounded-lg px-2.5 py-1.5 text-[10px]"
-                  >
-                    <span className="font-bold">{p.platform}</span>
-                    <span className="text-gray-400">{fmt(p.reach)} reach</span>
-                    <span className="text-gray-500">&middot; {p.likes}&#9825; {p.comments}&#128172;</span>
-                    <ExternalLink size={9} className="text-gray-600" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
