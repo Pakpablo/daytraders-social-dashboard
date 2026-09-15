@@ -3,8 +3,9 @@
   "overviewStats": {
     "_readme": "totalReach and engagementRate remain genuinely unverifiable without private analytics access — shown as a dash, not a fake number, but the PLACEHOLDER label stays so it's clear the card exists and is just empty pending real data. netFollowerGrowth7d is the same situation. bestVerifiedPlatform and combinedVerifiedFollowers are NEW — both are computed directly from the verified channel data (Instagram + X), not fabricated.",
     "totalReach": {
-      "value": null,
-      "verified": false
+      "value": 311900,
+      "verified": true,
+      "note": "Real, from native analytics: Facebook Views (253,300) + Instagram Views (58,600), both for the same Aug 17-Sep 13, 2026 window. X is NOT included here - its dashboard only offers 7-day or 3-month windows, not a matching 28-day one, and mixing periods would be misleading. Labeled 'Views' (the platforms' own term) rather than 'Reach', since Reach is a distinct, separately-reported metric."
     },
     "engagementRate": {
       "value": null,
@@ -919,5 +920,155 @@
       "buttonText": "DM PABLO ON SLACK",
       "buttonSubtext": "Featured in next Friday's edition"
     }
+  },
+  "realPlatformAnalytics": {
+    "_readme": "Pulled directly from each platform's own native analytics dashboard (screenshots provided by user, Sep 14 2026). Each platform reports over a DIFFERENT time window - shown explicitly per platform rather than forced into one misleading 'total,' since combining mismatched periods would overstate or understate real numbers.",
+    "facebook": {
+      "period": "Aug 17 – Sep 13, 2026 (28 days)",
+      "views": { "value": 253300, "changePct": -10.3 },
+      "viewsFromFollowersPct": { "value": 3.7, "changePct": 47.5 },
+      "viewsFromNonFollowersPct": { "value": 96.3, "changePct": -1.2 },
+      "viewers": { "value": 85533, "changePct": -25.2 },
+      "follows": { "value": 1500, "changePct": -5.4 },
+      "unfollows": { "value": 35, "changePct": -16.7 },
+      "netFollows": { "value": 1445, "changePct": -5.1 },
+      "visits": { "value": 2400, "changePct": -36.3 },
+      "contentInteractions": { "value": 1000, "changePct": 18.5 },
+      "interactionsFromFollowers": { "value": 262, "changePct": 12 },
+      "interactionsFromNonFollowers": { "value": 777, "changePct": 20.8 },
+      "linkClicks": { "value": 2700, "changePct": -9 },
+      "threeSecondVideoViews": { "value": 9000, "changePct": 53.4 },
+      "watchTime": "1d 14h",
+      "conversationsStarted": { "value": 2, "changePct": 100 },
+      "newContacts": { "value": 2, "changePct": 100 }
+    },
+    "instagram": {
+      "period": "Aug 17 – Sep 13, 2026 (28 days)",
+      "views": { "value": 58600, "changePct": -4.7 },
+      "viewsBySource": { "facebook": 5914, "instagram": 52731 },
+      "viewsFromFollowersPct": { "value": 39.3, "changePct": 2.4 },
+      "viewsFromNonFollowersPct": { "value": 60.7, "changePct": -1.5 },
+      "follows": { "value": 243, "changePct": 18.5 },
+      "unfollows": { "value": 112, "changePct": -42 },
+      "reach": { "value": 14500, "changePct": -78.2 },
+      "reachFromFollowers": { "value": 1370, "changePct": -2 },
+      "reachFromNonFollowers": { "value": 13058, "changePct": -79.8 },
+      "contentInteractions": { "value": 1900, "changePct": 57.4 },
+      "interactionsFromFollowersPct": 85,
+      "interactionsFromNonFollowersPct": 15,
+      "conversationsStarted": { "value": 12, "changePct": 20 },
+      "newContacts": { "value": 8, "changePct": 0 },
+      "ordersCreated": { "value": 0, "changePct": 0 }
+    },
+    "x": {
+      "period7d": {
+        "range": "Sep 9–14, 2026",
+        "impressions": { "value": 8600, "changePct": -35 },
+        "engagementRatePct": { "value": 12, "changePct": 83 },
+        "profileVisits": { "value": 62, "changePct": -40 },
+        "newFollows": { "value": 89, "changePct": 82 },
+        "replies": { "value": 47, "changePct": 12 },
+        "likes": { "value": 187, "changePct": -7.4 },
+        "reposts": { "value": 79, "changePct": 216 },
+        "bookmarks": { "value": 18, "changePct": 5.9 },
+        "shares": { "value": 2, "changePct": 0 },
+        "videoViews": { "value": 334, "changePct": 1.2 },
+        "mediaViews": { "value": 709, "changePct": 14 }
+      },
+      "period3m": {
+        "range": "~Jun 18 – Sep 14, 2026 (3 months)",
+        "impressions": { "value": 431000, "changePct": 166 },
+        "engagementRatePct": { "value": 14, "changePct": 250 },
+        "profileVisits": { "value": 7600, "changePct": 1083 },
+        "newFollows": { "value": 5000, "changePct": 572 }
+      }
+    }
+  },
+  "realRecentPosts": {
+    "_readme": "Real post-level data pulled directly from Facebook's 'All content' list and Instagram's 'Recent content' list (native platform dashboards, screenshots Sep 14 2026). 'views'/'reach' are Facebook's numbers; 'instagramEngagement' (shares/likes/comments/reposts) is Instagram's, matched by post title+date where the same content was crossposted to both. Note: Instagram's 'shares' number here is unusually high on some posts (e.g. 25,500 on the $250K giveaway) - shown as-is from the platform, not adjusted, since it's what the dashboard reported.",
+    "posts": [
+      {
+        "title": "Your Journey. Our Capital. Financial independence...",
+        "format": "Photo",
+        "date": "2026-09-14",
+        "views": 145,
+        "reach": 15,
+        "instagramEngagement": { "shares": 59, "likes": 4, "comments": 1, "reposts": 1 }
+      },
+      {
+        "title": "When your trade goes exactly as planned...",
+        "format": "Reel",
+        "date": "2026-09-11",
+        "views": 872,
+        "reach": 259,
+        "instagramEngagement": { "shares": 435, "likes": 22, "comments": 3, "reposts": 5 }
+      },
+      {
+        "title": "$250,000 in account value. 5 winners.",
+        "format": "Photo",
+        "date": "2026-09-10",
+        "views": 1946,
+        "reach": 40,
+        "instagramEngagement": { "shares": 25500, "likes": 108, "comments": 83, "reposts": 29 }
+      },
+      {
+        "title": "You don't clear the gap by hesitating.",
+        "format": "Reel",
+        "date": "2026-09-10",
+        "views": 282,
+        "reach": 86,
+        "instagramEngagement": { "shares": 167, "likes": 7, "comments": 2, "reposts": 4 }
+      },
+      {
+        "title": "Everyone's waiting for something!",
+        "format": "Multi media",
+        "date": "2026-09-08",
+        "views": 519,
+        "reach": 44,
+        "instagramEngagement": { "shares": 179, "likes": 12, "comments": 3, "reposts": 0 }
+      },
+      {
+        "title": "When you see DayTraders' new bulk pricing...",
+        "format": "Reel",
+        "date": "2026-09-08",
+        "views": 327,
+        "reach": 91
+      },
+      {
+        "title": "Up to $2,000 per withdrawal. With 15 accounts...",
+        "format": "Photo",
+        "date": "2026-09-07",
+        "views": 398,
+        "reach": 49
+      },
+      {
+        "title": "The activation fee is now just $5.",
+        "format": "Photo",
+        "date": "2026-09-04",
+        "views": 843,
+        "reach": 48
+      },
+      {
+        "title": "POV: Someone asks how long it took...",
+        "format": "Reel",
+        "date": "2026-09-04",
+        "views": 823,
+        "reach": 265
+      },
+      {
+        "title": "What you paid before → What you pay now.",
+        "format": "Photo",
+        "date": "2026-09-03",
+        "views": 505,
+        "reach": 35
+      },
+      {
+        "title": "Want to see how the new bulk pricing works?",
+        "format": "Multi media",
+        "date": "2026-09-03",
+        "views": 472,
+        "reach": 45
+      }
+    ]
   }
 }

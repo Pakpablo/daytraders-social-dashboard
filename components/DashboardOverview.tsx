@@ -31,7 +31,7 @@ export default function DashboardOverview() {
 
       {/* ================= STAT CARDS ================= */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <StatCard icon={Eye} label="Total Reach" value={fmt(overviewStats.totalReach.value)} verified={overviewStats.totalReach.verified} />
+        <StatCard icon={Eye} label="Total Views (FB+IG, 28d)" value={fmt(overviewStats.totalReach.value)} verified={overviewStats.totalReach.verified} />
         <StatCard
           icon={Users2}
           label={`Verified Followers (All ${channels.length})`}

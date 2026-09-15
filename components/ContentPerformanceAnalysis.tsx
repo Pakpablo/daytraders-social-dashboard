@@ -8,16 +8,17 @@ function fmt(n: number) {
 
 export default function ContentPerformanceAnalysis() {
   const a = data.contentPerformanceAnalysis as any;
+  const p = data.realPlatformAnalytics as any;
   const sorted = [...a.allPosts].sort((x: any, y: any) => y.views - x.views);
   const maxViews = sorted[0].views;
 
   // Group the new multi-platform posts by their post group (same content, cross-posted)
   const groups: Record<string, any[]> = {};
-  a.multiPlatformPosts.forEach((p: any) => {
-    (groups[p.postGroup] ??= []).push(p);
+  a.multiPlatformPosts.forEach((post: any) => {
+    (groups[post.postGroup] ??= []).push(post);
   });
   const groupList = Object.values(groups).sort(
-    (g1: any, g2: any) => Math.max(...g2.map((p: any) => p.reach)) - Math.max(...g1.map((p: any) => p.reach))
+    (g1: any, g2: any) => Math.max(...g2.map((post: any) => post.reach)) - Math.max(...g1.map((post: any) => post.reach))
   );
 
   return (
@@ -26,8 +27,86 @@ export default function ContentPerformanceAnalysis() {
         <h1 className="text-2xl font-extrabold">Content Performance Analysis</h1>
         <p className="text-gray-400 text-sm mt-1">
           {a.allPosts.length} posts from public X search (Jul 2026) + {a.multiPlatformPosts.length} rows across
-          6 platforms from the internal Weekly Content Performance sheet (Aug 29&ndash;Sep 7, 2026).
+          6 platforms from the internal Weekly Content Performance sheet (Aug 29&ndash;Sep 7, 2026) + real native
+          platform analytics below (Sep 14, 2026).
         </p>
+      </div>
+
+      {/* ---- Native platform analytics (real, from each platform's own dashboard) ---- */}
+      <div>
+        <div className="flex items-center gap-2 mb-3">
+          <BarChart3 size={16} className="text-green-400" />
+          <h2 className="text-sm font-bold uppercase tracking-wide text-gray-300">Native Platform Analytics (Real)</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <PlatformCard
+            name="Facebook"
+            period={p.facebook.period}
+            rows={[
+              ["Views", p.facebook.views],
+              ["Viewers", p.facebook.viewers],
+              ["Net Follows", p.facebook.netFollows],
+              ["Visits", p.facebook.visits],
+              ["Interactions", p.facebook.contentInteractions],
+              ["Link Clicks", p.facebook.linkClicks],
+            ]}
+          />
+          <PlatformCard
+            name="Instagram"
+            period={p.instagram.period}
+            rows={[
+              ["Views", p.instagram.views],
+              ["Reach", p.instagram.reach],
+              ["Follows", p.instagram.follows],
+              ["Interactions", p.instagram.contentInteractions],
+              ["Conversations", p.instagram.conversationsStarted],
+            ]}
+          />
+          <div className="bg-[#151517] border border-white/10 rounded-xl p-4">
+            <div className="flex items-center justify-between mb-1">
+              <div className="font-bold text-sm">X</div>
+              <span className="text-[8px] font-bold text-green-400 bg-green-400/10 rounded px-1.5 py-0.5">VERIFIED</span>
+            </div>
+            <div className="text-[10px] text-gray-500 mb-2">Two windows shown (platform doesn't offer 28d)</div>
+            <div className="text-[9px] font-bold text-gray-500 uppercase mb-1">{p.x.period7d.range}</div>
+            <StatRow label="Impressions" stat={p.x.period7d.impressions} />
+            <StatRow label="Engagement Rate" stat={p.x.period7d.engagementRatePct} suffix="%" />
+            <StatRow label="New Follows" stat={p.x.period7d.newFollows} />
+            <div className="text-[9px] font-bold text-gray-500 uppercase mt-2 mb-1">{p.x.period3m.range}</div>
+            <StatRow label="Impressions" stat={p.x.period3m.impressions} />
+            <StatRow label="New Follows" stat={p.x.period3m.newFollows} />
+          </div>
+        </div>
+        <p className="text-[10px] text-gray-600 mt-2">{data.realPlatformAnalytics._readme}</p>
+      </div>
+
+      {/* ---- Real recent posts (Facebook + matched Instagram engagement) ---- */}
+      <div>
+        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-300 mb-3">
+          Real Recent Posts (Facebook views/reach + matched Instagram engagement)
+        </h2>
+        <div className="space-y-1.5">
+          {[...data.realRecentPosts.posts].sort((x: any, y: any) => y.views - x.views).map((post: any, i: number) => (
+            <div key={i} className="bg-[#151517] border border-white/10 rounded-lg px-3 py-2">
+              <div className="flex items-center gap-3">
+                <div className="text-xs font-bold text-gray-600 w-5">{i + 1}</div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-xs font-semibold truncate">{post.title}</div>
+                  <div className="text-[10px] text-gray-500">{post.format} &middot; {post.date}</div>
+                </div>
+                <span className="text-[8px] font-bold text-green-400 bg-green-400/10 rounded px-1.5 py-0.5 shrink-0">VERIFIED</span>
+                <div className="text-xs font-bold text-gray-300 w-20 text-right shrink-0">{fmt(post.views)} views</div>
+                <div className="text-xs text-gray-500 w-20 text-right shrink-0">{fmt(post.reach)} reach</div>
+              </div>
+              {post.instagramEngagement && (
+                <div className="text-[10px] text-gray-500 mt-1 ml-8">
+                  IG: {fmt(post.instagramEngagement.shares)} shares &middot; {post.instagramEngagement.likes} likes &middot;
+                  {" "}{post.instagramEngagement.comments} comments &middot; {post.instagramEngagement.reposts} reposts
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* ---- What worked best ---- */}
@@ -178,6 +257,39 @@ export default function ContentPerformanceAnalysis() {
         <AlertCircle size={14} className="mt-0.5 shrink-0" />
         {a._readme}
       </div>
+    </div>
+  );
+}
+
+function changeColor(pct: number) {
+  return pct >= 0 ? "text-green-400" : "text-[#D42B3F]";
+}
+
+function StatRow({ label, stat, suffix = "" }: { label: string; stat: { value: number; changePct: number }; suffix?: string }) {
+  return (
+    <div className="flex items-center justify-between text-xs mb-1">
+      <span className="text-gray-500">{label}</span>
+      <span className="font-bold">
+        {fmt(stat.value)}{suffix}{" "}
+        <span className={`text-[10px] font-normal ${changeColor(stat.changePct)}`}>
+          {stat.changePct > 0 ? "+" : ""}{stat.changePct}%
+        </span>
+      </span>
+    </div>
+  );
+}
+
+function PlatformCard({ name, period, rows }: { name: string; period: string; rows: [string, { value: number; changePct: number }][] }) {
+  return (
+    <div className="bg-[#151517] border border-white/10 rounded-xl p-4">
+      <div className="flex items-center justify-between mb-1">
+        <div className="font-bold text-sm">{name}</div>
+        <span className="text-[8px] font-bold text-green-400 bg-green-400/10 rounded px-1.5 py-0.5">VERIFIED</span>
+      </div>
+      <div className="text-[10px] text-gray-500 mb-2">{period}</div>
+      {rows.map(([label, stat]) => (
+        <StatRow key={label} label={label} stat={stat} />
+      ))}
     </div>
   );
 }
