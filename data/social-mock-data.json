@@ -18,14 +18,14 @@
     },
     "bestVerifiedPlatform": {
       "platform": "X",
-      "followers": 6772,
+      "followers": 6948,
       "verified": true,
-      "note": "Largest by follower/member count, all live-checked Sep 14 2026."
+      "note": "Largest by follower/member count, all current as of Sep 18 2026."
     },
     "combinedVerifiedFollowers": {
-      "value": 23565,
+      "value": 24819,
       "verified": true,
-      "note": "Sum across all 7 platforms, freshest live-checked numbers as of Sep 14, 2026."
+      "note": "Sum across all 7 platforms, freshest numbers as of Sep 18, 2026 (weekly tracker sheet)."
     },
     "topPostOfWeek": {
       "platform": "Prediction Giveaway (X)",
@@ -40,7 +40,7 @@
     {
       "platform": "Instagram",
       "handle": "@daytraderscom",
-      "followers": 3787,
+      "followers": 3827,
       "followerGrowth7d": 55,
       "engagementRate": null,
       "postsLast30d": 22,
@@ -56,19 +56,19 @@
       "_sourceNote": "277 total posts, 1,023 following — from public profile, Aug 2026",
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "2026-08-28",
+        "retrieved": "Sep 18, 2026",
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "following": 1023,
       "_postsLast30dVerified": false,
       "_narrativeVerified": false,
-      "_asOf": "2026-08-28",
+      "_asOf": "2026-09-18",
       "url": "https://www.instagram.com/daytraderscom/"
     },
     {
       "platform": "X",
       "handle": "@DayTraders_com",
-      "followers": 6772,
+      "followers": 6948,
       "followerGrowth7d": 27,
       "engagementRate": null,
       "postsLast30d": 64,
@@ -84,19 +84,19 @@
       "_sourceNote": "Las Vegas, NV · joined June 2024 · 1,847 following — from public profile, Aug 2026",
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "2026-08-28",
+        "retrieved": "Sep 18, 2026",
         "note": "Following count from internal Daily Log sheet (Sep 9, 2026) - previously an estimate from public search."
       },
-      "following": 2720,
+      "following": 2904,
       "_postsLast30dVerified": false,
       "_narrativeVerified": false,
-      "_asOf": "2026-08-28",
+      "_asOf": "2026-09-18",
       "url": "https://x.com/DayTraders_com"
     },
     {
       "platform": "YouTube",
       "handle": "@DayTraders_com",
-      "followers": 3320,
+      "followers": 3321,
       "followerGrowth7d": 12,
       "engagementRate": null,
       "postsLast30d": 5,
@@ -114,17 +114,17 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 14, 2026",
+        "retrieved": "Sep 18, 2026",
         "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 3280."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-14",
+      "_asOf": "2026-09-18",
       "url": "https://www.youtube.com/@DayTraders_com"
     },
     {
       "platform": "TikTok",
       "handle": "@daytraders_com",
-      "followers": 198,
+      "followers": 200,
       "followerGrowth7d": 5,
       "engagementRate": null,
       "postsLast30d": 30,
@@ -140,17 +140,17 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 14, 2026",
+        "retrieved": "Sep 18, 2026",
         "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 196."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-14",
+      "_asOf": "2026-09-18",
       "url": "https://www.tiktok.com/@daytraders_com"
     },
     {
       "platform": "LinkedIn",
       "handle": "DayTraders",
-      "followers": 127,
+      "followers": 131,
       "followerGrowth7d": 0,
       "engagementRate": null,
       "postsLast30d": 8,
@@ -168,17 +168,17 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 14, 2026",
+        "retrieved": "Sep 18, 2026",
         "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 125."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-14",
+      "_asOf": "2026-09-18",
       "url": "https://www.linkedin.com/company/daytraders-com/"
     },
     {
       "platform": "Facebook",
       "handle": "DayTraders.com Group",
-      "followers": 3670,
+      "followers": 4701,
       "following": null,
       "followerGrowth7d": 365,
       "engagementRate": null,
@@ -187,11 +187,11 @@
       "improvements": [],
       "_verified": true,
       "_narrativeVerified": false,
-      "_asOf": "2026-08-28",
+      "_asOf": "2026-09-18",
       "url": null,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "2026-08-28",
+        "retrieved": "Sep 18, 2026",
         "note": "New platform, not in original 5-platform scope — added because real growth data made it worth tracking."
       }
     },
@@ -729,7 +729,7 @@
     ]
   },
   "followerHistory": {
-    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks. A 5th point (Sep 9, 2026) was added, but only for YouTube/TikTok/LinkedIn, which have a real newer number from individual platform screenshots. X/Instagram/Facebook do NOT have a verified number for that date, so those 3 fields are null - the chart shows a genuine gap there rather than a fabricated continuation. Extended backward with 2 earlier weeks (Jul 24, Jul 31) found in the real Google Sheet source.",
+    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks. A 5th point (Sep 9, 2026) was added, but only for YouTube/TikTok/LinkedIn, which have a real newer number from individual platform screenshots. X/Instagram/Facebook do NOT have a verified number for that date, so those 3 fields are null - the chart shows a genuine gap there rather than a fabricated continuation. Extended backward with 2 earlier weeks (Jul 24, Jul 31) found in the real Google Sheet source. Extended through Sep 18, 2026 with 2 more real weeks from the same tracking sheet.",
     "weeks": [
       { "date": "2026-07-24", "X": 6694, "Instagram": 3662, "Facebook": 1729, "YouTube": 3228, "TikTok": 193, "LinkedIn": 113, "Discord": null },
       { "date": "2026-07-31", "X": 6706, "Instagram": 3668, "Facebook": 2147, "YouTube": 3230, "TikTok": 191, "LinkedIn": 115, "Discord": null },
@@ -737,91 +737,103 @@
       { "date": "2026-08-14", "X": 6678, "Instagram": 3677, "Facebook": 2954, "YouTube": 3219, "TikTok": 195, "LinkedIn": 116, "Discord": null },
       { "date": "2026-08-21", "X": 6745, "Instagram": 3732, "Facebook": 3305, "YouTube": 3267, "TikTok": 188, "LinkedIn": 118, "Discord": null },
       { "date": "2026-08-28", "X": 6772, "Instagram": 3787, "Facebook": 3670, "YouTube": 3279, "TikTok": 193, "LinkedIn": 118, "Discord": null },
-      { "date": "2026-09-09", "X": null, "Instagram": null, "Facebook": null, "YouTube": 3280, "TikTok": 196, "LinkedIn": 125, "Discord": 5525 }
+      { "date": "2026-09-09", "X": null, "Instagram": null, "Facebook": null, "YouTube": 3280, "TikTok": 196, "LinkedIn": 125, "Discord": 5525 },
+      { "date": "2026-09-11", "X": 6819, "Instagram": 3800, "Facebook": 4021, "YouTube": 3301, "TikTok": 196, "LinkedIn": 123, "Discord": null },
+      { "date": "2026-09-18", "X": 6948, "Instagram": 3827, "Facebook": 4701, "YouTube": 3321, "TikTok": 200, "LinkedIn": 131, "Discord": null }
     ],
     "growthAnalysis": [
-      { "platform": "Facebook", "current": 3670, "asOf": "2026-08-28", "weekChange": 365, "weekChangePct": 11.0, "totalChange": 1941, "totalChangePct": 112.3, "spanWeeks": 5 },
-      { "platform": "LinkedIn", "current": 125, "asOf": "2026-09-09", "weekChange": 7, "weekChangePct": 5.9, "totalChange": 12, "totalChangePct": 10.6, "spanWeeks": 6 },
-      { "platform": "Instagram", "current": 3787, "asOf": "2026-08-28", "weekChange": 55, "weekChangePct": 1.5, "totalChange": 125, "totalChangePct": 3.4, "spanWeeks": 5 },
-      { "platform": "YouTube", "current": 3280, "asOf": "2026-09-09", "weekChange": 1, "weekChangePct": 0.0, "totalChange": 52, "totalChangePct": 1.6, "spanWeeks": 6 },
-      { "platform": "TikTok", "current": 196, "asOf": "2026-09-09", "weekChange": 3, "weekChangePct": 1.6, "totalChange": 3, "totalChangePct": 1.6, "spanWeeks": 6 },
-      { "platform": "X", "current": 6772, "asOf": "2026-08-28", "weekChange": 27, "weekChangePct": 0.4, "totalChange": 78, "totalChangePct": 1.2, "spanWeeks": 5 }
+      { "platform": "Facebook", "current": 4701, "asOf": "2026-09-18", "weekChange": 680, "weekChangePct": 16.9, "totalChange": 2972, "totalChangePct": 171.9, "spanWeeks": 7 },
+      { "platform": "LinkedIn", "current": 131, "asOf": "2026-09-18", "weekChange": 8, "weekChangePct": 6.5, "totalChange": 18, "totalChangePct": 15.9, "spanWeeks": 8 },
+      { "platform": "Instagram", "current": 3827, "asOf": "2026-09-18", "weekChange": 27, "weekChangePct": 0.7, "totalChange": 165, "totalChangePct": 4.5, "spanWeeks": 7 },
+      { "platform": "X", "current": 6948, "asOf": "2026-09-18", "weekChange": 129, "weekChangePct": 1.9, "totalChange": 254, "totalChangePct": 3.8, "spanWeeks": 7 },
+      { "platform": "TikTok", "current": 200, "asOf": "2026-09-18", "weekChange": 4, "weekChangePct": 2.0, "totalChange": 7, "totalChangePct": 3.6, "spanWeeks": 8 },
+      { "platform": "YouTube", "current": 3321, "asOf": "2026-09-18", "weekChange": 20, "weekChangePct": 0.6, "totalChange": 93, "totalChangePct": 2.9, "spanWeeks": 8 }
     ]
   },
   "thisWeeksContent": {
-    "_readme": "Pulled directly from the real 'Weekly Post Contents (14 Sep To 18 Sep)' Google Doc, provided by the user. Wednesday's DT-Bucks numbers were verified against the confirmed pricing sheet (25k Static $40, 50k Trail $70, 25k EOD $80) - all three match, confirming the earlier pricing correction was applied correctly. Every post now has an exact calendar date. Wednesday was revised again per a live Slack thread (Sep 14) after the team decided the original 3 products skewed too expensive - now using the 3 cheapest options instead, still verified accurate against pricing.",
-    "weekOf": "Sep 14, 2026",
-    "summary": "7 posts this week. Strong identity/freedom angle running Monday-Tuesday (financial independence, global community) tying directly into the 'sell freedom, not the product' marketing idea. Wednesday is the corrected DT-Bucks post, now verified accurate against the real pricing sheet. Two meme posts (Tue, Fri) and one psychology-driven educational post (Thu) round it out.",
+    "_readme": "Pulled directly from the real 'Weekly Post Contents (21 Sep To 28 Sep)' PDF, provided by the user. 8 posts total - Monday and Tuesday each have 2.",
+    "weekOf": "Sep 21, 2026",
+    "summary": "8 posts this week, bookending a giveaway cycle: Monday closes out the $50K Static giveaway (5 winners announced) right after an autonomy/freedom-identity post. Tuesday pairs payout-proof transparency with a meme. Wed/Thu/Fri cover free demo practice (ArcTrader), trading psychology, and a lighter new-trader meme. The cycle closes the following Monday with a Discord community push — continuing the giveaway-and-proof formats that have performed best in real data so far.",
     "posts": [
       {
         "day": "Monday",
-        "category": "Financial Independence / Promo",
+        "date": "2026-09-21",
+        "category": "Company News / Autonomy",
         "format": "Text + Image",
         "designer": "Rassel Hossain",
         "reviewer": "Kha-Yen Bataineh",
         "status": "Under Review",
-        "gist": "\"Your Journey. Our Capital.\" — frames DayTraders as the vehicle for financial independence, not a product pitch. Directly reflects the Martin/Abi freedom-identity marketing idea.",
-        "date": "2026-09-14"
+        "gist": "\"More freedom. Fewer restrictions. Better trading.\" — continues the identity/freedom angle from the Martin & Abi marketing idea, framed around trader autonomy specifically."
       },
       {
-        "day": "Tuesday",
-        "category": "Community / Global Reach",
+        "day": "Monday (Giveaway Winners)",
+        "date": "2026-09-21",
+        "category": "Company News / Announcement",
         "format": "Text + Image",
-        "designer": "Unlisted",
-        "reviewer": "Unlisted",
-        "status": "Unlisted",
-        "gist": "\"40+ countries. One global trading community.\" — positions DayTraders as a worldwide trader community, \"built for traders, by traders.\"",
-        "date": "2026-09-15"
+        "designer": "Rassel Hossain",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"5 WINNERS. $250K IN FUNDING.\" — closes out the $50K Static Account giveaway (8,208 total entries). This exact format (giveaway winner announcement) is a real, previously-verified top performer."
+      },
+      {
+        "day": "Tuesday (Payout Proof)",
+        "date": "2026-09-22",
+        "category": "Company News / Payout Proof",
+        "format": "Text + Image",
+        "designer": "Rassel Hossain",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"Want to see the latest payouts?\" — points to the live public payout ledger (amounts, processing times, account types, trader locations)."
       },
       {
         "day": "Tuesday (Meme)",
+        "date": "2026-09-22",
         "category": "Humorous",
-        "format": "Text + Image",
-        "designer": "Unlisted",
-        "reviewer": "Unlisted",
-        "status": "Unlisted",
-        "gist": "\"POV: you and your trading partner take the same trade\" — relatable bathroom-break-stop-loss meme, asks followers to tag their trading partner.",
-        "date": "2026-09-15"
+        "format": "Text + Video",
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"POV: you finally find a clean NQ setup\" — NQ immediately chops sideways for 30 candles. \"When NQ starts barcoding as soon as you enter a trade.\""
       },
       {
         "day": "Wednesday",
-        "category": "DT-Bucks Rewards / Promo",
-        "format": "Text + Image",
-        "designer": "Rakib (video) / Abi (checked)",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Revised (top 3 cheapest) — video update confirmed by DJ",
-        "gist": "REVISED per Slack thread (Sep 14): switched to the 3 cheapest products after Kha-Yen flagged \"80 trading days is too much\" — now 40 days→$40→25K Static, 70 days→$50→50K Static, 55 days→$55→25K Trail. All 3 verified against the pricing sheet. Rakib confirmed asking DJ to update the video to match.",
-        "date": "2026-09-16"
-      },
-      {
-        "day": "Thursday",
-        "category": "Educational / Trading Psychology",
+        "date": "2026-09-23",
+        "category": "Education / Promo",
         "format": "Text + Image",
         "designer": "Dajuan Davis",
         "reviewer": "Kha-Yen Bataineh",
         "status": "Under Review",
-        "gist": "\"What looks like fearlessness is often preparation\" — motocross-rider analogy for risk management: know your entry, stop loss, max acceptable loss, and plan before every trade.",
-        "date": "2026-09-17"
+        "gist": "\"Your futures trading journey starts at $0.\" — free ArcTrader demo account, real market data, no credit card, weekly prizes for top results."
+      },
+      {
+        "day": "Thursday",
+        "date": "2026-09-24",
+        "category": "Inspirational / Psychology",
+        "format": "Text + Video",
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"Most people have an income ceiling.\" — salary/raise you don't control vs. building income on your own skill. \"Trade futures. Not your freedom.\" Includes risk disclaimer."
       },
       {
         "day": "Friday",
-        "category": "Profit Retention / Promo",
-        "format": "Text + Image",
-        "designer": "Unlisted",
-        "reviewer": "Unlisted",
-        "status": "Unlisted",
-        "gist": "\"Trade with capital. Keep your profits.\" — no profit splits, you keep what you make. Simple value-prop close to the week.",
-        "date": "2026-09-18"
-      },
-      {
-        "day": "Friday (Meme)",
+        "date": "2026-09-25",
         "category": "Humorous",
         "format": "Text + Video",
-        "designer": "Unlisted",
-        "reviewer": "Unlisted",
-        "status": "Unlisted",
-        "gist": "\"POV: you finally find the perfect A+ setup\" — confidence 100%, risk management questionable, NQ personally attacks the trade. Includes a real trading-platform screen recording.",
-        "date": "2026-09-18"
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"POV: your friend asks if they should start day trading.\" — \"Prepare to meet your new teacher: the market.\" Learn. Trade. Get humbled. Repeat."
+      },
+      {
+        "day": "Next Monday",
+        "date": "2026-09-28",
+        "category": "Company News / Engagement",
+        "format": "Text + Image",
+        "designer": "Rassel Hossain",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"Trading doesn't have to be a solo game.\" — drives to the DayTraders Discord (real, verified 5,691 members). Image being updated from the previous \"Discord Community\" graphic."
       }
     ]
   },
