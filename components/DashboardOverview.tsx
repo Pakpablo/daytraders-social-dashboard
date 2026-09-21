@@ -106,9 +106,10 @@ export default function DashboardOverview() {
 
       {/* ================= LIVE FEED ================= */}
       <div>
-        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-3">
+        <h2 className="text-sm font-bold uppercase tracking-wide text-gray-400 mb-1">
           Best Performing Post (Verified)
         </h2>
+        <p className="text-[10px] text-gray-600 mb-3">Best organic post found, as of Sep 2026 research &mdash; re-verified Sep 21, 2026</p>
 
         {/* ---- Single hero: highest real engagement found ---- */}
         {(() => {
@@ -143,6 +144,11 @@ export default function DashboardOverview() {
             </a>
           );
         })()}
+        <p className="text-[10px] text-gray-600 mb-4">
+          Note: an Instagram post from Aug 30 technically hit a higher number (8.0k reach), but it's
+          tagged as ad-boosted in the source data &mdash; not swapped in here since it wouldn't be a
+          fair comparison to this post's organic reach.
+        </p>
 
         {/* ---- Other verified examples, for comparison ---- */}
         <h3 className="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">
