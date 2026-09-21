@@ -20,12 +20,12 @@
       "platform": "X",
       "followers": 6772,
       "verified": true,
-      "note": "Largest by follower/member count across all 7 platforms."
+      "note": "Largest by follower/member count, all live-checked Sep 14 2026."
     },
     "combinedVerifiedFollowers": {
-      "value": 23355,
+      "value": 23565,
       "verified": true,
-      "note": "Sum across all 7 platforms (added Discord members), each platform's own latest real number."
+      "note": "Sum across all 7 platforms, freshest live-checked numbers as of Sep 14, 2026."
     },
     "topPostOfWeek": {
       "platform": "Prediction Giveaway (X)",
@@ -96,7 +96,7 @@
     {
       "platform": "YouTube",
       "handle": "@DayTraders_com",
-      "followers": 3280,
+      "followers": 3320,
       "followerGrowth7d": 12,
       "engagementRate": null,
       "postsLast30d": 5,
@@ -114,17 +114,17 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "2026-09-09",
-        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
+        "retrieved": "Sep 14, 2026",
+        "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 3280."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-09",
+      "_asOf": "2026-09-14",
       "url": "https://www.youtube.com/@DayTraders_com"
     },
     {
       "platform": "TikTok",
       "handle": "@daytraders_com",
-      "followers": 196,
+      "followers": 198,
       "followerGrowth7d": 5,
       "engagementRate": null,
       "postsLast30d": 30,
@@ -140,17 +140,17 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "2026-09-09",
-        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
+        "retrieved": "Sep 14, 2026",
+        "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 196."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-09",
+      "_asOf": "2026-09-14",
       "url": "https://www.tiktok.com/@daytraders_com"
     },
     {
       "platform": "LinkedIn",
       "handle": "DayTraders",
-      "followers": 125,
+      "followers": 127,
       "followerGrowth7d": 0,
       "engagementRate": null,
       "postsLast30d": 8,
@@ -168,11 +168,11 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "2026-09-09",
-        "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
+        "retrieved": "Sep 14, 2026",
+        "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 125."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-09",
+      "_asOf": "2026-09-14",
       "url": "https://www.linkedin.com/company/daytraders-com/"
     },
     {
@@ -198,7 +198,7 @@
     {
       "platform": "Discord",
       "handle": "DayTraders Community",
-      "followers": 5525,
+      "followers": 5691,
       "following": null,
       "followerGrowth7d": null,
       "engagementRate": null,
@@ -207,13 +207,13 @@
       "improvements": [],
       "_verified": true,
       "_narrativeVerified": false,
-      "_asOf": "2026-09-09",
+      "_asOf": "2026-09-14",
       "url": "https://discord.com/invite/daytraders",
       "_source": {
         "method": "public search + Discord's own invite page",
         "url": "https://discord.com/invite/daytraders",
-        "retrieved": "Sep 9, 2026",
-        "note": "Description on the invite page literally reads \"Community for DayTraders.com!\" — confirms this is the official server, not a fan-made one."
+        "retrieved": "Sep 14, 2026",
+        "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 5525."
       }
     }
   ],
@@ -922,7 +922,7 @@
     }
   },
   "realPlatformAnalytics": {
-    "_readme": "Pulled directly from each platform's own native analytics dashboard (screenshots provided by user, Sep 14 2026). Each platform reports over a DIFFERENT time window - shown explicitly per platform rather than forced into one misleading 'total,' since combining mismatched periods would overstate or understate real numbers.",
+    "_readme": "Pulled directly from each platform's own native analytics dashboard (screenshots provided by user, Sep 14 2026). Each platform reports over a DIFFERENT time window - shown explicitly per platform rather than forced into one misleading 'total,' since combining mismatched periods would overstate or understate real numbers. Added YouTube, TikTok, Discord, and LinkedIn via live browser checks (Sep 14, 2026) - same standard as the Facebook/Instagram/X data above.",
     "facebook": {
       "period": "Aug 17 – Sep 13, 2026 (28 days)",
       "views": { "value": 253300, "changePct": -10.3 },
@@ -982,6 +982,50 @@
         "profileVisits": { "value": 7600, "changePct": 1083 },
         "newFollows": { "value": 5000, "changePct": 572 }
       }
+    },
+    "youtube": {
+      "period": "Live check, Sep 14, 2026",
+      "subscribers": 3320,
+      "totalVideos": 115,
+      "mostRecentUploadAge": "11 months ago",
+      "note": "Channel is essentially dormant — sorted by Latest, and the newest video is still 11 months old. Not a data error, a real operational gap.",
+      "topVideoAllTime": {
+        "title": "Unlock Your Trading Potential with DayTraders.com!",
+        "views": 720000,
+        "age": "2 years ago"
+      },
+      "recentVideos": [
+        { "title": "What Is Funded Trading? How DayTraders.com Helps You Trade Without Risking Your Own Money!", "views": 453, "age": "11 months ago" },
+        { "title": "Future(s) Trading Technology - DayTraders.com", "views": 230, "age": "1 year ago" },
+        { "title": "DayTraders.com Web Trading Platform Demo", "views": 533, "age": "1 year ago" },
+        { "title": "How to Find Answers: DayTraders.com FAQ Guide", "views": 155, "age": "1 year ago" }
+      ]
+    },
+    "tiktok": {
+      "period": "Live check, Sep 14, 2026",
+      "followers": 198,
+      "following": 509,
+      "likes": 329,
+      "recentVideoViews": [325, 105, 145, 1132, 118, 30, 127, 96, 1115, 112, 134, 50, 58],
+      "topVideos": [
+        { "caption": "POV: When someone asks how long it took to get your first payout", "views": 1132 },
+        { "caption": "(unlabeled, 2nd highest)", "views": 1115 },
+        { "caption": "How it feels to hit an absolute banger of a trade", "views": 325 }
+      ]
+    },
+    "discord": {
+      "period": "Live check, Sep 14, 2026",
+      "members": 5691,
+      "onlineNow": 855
+    },
+    "linkedin": {
+      "period": "Live check, Sep 14, 2026",
+      "followers": 127,
+      "recentPosts": [
+        { "text": "Your Journey. Our Capital. Financial independence starts with the right opportunity.", "age": "10h ago" },
+        { "text": "$250,000 in account value. 5 winners. Giving away five $50K Static Accounts.", "age": "4d ago" }
+      ],
+      "note": "Confirms the real Monday Sep 14 post ('Your Journey. Our Capital.') is live and matches what's in This Week's Content."
     }
   },
   "realRecentPosts": {
