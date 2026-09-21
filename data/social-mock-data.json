@@ -864,67 +864,65 @@
     }
   ],
   "weeklyNewsletter": {
-    "_readme": "Transcribed from the updated 'Weekly Team Briefing' PDF (Sept 7-11, 2026) - a more complete version of the same week, with real HeyTaco numbers and a real top-post metric replacing the earlier placeholders.",
-    "dateRange": "SEPT 7–11, 2026",
-    "draftLabel": "FINAL",
+    "_readme": "Transcribed directly from the real 'Weekly Internal Newsletter - Week 2 - Sept 14-18' PDF, provided by the user. Fully replaces the previous week's newsletter content.",
+    "dateRange": "SEPT 14–18, 2026",
+    "draftLabel": "WEEK 2",
     "audience": "FOR MARKETING & SUPPORT TEAMS",
     "subtitle": "Marketing · Support · Backend & Others — this week's numbers, shoutouts, and what's next.",
     "headerStats": [
       { "value": "4.6★", "label": "Trustpilot rating (= vs last wk)" },
-      { "value": "100%", "label": "🎉 New Sept. high — CSAT 5.0 / 5" },
+      { "value": "95.8%", "label": "CSAT score — month to date" },
       { "value": "Post-launch scaling", "label": "Volume up across Support & Marketing" }
     ],
     "weeklyShoutout": [
-      { "name": "Abi", "team": "Marketing", "reason": "new docs, stepped up to lead." },
-      { "name": "Achim", "team": "Support", "reason": "steady teamwork." },
-      { "name": "Kha-Yen", "team": "Leadership", "reason": "guidance across teams." },
-      { "name": "Whole Team", "team": "Cross-functional alignment", "reason": "huge step up in team collaboration across Marketing, Support, and Backend." }
+      { "name": "Sebastian", "team": "Support", "reason": "continued excellent, rapid L3 support." },
+      { "name": "Rich", "team": "Live Team", "reason": "live weather check, great work with live traders." },
+      { "name": "Rassel", "team": "Marketing", "reason": "incredible graphic and content creation." }
     ],
     "heyTaco": {
       "received": [
-        { "name": "Pablo Ancizar", "count": 52 },
-        { "name": "Kha-Yen", "count": 31 },
-        { "name": "Sebastian", "count": 19 }
+        { "name": "Sebastian", "count": 36 },
+        { "name": "Rassel", "count": 11 },
+        { "name": "Achim", "count": 11 }
       ],
       "given": [
-        { "name": "Martin", "count": 20 },
-        { "name": "Achim", "count": 17 },
-        { "name": "Kha-Yen", "count": 16 }
+        { "name": "Pablo A.", "count": 15 },
+        { "name": "Abi", "count": 13 },
+        { "name": "Peter", "count": 12 }
       ]
     },
     "marketing": {
       "intro": "This week's campaigns, giveaways, and what's coming up.",
-      "topPost": "18.6K views — highest-performing organic post of the week (Instagram). Real number, no longer a placeholder.",
+      "topPost": "2.2K views (2,065 via Instagram) | 287 interactions — the $50K Static giveaway drove the week's strongest reach, almost entirely organic on Instagram.",
       "topPostPlatform": "IG",
+      "topPostLink": "View on Instagram",
       "currentGiveaways": [
-        "5x $25K S2F — ended",
-        "New: 5x $50K Static accounts",
-        "Started Sept 10 — live now"
+        "5x $50K Static accounts — live now",
+        "Ends Sept 20"
       ],
       "comingUp": [
         "Ongoing affiliate outreach",
-        "ArcTrader Setup Challenge — more info next week"
+        "ArcTrader Setup Challenge — more info next week",
+        "Weekly bulk email campaign — new idea from Abi"
       ]
     },
     "supportBackendRadar": [
       "Bulk Bundles = Max 15 Accounts Strictly Applies",
-      "Onyx update: traders can now create & save custom Bracket Order Templates.",
-      "Rithmic fix: root cause of unexpected account deactivations identified & fully resolved."
+      "Giveaway entry blocked? Whitelist the customer's email — Kha-Yen & Pablo have permissions.",
+      "NinjaTrader connection issues — continues to be recurring."
     ],
     "coreRulesChecklist": [
-      "Eval: $40 + $5 activation fee = $45 total",
+      "$5 activation fee",
       "DT Wallet / DT Bucks rewards active",
-      "Trailing/Static: no daily hard breach",
-      "Bulk discounts apply to Evals only (excludes S2F and S2L accounts)"
+      "Bulk discounts: active"
     ],
     "recurringTicket": {
-      "title": "NinjaTrader Connection Issues",
-      "description": "high ticket volume from traders unable to get the trade copier online and fully connected/working."
+      "title": "Password Lockout: Too Many Attempts",
+      "description": "high ticket volume. Leo reduced the lockout window from 1 hour to 5 minutes, cutting ticket volume."
     },
     "reminders": [
-      "If you don't have a DT hat, let your manager know.",
-      "Remember to fill in the Happy Hour poll.",
-      "Not US-based? You can get a day off in compensation — US-based teammates had Monday off for the holiday."
+      "DT Games are currently paused.",
+      "Happy Hour — Oct 6, 2:30 PM ET."
     ],
     "callToAction": {
       "prompt": "Wins, shoutouts, or questions for next week?",

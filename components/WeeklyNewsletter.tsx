@@ -80,19 +80,18 @@ export default function WeeklyNewsletter() {
           <p className="text-[11px] text-gray-500 mb-4">{n.marketing.intro}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div>
-              <div className="text-xs font-bold text-amber-400 mb-1.5">
-                &#127942; Top Post{n.marketing.topPostPlatform && ` (${n.marketing.topPostPlatform})`}
-              </div>
+              <div className="text-xs font-bold text-amber-400 mb-1.5">&#127942; Top Post</div>
               <p className="text-xs text-gray-300 leading-relaxed">
-                {n.marketing.topPost.includes("Swap in") ? (
-                  <>
-                    {n.marketing.topPost.split("Swap in")[0]}
-                    <i className="text-gray-500">Swap in{n.marketing.topPost.split("Swap in")[1]}</i>
-                  </>
-                ) : (
-                  n.marketing.topPost
+                {n.marketing.topPost}
+                {n.marketing.topPostPlatform && (
+                  <span className="ml-1.5 text-[9px] font-bold text-gray-500 bg-white/5 rounded px-1.5 py-0.5">
+                    {n.marketing.topPostPlatform}
+                  </span>
                 )}
               </p>
+              {n.marketing.topPostLink && (
+                <span className="text-[10px] text-[#D42B3F] font-semibold">{n.marketing.topPostLink}</span>
+              )}
             </div>
             <div>
               <div className="text-xs font-bold text-gray-200 mb-1.5">&#127919; Current Giveaways</div>
