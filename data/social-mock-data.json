@@ -1,5 +1,5 @@
 {
-  "_readme": "REAL where noted, PLACEHOLDER elsewhere. Verified via public search (Aug 2026): Instagram and X follower counts are real, pulled from public profile pages. YouTube, TikTok, and LinkedIn handles are confirmed real (found in daytraders.com's own footer) but their follower counts could not be retrieved from public search results and are still placeholders below, marked _verified:false. Engagement rate, reach, and 7-day growth deltas are NOT publicly visible on any platform without account login or API access — those remain placeholders until the real API integrations in lib/socialApis/ are connected.",
+  "_readme": "File history: started as mostly placeholders (Aug 2026), progressively replaced with real data across many research passes - public profile checks, an internal weekly tracking sheet, live browser checks of every platform (Sep 14 and Sep 18, 2026), and native analytics dashboards (Facebook/Instagram/X, Sep 14). All 7 channels (Instagram, X, YouTube, TikTok, LinkedIn, Facebook, Discord) are now _verified:true with real follower counts. Engagement rate and reach are real for Facebook/Instagram/X (see realPlatformAnalytics) but still unavailable for YouTube/TikTok/LinkedIn/Discord without their own analytics access. Check each section's own _readme for what is and isn't verified there specifically - this top-level note is a summary, not a per-field source of truth.",
   "overviewStats": {
     "_readme": "totalReach and engagementRate remain genuinely unverifiable without private analytics access — shown as a dash, not a fake number, but the PLACEHOLDER label stays so it's clear the card exists and is just empty pending real data. netFollowerGrowth7d is the same situation. bestVerifiedPlatform and combinedVerifiedFollowers are NEW — both are computed directly from the verified channel data (Instagram + X), not fabricated.",
     "totalReach": {
@@ -12,9 +12,9 @@
       "verified": false
     },
     "netFollowerGrowth7d": {
-      "value": 464,
+      "value": 868,
       "verified": true,
-      "note": "Real, computed from the internal tracking sheet: sum of Aug 21 -> Aug 28 change across all 6 platforms. This was a placeholder in every earlier version — now it's genuinely real."
+      "note": "Real, computed from the internal tracking sheet: sum of 2026-09-11 -> 2026-09-18 change across the 6 platforms in that sheet (Discord isn't tracked there, excluded from this sum)."
     },
     "bestVerifiedPlatform": {
       "platform": "X",
@@ -85,7 +85,7 @@
       "_source": {
         "method": "internal tracking sheet (user-provided)",
         "retrieved": "Sep 18, 2026",
-        "note": "Following count from internal Daily Log sheet (Sep 9, 2026) - previously an estimate from public search."
+        "note": "Following count from internal Daily Log sheet (Sep 18, 2026) - previously an estimate from public search, then Sep 9 data, now current through Sep 18."
       },
       "following": 2904,
       "_postsLast30dVerified": false,
@@ -330,12 +330,12 @@
       },
       {
         "name": "GTA 6 Countdown Hype",
-        "description": "GTA 6 launches November 19, 2026 — about 9 weeks out. Countdown content, Vice City/Leonida references, and character-switch mechanics are dominating gaming social media and bleeding into mainstream culture broadly.",
+        "description": "GTA 6 launches November 19, 2026. Countdown content, Vice City/Leonida references, and character-switch mechanics are dominating gaming social media and bleeding into mainstream culture broadly.",
         "exampleLink": "https://www.gamesradar.com/gta-6-guide/"
       },
       {
         "name": "NFL Season Kickoff (Week 1)",
-        "description": "The 2026 NFL season just started (Sept 9). Defending champs Seattle opened by beating New England; Giants upset the Cowboys in new head coach John Harbaugh's debut. Injury news (Tua Tagovailoa, Kyler Murray, A.J. Brown) and fantasy football waiver-wire content are dominating sports social media right now.",
+        "description": "The 2026 NFL season kicked off Sept 9 (Week 1) with defending champs Seattle beating New England, and the Giants upsetting the Cowboys in new head coach John Harbaugh's debut. Note: this was researched around Sept 14 — the season's moved on since, worth a fresh check before using for current content.",
         "exampleLink": "https://en.wikipedia.org/wiki/2026_NFL_season"
       },
       {

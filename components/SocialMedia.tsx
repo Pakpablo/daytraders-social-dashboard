@@ -16,9 +16,8 @@ const PLATFORM_COLOR: Record<string, string> = {
   Discord: "#5865F2",
 };
 
-// Discord only has ONE real data point (Sep 9) instead of a full weekly
-// history like the other 6 - it still shows up in the table/chart below,
-// just with a dash for every earlier date instead of a fabricated number.
+// Discord only has ONE real data point per check (not weekly tracked like the
+// other 6 in this sheet) - shown with gaps rather than a fabricated trend.
 const PLATFORM_ICON: Record<string, any> = {
   Instagram, X: Twitter, YouTube: Youtube, TikTok: Music2, LinkedIn: Linkedin, Facebook, Discord: MessagesSquare,
 };
@@ -287,18 +286,19 @@ export default function SocialMedia() {
         </div>
       </div>
 
-      {/* ---- Callout on the standout finding ---- */}
+      {/* ---- Callout on the standout finding, computed dynamically so it never goes stale ---- */}
       <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-4 space-y-2">
-        <div className="font-bold text-sm text-green-400">Facebook is still the biggest standout</div>
-        <p className="text-xs text-gray-300 leading-relaxed">
-          +43.7% over its 3-week span (2,554 &rarr; 3,670) &mdash; no other platform is close, though
-          it hasn't had a newer check-in since Aug 28.
-        </p>
-        <div className="font-bold text-sm text-green-400 pt-1">LinkedIn moved up with the new data point</div>
-        <p className="text-xs text-gray-300 leading-relaxed">
-          +8.7% over 4 weeks (115 &rarr; 125) once the Sep 9 number is included &mdash; small in absolute
-          terms (only +10 followers) but a real, consistent upward trend on a small base.
-        </p>
+        {growthAnalysis.slice(0, 2).map((g: any, i: number) => (
+          <div key={g.platform}>
+            <div className="font-bold text-sm text-green-400" style={i > 0 ? { paddingTop: 4 } : undefined}>
+              {g.platform} is {i === 0 ? "the biggest standout" : "also moving well"}
+            </div>
+            <p className="text-xs text-gray-300 leading-relaxed">
+              {g.totalChangePct > 0 ? "+" : ""}{g.totalChangePct}% over its {g.spanWeeks}-week tracked span
+              ({fmt(g.current - g.totalChange)} &rarr; {fmt(g.current)}), as of {fmtDate(g.asOf)}.
+            </p>
+          </div>
+        ))}
       </div>
 
       {/* ==================================================== */}
