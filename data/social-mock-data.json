@@ -1126,5 +1126,282 @@
         "reach": 45
       }
     ]
+  },
+  "dailyIntelligenceReport": {
+    "_readme": "Transcribed directly from the real 'DT Intelligence Report - Sep 23rd' PDF, provided by the user. Report is credited to Abi. All figures, quotes, and ad data are real as captured by the report's own research (Meta Ad Library live pulls, Trustpilot live pulls, agent-mail inbox, Reddit) - not independently re-verified by Claude, but transcribed faithfully from a real source document.",
+    "reportDate": "Wednesday, September 23, 2026",
+    "preparedNote": "Prepared before 8:00 AM IST — re-verification pass at 5:08 PM IST",
+    "headerStats": [
+      { "value": "4.6 / 492", "label": "DayTraders Trustpilot (was 4.5 / 347)", "tag": "RATING PULLED" },
+      { "value": "Suspended", "label": "Blue Guardian — Trustpilot breach", "tag": "RATING PULLED" },
+      { "value": "90+", "label": "Active competitor Meta ads tracked" },
+      { "value": "4", "label": "Payout-denial flare-ups this week" }
+    ],
+    "competitorMoves": [
+      {
+        "competitor": "Take Profit Trader",
+        "activeAds": "7+ first-page ads",
+        "change": "NEW 2 ads started Sep 15 (free-course angle rebuilt)",
+        "pushing": "Free futures course + \"$150K Playbook\" PDF lead magnet + \"Day-One PRO Payouts\""
+      },
+      {
+        "competitor": "Blue Guardian",
+        "activeAds": "9 (incl. 2 \"Blue Guardian Futures\")",
+        "change": "NEW ad Sep 7; Trustpilot rating now unavailable",
+        "pushing": "\"$400K / 90% split / 24hr payout guarantee\" + discount funnel (25% off, code BG25)"
+      },
+      {
+        "competitor": "Apex Trader Funding",
+        "activeAds": "10+ first-page ads",
+        "change": "No change — 90%-off code PASS running since Mar 31, longest prop ad alive",
+        "pushing": "Pure discount: \"Save 90% with Code: PASS — Get Funded in 1 Day\""
+      },
+      {
+        "competitor": "Topstep",
+        "activeAds": "5 first-page ads",
+        "change": "No change — Aug 14 payout ad still lead",
+        "pushing": "\"9 second payouts, 99.26% approved\" + \"$150K buying power from $49\""
+      },
+      {
+        "competitor": "MyFundedFutures",
+        "activeAds": "4 (Sep 9 cluster)",
+        "change": "No change",
+        "pushing": "Fresh Sep 9 creative cluster, all started same day"
+      },
+      {
+        "competitor": "FTMO",
+        "activeAds": "10 (FTMO.com page)",
+        "change": "No change — Aug 28-Sep 10 cluster holding",
+        "pushing": "Brand/trust creative, steady cadence"
+      },
+      {
+        "competitor": "FundedNext",
+        "activeAds": "10+ (Global + Futures + Asia pages)",
+        "change": "NEW direct-bank-payout angle confirmed",
+        "pushing": "\"No middleman. Bank transfer straight to your bank. Every step tracked.\" + Deloitte award ad"
+      },
+      {
+        "competitor": "The5ers",
+        "activeAds": "Not surfacing on keyword search",
+        "change": "Email machine turned ON: daily \"Market Watch\" newsletter + welcome sequence reached inbox Sep 22",
+        "pushing": "Honesty campaign + education-led email nurture"
+      },
+      {
+        "competitor": "FundingPips",
+        "activeAds": "Not surfacing on keyword search",
+        "change": "No detectable change",
+        "pushing": "Keyword page polluted by small firms"
+      },
+      {
+        "competitor": "E8 Funding",
+        "activeAds": "Not surfacing on keyword search",
+        "change": "No detectable change",
+        "pushing": "Keyword page polluted"
+      }
+    ],
+    "metaWinnerAds": [
+      {
+        "competitor": "Apex Trader Funding",
+        "tagline": "The category's longest runner",
+        "activeSince": "Mar 31, 2026 (~6 months)",
+        "libraryId": "1894306984530380",
+        "adCopy": "Save 90% with Code: PASS. Get Funded as a Trader in 1 Day. Start today.",
+        "analysis": "Six months unbroken on a pure discount hook. Apex is buying the entire bottom of the funnel on price alone — no education, no trust build. It works because the offer IS the ad.",
+        "breakingUpdate": "UPDATE (5:08 PM re-verification): this ad is no longer in the Ad Library — pulled today (Sep 23) after ~6 months unbroken. Screenshot now shows Apex's current active grid (~70 results). The discount-control era may have just ended — watch what replaces it.",
+        "isBreaking": true
+      },
+      {
+        "competitor": "Blue Guardian",
+        "tagline": "Payout-proof lead",
+        "activeSince": "Aug 7, 2026",
+        "libraryId": "1767395694611954",
+        "adCopy": "$400K in funded capital. 90% profit split. 24hr payout guarantee. No waiting. No excuses. Just trading.",
+        "analysis": "The ad is a payout promise stacked in one breath. But see the Trustpilot collapse — the gap between this promise and the reviews is the widest in the category right now.",
+        "breakingUpdate": "UPDATE (5:08 PM re-verification): Meta has REMOVED this ad — \"didn't follow our Advertising Standards,\" inactive as of Sep 23. Trustpilot suspension + ad removal in the same week: Blue Guardian is under enforcement pressure on two fronts.",
+        "isBreaking": true
+      },
+      {
+        "competitor": "Topstep",
+        "tagline": "Receipts-as-ad",
+        "activeSince": "Aug 14, 2026",
+        "libraryId": "4395091170741844",
+        "adCopy": "Trade with up to $150K in buying power. Starting at just $49. 7,000+ Traders Paid Weekly. Average Payout: $2,300.",
+        "analysis": "Specific numbers do the trust work: 7,000+ paid weekly, $2,300 average. Price anchor ($49) keeps the door wide.",
+        "breakingUpdate": null,
+        "isBreaking": false
+      },
+      {
+        "competitor": "Take Profit Trader",
+        "tagline": "Free course rebuilt (NEW Sep 15)",
+        "activeSince": "Sep 15, 2026",
+        "libraryId": "2063383834283344",
+        "adCopy": "100% free futures trading course built by traders and an industry-leading prop firm.",
+        "analysis": "TPT killed its old course ad and relaunched the same lead magnet Sep 15. Free education is their list-building engine — the playbook PDF and daily nurture emails we receive confirm the funnel is alive and iterating.",
+        "breakingUpdate": null,
+        "isBreaking": false
+      },
+      {
+        "competitor": "FundedNext",
+        "tagline": "Direct-bank payout (NEW ANGLE)",
+        "activeSince": "May 4, 2026",
+        "libraryId": "2029795367917171",
+        "adCopy": "No middleman. No third-party accounts. Bank transfer from FundedNext straight to your bank. Every step tracked.",
+        "analysis": "A direct answer to the payout-denial fear wave: the mechanism of getting paid is now the headline. Their Deloitte-award trust ad also still runs since May 4.",
+        "breakingUpdate": null,
+        "isBreaking": false
+      }
+    ],
+    "customerQuotes": [
+      {
+        "quote": "Blue Guardian is running a Ponzi Scheme. Once you become profitable they will lock you out of your accounts and will ban you from their platform without giving any reason whatsoever.",
+        "awarenessStage": 5,
+        "awarenessLabel": "Most Aware",
+        "source": "Awais Virk, Trustpilot, 5 hours before pull"
+      },
+      {
+        "quote": "Worst experience ever with any prop firm. They Denied pay outs for no reason without any explanation or even let you explain... I spent 2 weeks passing th...",
+        "awarenessStage": 5,
+        "awarenessLabel": "Most Aware",
+        "source": "Jesus Pedraza, Trustpilot, 1 day before pull"
+      },
+      {
+        "quote": "I've got payment from blue guardian within 2 hours. With their payment I bought another big account... Their rules are flexible.",
+        "awarenessStage": 4,
+        "awarenessLabel": "Product Aware",
+        "source": "Trustpilot, 17 hours before pull (posted while BG's rating is suspended — polarized review base)"
+      },
+      {
+        "quote": "Got my payout denied from atlas funded because I allegedly have 51 other trading accounts on my ip address. They're saying all 51 accounts are from different people. Like What?",
+        "awarenessStage": 5,
+        "awarenessLabel": "Most Aware",
+        "source": "r/Daytrading"
+      },
+      {
+        "quote": "I was struggle, upset and furious understanding the consistency rules, but i never give up until its be come one of my best tools for success. So far i won 19 out of 23 days of trading using the consistency rules like I'm drinking water.",
+        "awarenessStage": 4,
+        "awarenessLabel": "Product Aware",
+        "source": "DayTraders.com Trustpilot (THEOWEALTH FINANCIAL)"
+      },
+      {
+        "quote": "I like that they let you have up to 15 funded accounts at once... I wish I could trade with it directly on TradingView is the only downside.",
+        "awarenessStage": 4,
+        "awarenessLabel": "Product Aware",
+        "source": "DayTraders.com Trustpilot (DG), Sep 9 — the only recurring product complaint: no direct TradingView sync"
+      }
+    ],
+    "denialStorySpreading": "The Sep 17 Dave Finances story — \"Trade the Pool Denies $50K Payout Over Trades That Passed Earlier Reviews\" — is now the reference case traders cite in denial threads. Combined with the Atlas and TopOneFutures Reddit flare-ups, payout-denial fear is the loudest emotion in the audience this week.",
+    "awarenessMap": [
+      { "stage": 1, "label": "Unaware", "shareToday": 5, "sharePrev": null, "description": "Quiet — news cycle not pulling new people in today" },
+      { "stage": 2, "label": "Problem Aware", "shareToday": 10, "sharePrev": null, "description": "\"I keep blowing accounts / I need structure\"" },
+      { "stage": 3, "label": "Solution Aware", "shareToday": 45, "sharePrev": null, "description": "\"Which firm actually pays?\", \"free course vs paid eval\", payout-mechanism questions" },
+      { "stage": 4, "label": "Product Aware", "shareToday": 25, "sharePrev": 35, "description": "Comparing rules: consistency, account limits, TradingView sync, payout speed" },
+      { "stage": 5, "label": "Most Aware", "shareToday": 15, "sharePrev": 10, "description": "Payout-denial anger, discount-code hunting, firm-hopping after bans" }
+    ],
+    "awarenessShift": "Shift vs Sep 22: Most Aware grew (10% to ~15%) on the payout-denial wave; Product Aware dipped (35% to ~25%). Fear moved people past comparison into grievance mode — they want proof-of-payment, not feature lists.",
+    "competitorEmails": [
+      {
+        "sender": "Blue Guardian",
+        "arrived": "Sep 22, 11:50 PM",
+        "subject": "\"Why 100,00+ traders trust Blue Guardian. And keep coming back.\"",
+        "hook": "Social proof + retention framing; subject line carries a live typo (\"100,00+\") — proof of rushed sends"
+      },
+      {
+        "sender": "Take Profit Trader (James)",
+        "arrived": "Sep 22, 7:11 PM",
+        "subject": "\"🪙 Small Steps > Big Leaps\"",
+        "hook": "Discipline narrative: \"Base hits, not home runs\"; CTA \"Get Day-One PRO Payouts\"; two testimonial quotes embedded"
+      },
+      {
+        "sender": "The5ers",
+        "arrived": "Sep 22, 12:00 PM",
+        "subject": "\"Your 5ers Daily Market Watch — September 22!\"",
+        "hook": "NEW SEQUENCE — daily value newsletter (Germany/UK PMI explainers). Education-first retention, zero pitch in body"
+      },
+      {
+        "sender": "The5ers",
+        "arrived": "Sep 22, 8:45 AM",
+        "subject": "\"Thanks for joining us\"",
+        "hook": "Welcome email: academy, performance coach, contests, YouTube — onboarding tree is content-led"
+      }
+    ],
+    "bigPatterns": [
+      "Payout proof is the whole game now. FundedNext headlines the bank-transfer mechanism, Topstep advertises \"9 second payouts, 99.26% approved,\" BG promises 24hr — while the audience's loudest posts are denial stories. Every winning ad and every angry review is about the same thing: will I actually get paid?",
+      "A trust split is opening. Blue Guardian's Trustpilot rating is suspended for a guidelines breach at the exact moment DayTraders.com hit 4.6/492 (84% five-star, founder replies within days). The category's #2 discount player is reputation-bleeding while DayTraders is stacking verified proof.",
+      "Free education is the list-builder of choice. TPT relaunched its free course (Sep 15) after the old one died, The5ers sends a genuinely useful daily market email with no pitch. The sale happens in the inbox, not the ad.",
+      "Discounts are table stakes, not differentiation. Apex has run 90% off for 6 months straight; BG pushes 25% off first order in email. Price hooks alone no longer separate anyone — mechanism and proof do.",
+      "Rules framing is flipping from complaint to feature. Our own reviewer: consistency rules \"be come one of my best tools for success... 19 out of 23 days.\" The audience is starting to credit structure for their wins — a message opening nobody else is using."
+    ],
+    "gaps": [
+      {
+        "competitorMove": "FundedNext / Topstep advertise the payout MECHANISM (bank transfer tracked, 9-second payouts)",
+        "dtStatus": "4.6/492 payout-speed proof exists but isn't the ad headline",
+        "recommendedMove": "Make \"how you get paid\" the hero: payout timeline creative built on real Trustpilot receipts"
+      },
+      {
+        "competitorMove": "TPT runs a free course + playbook PDF feeding a daily nurture list",
+        "dtStatus": "No equivalent lead magnet detected",
+        "recommendedMove": "Ship \"The Consistency Rules Playbook\" — free PDF built from the exact rules reviewers credit for their wins"
+      },
+      {
+        "competitorMove": "The5ers sends a daily market email traders actually read",
+        "dtStatus": "No daily value touchpoint detected",
+        "recommendedMove": "Daily pre-market email: levels + one rule reminder — retention asset, zero pitch"
+      },
+      {
+        "competitorMove": "Blue Guardian is reputation-down (rating suspended) while spending on Meta",
+        "dtStatus": "DayTraders is reputation-up and not contrast-marketing",
+        "recommendedMove": "Run \"rated vs unrated\" contrast creative NOW while the window is open (factual: our live 4.6/492 vs category denial stories)"
+      },
+      {
+        "competitorMove": "Nobody advertises platform flexibility",
+        "dtStatus": "Only recurring product complaint: no direct TradingView sync",
+        "recommendedMove": "Content acknowledging the workaround (trade copier) + roadmap signal; converts a complaint into an honesty asset"
+      }
+    ],
+    "moves": {
+      "paidAds": [
+        "Launch a payout-mechanism campaign this week. Lead with the live numbers: 4.6 Trustpilot, 492 reviews, payout approvals in minutes. The denial wave means this message lands harder today than any discount.",
+        "Contrast ad while BG's rating is suspended. Factual framing: \"2,075 reviews can't show you a rating right now. Ours is 4.6 across 492.\" No competitor named — the audience will connect it themselves.",
+        "Test a rules-as-feature angle. Use the reviewer's own arc: frustrated by consistency rules, then 19/23 winning days. Nobody else advertises the rules as the benefit."
+      ],
+      "socialAds": [
+        "Cut the best payout-speed Trustpilot reviews into 6-second screenshot cards with the live rating overlay; retarget site visitors with the \"how payouts work\" explainer."
+      ],
+      "organicPosting": [
+        "Daily \"Payout Proof\" post: one real payout receipt per day (amount + approval time), founder-signed. Category-wide fear makes this the highest-leverage organic format right now.",
+        "Reply-guy strategy on denial threads: helpful, non-pitchy comments under payout-denial posts (Atlas/TopOne/TTP stories) pointing to how our process works."
+      ],
+      "videos": [
+        "\"Watch a payout happen\" (60-90s): screen-record the full withdrawal flow end to end, timer on screen. Direct answer to the week's fear.",
+        "\"Why we have consistency rules\" (45s): built on the 19/23 review arc — the rule that annoyed him became his edge.",
+        "\"Prop firm red flags checklist\" (60s): teach traders to spot denial patterns (vague IP-address accusations, post-profit bans) — positions us as the adult in the room without naming names."
+      ]
+    },
+    "readyAssets": {
+      "reels": [
+        {
+          "title": "Reel 1 — \"The Payout Timer\" (organic, ~30s)",
+          "script": "[Screen recording: withdrawal request submitted, timer starts]\nVO: \"Every prop firm says they pay. Cool. Watch this.\"\n[Timer runs — approval lands]\nVO: \"Approved. That's not a promise, that's Tuesday.\"\n[Cut to Trustpilot page: 4.6, 492 reviews]\nVO: \"492 traders already knew.\"\nText on screen: \"DayTraders.com — payouts you can time.\""
+        },
+        {
+          "title": "Reel 2 — \"The Rule I Hated\" (organic, ~40s)",
+          "script": "[Talking head, trader energy]\n\"I hated the consistency rules. Fought them for weeks.\nThen I actually traded them.\n19 winning days out of 23.\nThe rule I hated became the reason I get paid.\"\nText on screen: \"Structure pays. DayTraders.com\"",
+          "note": "Built from verbatim customer language (Trustpilot, Sep 2026) — it already resonates because a real customer said it first."
+        },
+        {
+          "title": "Reel 3 — \"Red Flags\" (organic, ~45s)",
+          "script": "\"Three signs your prop firm won't pay you:\n1. They pass you, then 'review' your trades only AFTER you request a payout.\n2. They accuse you of something you can't disprove — like 51 accounts on your IP.\n3. Their reviews suddenly disappear from Trustpilot.\nDo your homework. Then come trade somewhere boring and reliable.\"\nText: \"DayTraders.com — 4.6 rated, 492 reviews, payouts in minutes.\""
+        }
+      ],
+      "adHeadlines": [
+        "\"The payout isn't the promise. It's the process.\"",
+        "\"4.6 stars. 492 reviews. Minutes to approval.\"",
+        "\"Funded accounts for traders who read the reviews first.\"",
+        "\"Trade our money. Keep up to 90%. Get paid on schedule.\""
+      ]
+    },
+    "coverageFlags": "Not reachable / not verified today: FundingPips, The5ers, E8 Meta ads (keyword search pages polluted by unrelated advertisers); Quantfury Ad Library keyword search renders blank (2nd day); Google Ads Transparency Center not checked this run; YouTube comments and TikTok not sampled today; Trustpilot live pulls done for Nurp, DayTraders, Blue Guardian, GemAlgo only (other profiles from Sep 21-22 baselines). Blue Guardian Trustpilot rating is suspended (\"breach of guidelines\") — review counts still visible (2,075) but no score. DayTraders review count: live page shows 492/4.6 vs 347/4.5 from Sep 21-22 search snippets — live page treated as today's source of truth.",
+    "reissueNote": "Re-issue note (5:08 PM): file regenerated after a workspace reset. All morning content unchanged; two winner-ad screenshots (Apex PASS, Blue Guardian $400K) now show their current Ad Library state because BOTH ads were taken down today — flagged inline.",
+    "sources": "Meta Ad Library (live, US), Trustpilot (live), agent-mail inbox captures, Reddit, trade press. Screenshots captured 6:27-6:28 AM IST; Apex/BG screenshots refreshed 5:08-5:10 PM IST."
   }
 }

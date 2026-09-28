@@ -11,6 +11,7 @@ const TABS = [
   { href: "/performance", label: "Performance" },
   { href: "/trends", label: "Trends & Ideas" },
   { href: "/competitors", label: "Competitors" },
+  { href: "/intelligence", label: "Daily Intel" },
 ];
 
 export default function NavTabs({ children }: { children?: React.ReactNode }) {
