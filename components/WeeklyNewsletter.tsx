@@ -39,7 +39,7 @@ export default function WeeklyNewsletter() {
             {n.weeklyShoutout.map((s: any, i: number) => (
               <li key={i} className="text-xs text-gray-300 flex gap-2">
                 <span className="text-[#D42B3F]">&#9632;</span>
-                <span><b>{s.name}</b> &mdash; {s.team} &mdash; {s.reason}</span>
+                <span><b>{s.name}</b>{s.team && <> &mdash; {s.team}</>} &mdash; {s.reason}</span>
               </li>
             ))}
           </ul>

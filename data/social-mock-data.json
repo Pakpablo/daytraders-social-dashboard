@@ -752,89 +752,89 @@
     ]
   },
   "thisWeeksContent": {
-    "_readme": "Pulled directly from the real 'Weekly Post Contents (21 Sep To 28 Sep)' PDF, provided by the user. 8 posts total - Monday and Tuesday each have 2.",
-    "weekOf": "Sep 21, 2026",
-    "summary": "8 posts this week, bookending a giveaway cycle: Monday closes out the $50K Static giveaway (5 winners announced) right after an autonomy/freedom-identity post. Tuesday pairs payout-proof transparency with a meme. Wed/Thu/Fri cover free demo practice (ArcTrader), trading psychology, and a lighter new-trader meme. The cycle closes the following Monday with a Discord community push — continuing the giveaway-and-proof formats that have performed best in real data so far.",
+    "_readme": "Pulled from the real 'Weekly Post Contents (29 Sep To 5 Oct)' PDF. IMPORTANT: unlike the previous 2 weeks' PDFs, this one has NO day-of-week labels anywhere (checked both the text layer and a rasterized page render) - just 8 posts in sequence. Dates below are inferred by position across the week, not explicitly stated in the source. If the real day assignment matters, worth confirming with whoever built the doc.",
+    "weekOf": "Sep 29, 2026",
+    "summary": "8 posts, Sep 29-Oct 5 (day labels inferred, not in source). Opens with an already-Approved payout proof post, closes out the iPhone-vs-Samsung $300K Trailing giveaway from last week (5 winners, $1.5M total), and adds a new format: a trader-reviews carousel (\"real traders, real experiences\") plus an ArcTrader mobility angle and a risk-management poll.",
     "posts": [
       {
-        "day": "Monday",
-        "date": "2026-09-21",
-        "category": "Company News / Autonomy",
+        "day": "Day 1 (inferred)",
+        "date": "2026-09-29",
+        "category": "Company News / Payout Proof",
+        "format": "Text + Image",
+        "designer": "Rassel Hossain",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Approved",
+        "gist": "\"Want to see the latest payout proof?\" — points to the live public payout ledger. Already Approved, unlike most posts which sit at Under Review."
+      },
+      {
+        "day": "Day 2 (inferred)",
+        "date": "2026-09-30",
+        "category": "Humorous",
+        "format": "Text + Video",
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"POV: having a perfectly good day... then your brain suddenly goes: 'remember when you blew the account this morning?'\" — mood: ruined."
+      },
+      {
+        "day": "Day 3 (inferred)",
+        "date": "2026-10-01",
+        "category": "Education / Promo",
+        "format": "Thread + Images",
+        "designer": "Rassel Hossain",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"What are traders saying about DayTraders?\" — a swipeable carousel of real trader reviews. New format: social proof via reviews, not a single testimonial."
+      },
+      {
+        "day": "Day 4 (inferred)",
+        "date": "2026-10-02",
+        "category": "Inspirational / Engagement",
+        "format": "Text + Video",
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"Same platform. Different world.\" — ArcTrader's mobility angle: trade from anywhere, not tied to a desk."
+      },
+      {
+        "day": "Day 5 (inferred)",
+        "date": "2026-10-03",
+        "category": "Humorous",
+        "format": "Text + Video",
+        "designer": "Dajuan Davis",
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"POV: New York session lately... Consolidation → Judas Swing → Bias flip → Stop Loss.\" NY session volatility meme."
+      },
+      {
+        "day": "Day 6 (inferred)",
+        "date": "2026-10-04",
+        "category": "Education / Engagement",
+        "format": "Poll",
+        "designer": null,
+        "reviewer": "Kha-Yen Bataineh",
+        "status": "Under Review",
+        "gist": "\"What matters more over the long run?\" — poll: daily profit vs win rate vs following your plan vs protecting capital. No designer listed for this one."
+      },
+      {
+        "day": "Day 7 (inferred)",
+        "date": "2026-10-05",
+        "category": "Company News / Affiliate",
         "format": "Text + Image",
         "designer": "Rassel Hossain",
         "reviewer": "Kha-Yen Bataineh",
         "status": "Under Review",
-        "gist": "\"More freedom. Fewer restrictions. Better trading.\" — continues the identity/freedom angle from the Martin & Abi marketing idea, framed around trader autonomy specifically."
+        "gist": "\"Refer Traders. Earn 20% for Life.\" — promotes the DayTraders Affiliate Program: 20% lifetime commission, $0 upfront, real-time tracking dashboard."
       },
       {
-        "day": "Monday (Giveaway Winners)",
-        "date": "2026-09-21",
+        "day": "Day 8 (inferred, likely next Monday)",
+        "date": "2026-10-06",
         "category": "Company News / Announcement",
         "format": "Text + Image",
         "designer": "Rassel Hossain",
         "reviewer": "Kha-Yen Bataineh",
         "status": "Under Review",
-        "gist": "\"5 WINNERS. $250K IN FUNDING.\" — closes out the $50K Static Account giveaway (8,208 total entries). This exact format (giveaway winner announcement) is a real, previously-verified top performer."
-      },
-      {
-        "day": "Tuesday (Payout Proof)",
-        "date": "2026-09-22",
-        "category": "Company News / Payout Proof",
-        "format": "Text + Image",
-        "designer": "Rassel Hossain",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "\"Want to see the latest payouts?\" — points to the live public payout ledger (amounts, processing times, account types, trader locations)."
-      },
-      {
-        "day": "Tuesday (Meme)",
-        "date": "2026-09-22",
-        "category": "Humorous",
-        "format": "Text + Video",
-        "designer": "Dajuan Davis",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "\"POV: you finally find a clean NQ setup\" — NQ immediately chops sideways for 30 candles. \"When NQ starts barcoding as soon as you enter a trade.\""
-      },
-      {
-        "day": "Wednesday",
-        "date": "2026-09-23",
-        "category": "Education / Promo",
-        "format": "Text + Image",
-        "designer": "Dajuan Davis",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "\"Your futures trading journey starts at $0.\" — free ArcTrader demo account, real market data, no credit card, weekly prizes for top results."
-      },
-      {
-        "day": "Thursday",
-        "date": "2026-09-24",
-        "category": "Inspirational / Psychology",
-        "format": "Text + Video",
-        "designer": "Dajuan Davis",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "\"Most people have an income ceiling.\" — salary/raise you don't control vs. building income on your own skill. \"Trade futures. Not your freedom.\" Includes risk disclaimer."
-      },
-      {
-        "day": "Friday",
-        "date": "2026-09-25",
-        "category": "Humorous",
-        "format": "Text + Video",
-        "designer": "Dajuan Davis",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "\"POV: your friend asks if they should start day trading.\" — \"Prepare to meet your new teacher: the market.\" Learn. Trade. Get humbled. Repeat."
-      },
-      {
-        "day": "Next Monday",
-        "date": "2026-09-28",
-        "category": "Company News / Engagement",
-        "format": "Text + Image",
-        "designer": "Rassel Hossain",
-        "reviewer": "Kha-Yen Bataineh",
-        "status": "Under Review",
-        "gist": "\"Trading doesn't have to be a solo game.\" — drives to the DayTraders Discord (real, verified 5,691 members). Image being updated from the previous \"Discord Community\" graphic."
+        "gist": "\"THE WINNERS ARE IN! $1.5M IN TOTAL ACCOUNT SIZE!\" — closes out the $300K Trailing Evaluation giveaway (the iPhone-vs-Samsung themed one from last week's newsletter): 5 winners, $300K each."
       }
     ]
   },
@@ -865,41 +865,42 @@
     }
   ],
   "weeklyNewsletter": {
-    "_readme": "Transcribed directly from the real 'Weekly Internal Newsletter - Week 2 - Sept 14-18' PDF, provided by the user. Fully replaces the previous week's newsletter content.",
-    "dateRange": "SEPT 14–18, 2026",
-    "draftLabel": "WEEK 2",
+    "_readme": "Transcribed directly from the real 'Weekly Internal Newsletter - Week 3 - Sept 21-25' PDF, provided by the user. Fully replaces the previous week's newsletter content.",
+    "dateRange": "SEPT 21–25, 2026",
+    "draftLabel": "WEEK 3",
     "audience": "FOR MARKETING & SUPPORT TEAMS",
     "subtitle": "Marketing · Support · Backend & Others — this week's numbers, shoutouts, and what's next.",
     "headerStats": [
       { "value": "4.6★", "label": "Trustpilot rating (= vs last wk)" },
-      { "value": "95.8%", "label": "CSAT score — month to date" },
+      { "value": "95.83%", "label": "CSAT — Sept 1–25 (69/72 rated 4–5★)" },
       { "value": "Post-launch scaling", "label": "Volume up across Support & Marketing" }
     ],
     "weeklyShoutout": [
-      { "name": "Sebastian", "team": "Support", "reason": "continued excellent, rapid L3 support." },
-      { "name": "Rich", "team": "Live Team", "reason": "live weather check, great work with live traders." },
-      { "name": "Rassel", "team": "Marketing", "reason": "incredible graphic and content creation." }
+      { "name": "Kha-Yen", "team": "", "reason": "it's her birthday week! 🎂" },
+      { "name": "Julius", "team": "", "reason": "caught a needed update in the Terms of Use." },
+      { "name": "DJ", "team": "", "reason": "creating amazing videos." }
     ],
     "heyTaco": {
       "received": [
-        { "name": "Sebastian", "count": 36 },
-        { "name": "Rassel", "count": 11 },
-        { "name": "Achim", "count": 11 }
+        { "name": "Kha-Yen", "count": 48 },
+        { "name": "Garrett", "count": 34 },
+        { "name": "Pablo A.", "count": 20 }
       ],
       "given": [
-        { "name": "Pablo A.", "count": 15 },
-        { "name": "Abi", "count": 13 },
-        { "name": "Peter", "count": 12 }
+        { "name": "Sebastian", "count": 22 },
+        { "name": "Kha-Yen", "count": 16 },
+        { "name": "Abi", "count": 14 }
       ]
     },
     "marketing": {
       "intro": "This week's campaigns, giveaways, and what's coming up.",
-      "topPost": "2.2K views (2,065 via Instagram) | 287 interactions — the $50K Static giveaway drove the week's strongest reach, almost entirely organic on Instagram.",
-      "topPostPlatform": "IG",
-      "topPostLink": "View on Instagram",
+      "topPost": "Pending — couldn't confirm last week's top post by public likes across X/IG/TikTok. Send the link and I'll add it in.",
+      "topPostPlatform": null,
+      "topPostLink": null,
       "currentGiveaways": [
-        "5x $50K Static accounts — live now",
-        "Ends Sept 20"
+        "5x $50K Static accounts — ended Sept 20",
+        "New: iPhone vs Samsung — 5x $300K Trailing accounts",
+        "\"Pick a side\" (Duo vs Fold) — starts Sept 25"
       ],
       "comingUp": [
         "Ongoing affiliate outreach",
@@ -918,8 +919,8 @@
       "Bulk discounts: active"
     ],
     "recurringTicket": {
-      "title": "Password Lockout: Too Many Attempts",
-      "description": "high ticket volume. Leo reduced the lockout window from 1 hour to 5 minutes, cutting ticket volume."
+      "title": "AI-Generated Ticket",
+      "description": "customer asking about HFT and whether AI can automatically trade on their behalf."
     },
     "reminders": [
       "DT Games are currently paused.",
