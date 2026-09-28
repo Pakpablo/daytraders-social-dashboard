@@ -12,20 +12,20 @@
       "verified": false
     },
     "netFollowerGrowth7d": {
-      "value": 868,
+      "value": 385,
       "verified": true,
-      "note": "Real, computed from the internal tracking sheet: sum of 2026-09-11 -> 2026-09-18 change across the 6 platforms in that sheet (Discord isn't tracked there, excluded from this sum)."
+      "note": "Real, computed from the internal tracking sheet: sum of 2026-09-18 -> 2026-09-25 change across the 6 platforms in that sheet (Discord isn't tracked there, excluded)."
     },
     "bestVerifiedPlatform": {
       "platform": "X",
-      "followers": 6948,
+      "followers": 6986,
       "verified": true,
-      "note": "Largest by follower/member count, all current as of Sep 18 2026."
+      "note": "Largest by follower/member count, current as of Sep 25 2026 (Discord from its own last check)."
     },
     "combinedVerifiedFollowers": {
-      "value": 24819,
+      "value": 25204,
       "verified": true,
-      "note": "Sum across all 7 platforms, freshest numbers as of Sep 18, 2026 (weekly tracker sheet)."
+      "note": "Sum across all 7 platforms, freshest numbers as of Sep 25, 2026 (weekly tracker sheet, Discord from its own last check)."
     },
     "topPostOfWeek": {
       "platform": "Prediction Giveaway (X)",
@@ -41,7 +41,7 @@
     {
       "platform": "Instagram",
       "handle": "@daytraderscom",
-      "followers": 3827,
+      "followers": 3829,
       "followerGrowth7d": 55,
       "engagementRate": null,
       "postsLast30d": 22,
@@ -57,19 +57,19 @@
       "_sourceNote": "277 total posts, 1,023 following — from public profile, Aug 2026",
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 18, 2026",
+        "retrieved": "Sep 25, 2026",
         "note": "From 'DT Social Media Follower Update' — supersedes any earlier estimate for this platform."
       },
       "following": 1023,
       "_postsLast30dVerified": false,
       "_narrativeVerified": false,
-      "_asOf": "2026-09-18",
+      "_asOf": "2026-09-25",
       "url": "https://www.instagram.com/daytraderscom/"
     },
     {
       "platform": "X",
       "handle": "@DayTraders_com",
-      "followers": 6948,
+      "followers": 6986,
       "followerGrowth7d": 27,
       "engagementRate": null,
       "postsLast30d": 64,
@@ -85,19 +85,19 @@
       "_sourceNote": "Las Vegas, NV · joined June 2024 · 1,847 following — from public profile, Aug 2026",
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 18, 2026",
+        "retrieved": "Sep 25, 2026",
         "note": "Following count from internal Daily Log sheet (Sep 18, 2026) - previously an estimate from public search, then Sep 9 data, now current through Sep 18."
       },
       "following": 2904,
       "_postsLast30dVerified": false,
       "_narrativeVerified": false,
-      "_asOf": "2026-09-18",
+      "_asOf": "2026-09-25",
       "url": "https://x.com/DayTraders_com"
     },
     {
       "platform": "YouTube",
       "handle": "@DayTraders_com",
-      "followers": 3321,
+      "followers": 3324,
       "followerGrowth7d": 12,
       "engagementRate": null,
       "postsLast30d": 5,
@@ -115,17 +115,17 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 18, 2026",
+        "retrieved": "Sep 25, 2026",
         "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 3280."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-18",
+      "_asOf": "2026-09-25",
       "url": "https://www.youtube.com/@DayTraders_com"
     },
     {
       "platform": "TikTok",
       "handle": "@daytraders_com",
-      "followers": 200,
+      "followers": 203,
       "followerGrowth7d": 5,
       "engagementRate": null,
       "postsLast30d": 30,
@@ -141,17 +141,17 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 18, 2026",
+        "retrieved": "Sep 25, 2026",
         "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 196."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-18",
+      "_asOf": "2026-09-25",
       "url": "https://www.tiktok.com/@daytraders_com"
     },
     {
       "platform": "LinkedIn",
       "handle": "DayTraders",
-      "followers": 131,
+      "followers": 133,
       "followerGrowth7d": 0,
       "engagementRate": null,
       "postsLast30d": 8,
@@ -169,17 +169,17 @@
       "_postsLast30dVerified": false,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 18, 2026",
+        "retrieved": "Sep 25, 2026",
         "note": "Live-checked directly on the platform (browser navigation), Sep 14 2026. Was 125."
       },
       "_narrativeVerified": false,
-      "_asOf": "2026-09-18",
+      "_asOf": "2026-09-25",
       "url": "https://www.linkedin.com/company/daytraders-com/"
     },
     {
       "platform": "Facebook",
       "handle": "DayTraders.com Group",
-      "followers": 4701,
+      "followers": 5038,
       "following": null,
       "followerGrowth7d": 365,
       "engagementRate": null,
@@ -188,12 +188,13 @@
       "improvements": [],
       "_verified": true,
       "_narrativeVerified": false,
-      "_asOf": "2026-09-18",
-      "url": null,
+      "_asOf": "2026-09-25",
+      "url": "https://www.facebook.com/DayTraderscom/",
+      "pageLikes": 1901,
       "_source": {
         "method": "internal tracking sheet (user-provided)",
-        "retrieved": "Sep 18, 2026",
-        "note": "New platform, not in original 5-platform scope — added because real growth data made it worth tracking."
+        "retrieved": "Sep 25, 2026",
+        "note": "New platform, not in original 5-platform scope — added because real growth data made it worth tracking. Page also shows 1,901 Page Likes (confirmed by user to be the same real page as the 4,701 Followers count - Facebook tracks these as two distinct, both-real metrics, not a discrepancy."
       }
     },
     {
@@ -730,7 +731,7 @@
     ]
   },
   "followerHistory": {
-    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks. A 5th point (Sep 9, 2026) was added, but only for YouTube/TikTok/LinkedIn, which have a real newer number from individual platform screenshots. X/Instagram/Facebook do NOT have a verified number for that date, so those 3 fields are null - the chart shows a genuine gap there rather than a fabricated continuation. Extended backward with 2 earlier weeks (Jul 24, Jul 31) found in the real Google Sheet source. Extended through Sep 18, 2026 with 2 more real weeks from the same tracking sheet.",
+    "_readme": "Real weekly tracking data provided directly by the user from an internal DayTraders spreadsheet ('DT Social Media Follower Update'), not from public search. This supersedes earlier screenshot/search-derived numbers where they conflict, since it's first-party tracking with exact dates across 4 consecutive weeks. A 5th point (Sep 9, 2026) was added, but only for YouTube/TikTok/LinkedIn, which have a real newer number from individual platform screenshots. X/Instagram/Facebook do NOT have a verified number for that date, so those 3 fields are null - the chart shows a genuine gap there rather than a fabricated continuation. Extended backward with 2 earlier weeks (Jul 24, Jul 31) found in the real Google Sheet source. Extended through Sep 18, 2026 with 2 more real weeks from the same tracking sheet. Extended through Sep 25, 2026 with 1 more real week from the same tracking sheet. All 8 prior weeks cross-checked exactly against the user's fresh paste - zero discrepancies.",
     "weeks": [
       { "date": "2026-07-24", "X": 6694, "Instagram": 3662, "Facebook": 1729, "YouTube": 3228, "TikTok": 193, "LinkedIn": 113, "Discord": null },
       { "date": "2026-07-31", "X": 6706, "Instagram": 3668, "Facebook": 2147, "YouTube": 3230, "TikTok": 191, "LinkedIn": 115, "Discord": null },
@@ -740,15 +741,16 @@
       { "date": "2026-08-28", "X": 6772, "Instagram": 3787, "Facebook": 3670, "YouTube": 3279, "TikTok": 193, "LinkedIn": 118, "Discord": null },
       { "date": "2026-09-09", "X": null, "Instagram": null, "Facebook": null, "YouTube": 3280, "TikTok": 196, "LinkedIn": 125, "Discord": 5525 },
       { "date": "2026-09-11", "X": 6819, "Instagram": 3800, "Facebook": 4021, "YouTube": 3301, "TikTok": 196, "LinkedIn": 123, "Discord": null },
-      { "date": "2026-09-18", "X": 6948, "Instagram": 3827, "Facebook": 4701, "YouTube": 3321, "TikTok": 200, "LinkedIn": 131, "Discord": null }
+      { "date": "2026-09-18", "X": 6948, "Instagram": 3827, "Facebook": 4701, "YouTube": 3321, "TikTok": 200, "LinkedIn": 131, "Discord": null },
+      { "date": "2026-09-25", "X": 6986, "Instagram": 3829, "Facebook": 5038, "YouTube": 3324, "TikTok": 203, "LinkedIn": 133, "Discord": null }
     ],
     "growthAnalysis": [
-      { "platform": "Facebook", "current": 4701, "asOf": "2026-09-18", "weekChange": 680, "weekChangePct": 16.9, "totalChange": 2972, "totalChangePct": 171.9, "spanWeeks": 7 },
-      { "platform": "LinkedIn", "current": 131, "asOf": "2026-09-18", "weekChange": 8, "weekChangePct": 6.5, "totalChange": 18, "totalChangePct": 15.9, "spanWeeks": 8 },
-      { "platform": "Instagram", "current": 3827, "asOf": "2026-09-18", "weekChange": 27, "weekChangePct": 0.7, "totalChange": 165, "totalChangePct": 4.5, "spanWeeks": 7 },
-      { "platform": "X", "current": 6948, "asOf": "2026-09-18", "weekChange": 129, "weekChangePct": 1.9, "totalChange": 254, "totalChangePct": 3.8, "spanWeeks": 7 },
-      { "platform": "TikTok", "current": 200, "asOf": "2026-09-18", "weekChange": 4, "weekChangePct": 2.0, "totalChange": 7, "totalChangePct": 3.6, "spanWeeks": 8 },
-      { "platform": "YouTube", "current": 3321, "asOf": "2026-09-18", "weekChange": 20, "weekChangePct": 0.6, "totalChange": 93, "totalChangePct": 2.9, "spanWeeks": 8 }
+      { "platform": "Facebook", "current": 5038, "asOf": "2026-09-25", "weekChange": 337, "weekChangePct": 7.2, "totalChange": 3309, "totalChangePct": 191.4, "spanWeeks": 8 },
+      { "platform": "LinkedIn", "current": 133, "asOf": "2026-09-25", "weekChange": 2, "weekChangePct": 1.5, "totalChange": 20, "totalChangePct": 17.7, "spanWeeks": 9 },
+      { "platform": "TikTok", "current": 203, "asOf": "2026-09-25", "weekChange": 3, "weekChangePct": 1.5, "totalChange": 10, "totalChangePct": 5.2, "spanWeeks": 9 },
+      { "platform": "Instagram", "current": 3829, "asOf": "2026-09-25", "weekChange": 2, "weekChangePct": 0.1, "totalChange": 167, "totalChangePct": 4.6, "spanWeeks": 8 },
+      { "platform": "X", "current": 6986, "asOf": "2026-09-25", "weekChange": 38, "weekChangePct": 0.5, "totalChange": 292, "totalChangePct": 4.4, "spanWeeks": 8 },
+      { "platform": "YouTube", "current": 3324, "asOf": "2026-09-25", "weekChange": 3, "weekChangePct": 0.1, "totalChange": 96, "totalChangePct": 3.0, "spanWeeks": 9 }
     ]
   },
   "thisWeeksContent": {
