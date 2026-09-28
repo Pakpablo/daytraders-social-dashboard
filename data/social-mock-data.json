@@ -228,7 +228,7 @@
       "_source": {
         "url": "https://x.com/DayTraders_com",
         "retrieved": "Aug 2026, re-verified Sep 21 2026",
-        "note": "Posted Jul 19 2026. Re-checked Sep 21 2026 by finding the account's real post list directly - couldn't get a clean fresh read on this exact post's number, but a sibling post from the same thread (\"first goal scorer\" prediction, 6.3K) matched stored data exactly, so 7.7K here is treated as stable rather than re-guessed. One number in the broader dataset IS technically higher (an Instagram post from Aug 30, 8.0K reach) but it's tagged ADS RUN (paid promotion), so it isn't swapped in here as a fair comparison to this organic post."
+        "note": "Posted Jul 19 2026. Re-checked Sep 21 2026 by finding the account's real post list directly - couldn't get a clean fresh read on this exact post's number, but a sibling post from the same thread (\"first goal scorer\" prediction, 6.3K) matched stored data exactly, so 7.7K here is treated as stable rather than re-guessed. One number in the broader dataset IS technically higher (an Instagram post from Aug 30, 8.0K reach) but it's tagged ADS RUN (paid promotion), so it isn't swapped in here as a fair comparison to this organic post. Re-attempted again Sep 28 2026 - search returned the same cached profile snapshot as before (no fresher data available via public search for this account), so 7.7K stands as the best verified organic post found to date."
       },
       "whyItWorked": {
         "hookType": "World Cup Final prediction giveaway, tied to a live global event",
@@ -325,24 +325,24 @@
     ],
     "beyondTrading": [
       {
-        "name": "iPhone Fold vs. Samsung's Foldables",
-        "description": "Apple is entering the foldable phone market for the first time, expected to launch late 2026. Samsung (7 generations into foldables, just released the Galaxy Z Fold8) isn't standing still — both companies are converging on a similar 4:3 inner-screen design, setting up the biggest smartphone rivalry storyline of the year.",
-        "exampleLink": "https://www.tomsguide.com/phones/apples-foldable-iphone-flip-tipped-for-release-in-2026-with-a-familiar-design-and-iphone-17-air-features"
+        "name": "\"Right Round Hangover\"",
+        "description": "TikTok's paparazzi-prank format lands on Reels too: creators sneak up on a sleeping family member and build a full Hangover-movie aftermath scene around them, then snap it flash-on to Flo Rida's \"Right Round.\" Confirmed active as of Sep 23, 2026.",
+        "exampleLink": "https://newengen.com/insights/september-tiktok-trends/"
+      },
+      {
+        "name": "\"Where Are You?\" \"Home.\"",
+        "description": "A very current Instagram trend (Sep 23, 2026): a short B-roll clip paired with a fake iMessage exchange reveals the place someone considers their real home. Simple, personal, easy identity-angle format.",
+        "exampleLink": "https://socialbee.com/blog/latest-instagram-trends/"
       },
       {
         "name": "GTA 6 Countdown Hype",
-        "description": "GTA 6 launches November 19, 2026. Countdown content, Vice City/Leonida references, and character-switch mechanics are dominating gaming social media and bleeding into mainstream culture broadly.",
+        "description": "GTA 6 launches November 19, 2026. Countdown content, Vice City/Leonida references, and character-switch mechanics are still dominating gaming social media and bleeding into mainstream culture broadly.",
         "exampleLink": "https://www.gamesradar.com/gta-6-guide/"
       },
       {
-        "name": "NFL Season Kickoff (Week 1)",
-        "description": "The 2026 NFL season kicked off Sept 9 (Week 1) with defending champs Seattle beating New England, and the Giants upsetting the Cowboys in new head coach John Harbaugh's debut. Note: this was researched around Sept 14 — the season's moved on since, worth a fresh check before using for current content.",
-        "exampleLink": "https://en.wikipedia.org/wiki/2026_NFL_season"
-      },
-      {
-        "name": "AI Insiders Warning About AI Risk",
-        "description": "A serious, fast-moving story, not a lighthearted trend: a former OpenAI/Anthropic researcher publicly resigned this week warning AI companies are \"gambling with our lives,\" and the post went viral (100M+ views). Other AI safety researchers have echoed the concern publicly, and it's now drawing Congressional attention. Included here because it's genuinely dominating tech conversation right now — not a suggested content angle. Handle with care given the subject matter and that it involves real people and real companies (including Anthropic, who builds the AI this dashboard runs on).",
-        "exampleLink": "https://www.bloomberg.com/news/articles/2026-09-10/silicon-valley-escalates-warnings-about-existential-risks-of-ai-mtvyorsp"
+        "name": "\"Down Goes the Whiskey\" Roast-Stitch Format",
+        "description": "Confirmed still active as of Sep 23, 2026 — a jingle-turned-roast-format where creators stitch their own mock verses over the beat. The joke has fully outgrown the song it started from.",
+        "exampleLink": "https://newengen.com/insights/september-tiktok-trends/"
       }
     ]
   },
