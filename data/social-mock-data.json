@@ -626,6 +626,11 @@
         "pattern": "Memes and relatable content, organically",
         "evidence": "\"Meme / Relatable\" is the top PURELY ORGANIC category in the internal sheet (939 avg reach), ahead of every other non-ads-run category.",
         "why": "Low-effort-to-consume, funny, and not asking anything of the viewer — people engage without needing to care about pricing details."
+      },
+      {
+        "pattern": "On Facebook specifically: meme/POV format shows up strong too",
+        "evidence": "Two of Facebook's newest confirmed posts are meme/POV content (1,300 and 338 views) sitting alongside giveaway posts in the existing Facebook dataset (e.g. the $250K giveaway post at 1,946 views) - so on Facebook, memes aren't a clear underperformer the way the original hypothesis assumed.",
+        "why": "Worth treating format effectiveness as platform-specific rather than assuming one format wins everywhere."
       }
     ],
     "whatWorkedLeast": [
@@ -938,23 +943,27 @@
   "realPlatformAnalytics": {
     "_readme": "Pulled directly from each platform's own native analytics dashboard (screenshots provided by user, Sep 14 2026). Each platform reports over a DIFFERENT time window - shown explicitly per platform rather than forced into one misleading 'total,' since combining mismatched periods would overstate or understate real numbers. Added YouTube, TikTok, Discord, and LinkedIn via live browser checks (Sep 14, 2026) - same standard as the Facebook/Instagram/X data above.",
     "facebook": {
-      "period": "Aug 17 – Sep 13, 2026 (28 days)",
-      "views": { "value": 253300, "changePct": -10.3 },
-      "viewsFromFollowersPct": { "value": 3.7, "changePct": 47.5 },
-      "viewsFromNonFollowersPct": { "value": 96.3, "changePct": -1.2 },
-      "viewers": { "value": 85533, "changePct": -25.2 },
-      "follows": { "value": 1500, "changePct": -5.4 },
-      "unfollows": { "value": 35, "changePct": -16.7 },
-      "netFollows": { "value": 1445, "changePct": -5.1 },
-      "visits": { "value": 2400, "changePct": -36.3 },
-      "contentInteractions": { "value": 1000, "changePct": 18.5 },
-      "interactionsFromFollowers": { "value": 262, "changePct": 12 },
-      "interactionsFromNonFollowers": { "value": 777, "changePct": 20.8 },
-      "linkClicks": { "value": 2700, "changePct": -9 },
-      "threeSecondVideoViews": { "value": 9000, "changePct": 53.4 },
-      "watchTime": "1d 14h",
-      "conversationsStarted": { "value": 2, "changePct": 100 },
-      "newContacts": { "value": 2, "changePct": 100 }
+      "period": "Sep 1 – Sep 28, 2026 (28 days)",
+      "views": { "value": 290100, "changePct": 2.3 },
+      "viewsFromFollowersPct": { "value": 3.0, "changePct": 5.1 },
+      "viewsFromNonFollowersPct": { "value": 97.0, "changePct": -0.2 },
+      "organicViews": { "value": 5980, "changePct": -1.9 },
+      "adViews": { "value": 284136, "changePct": 2.4 },
+      "viewers": { "value": 107981, "changePct": -6.8 },
+      "follows": { "value": 1400, "changePct": -9.3 },
+      "unfollows": { "value": 52, "changePct": 33.3 },
+      "netFollows": { "value": 1384, "changePct": -10.4 },
+      "visits": { "value": 2200, "changePct": -36.5 },
+      "contentInteractions": { "value": 1100, "changePct": 28.6 },
+      "interactionsFromFollowers": { "value": 229, "changePct": 4.6 },
+      "interactionsFromNonFollowers": { "value": 832, "changePct": 37.3 },
+      "linkClicks": { "value": 3300, "changePct": 5.0 },
+      "threeSecondVideoViews": { "value": 7000, "changePct": 55.7 },
+      "watchTime": "1d 1h",
+      "conversationsStarted": { "value": 1, "changePct": 0 },
+      "newContacts": { "value": 1, "changePct": 0 },
+      "_supersedes": "Previous window was Aug 17-Sep 13 (views: 253,300). This is a rolling 28-day window that moved forward, not a conflicting re-measurement - straightforward update.",
+      "_note": "IMPORTANT: organic views (5,980, 2.1%) vs ad views (284,136, 97.9%) - the vast majority of 'total views' is paid reach, not organic. Never cite the 290.1K headline number without this breakdown."
     },
     "instagram": {
       "period": "Aug 17 – Sep 13, 2026 (28 days)",
@@ -1040,6 +1049,13 @@
         { "text": "$250,000 in account value. 5 winners. Giving away five $50K Static Accounts.", "age": "4d ago" }
       ],
       "note": "Confirms the real Monday Sep 14 post ('Your Journey. Our Capital.') is live and matches what's in This Week's Content."
+    },
+    "facebookWeekly": {
+      "_readme": "Narrower, more recent snapshot than the 28-day window above - most current single week available.",
+      "range": "Sep 20–Sep 26, 2026",
+      "published": { "total": 14, "posts": 9, "stories": 5 },
+      "reach": 12400,
+      "newContactsFromMessaging": 0
     }
   },
   "realRecentPosts": {
@@ -1126,8 +1142,52 @@
         "date": "2026-09-03",
         "views": 472,
         "reach": 45
+      },
+      {
+        "date": "2026-09-01",
+        "title": "POV: Overtrading was an Olympic sport...",
+        "views": 1300,
+        "likes": 9,
+        "comments": 0,
+        "shares": 1,
+        "source": "Sep 28 screenshot, Top Content by Views"
+      },
+      {
+        "date": "2026-09-25",
+        "title": "POV: Your friend asks if they should start day trading...",
+        "views": 338,
+        "likes": 1,
+        "comments": 0,
+        "shares": 1,
+        "source": "Sep 28 screenshot, Top Content by Views"
       }
-    ]
+    ],
+    "_unresolvedConflicts": {
+      "_readme": "3 posts appear in both the Sep 14 and Sep 28 data pulls, under similar titles/dates, but with different view counts each time - not close enough to be rounding. Not silently resolved. Likely explanation: 'All content' list and 'Top Content by Views' list may measure different things (e.g. total views vs a filtered/recalculated metric) even though both show a number labeled 'views'. Flagged for the user to confirm which report is authoritative, or whether these are genuinely different metrics that both deserve a place.",
+      "conflicts": [
+        {
+          "post_identity": "Your Journey. Our Capital... (Sep 14)",
+          "old_views": 145,
+          "old_source": "Sep 14 screenshot, 'All content' list",
+          "new_views": 318,
+          "new_source": "Sep 28 screenshot, 'Top Content by Views' list"
+        },
+        {
+          "post_identity": "When your trade goes exactly as planned... (Sep 11)",
+          "old_views": 872,
+          "old_source": "Sep 14 screenshot, 'All content' list",
+          "new_views": 326,
+          "new_source": "Sep 28 screenshot, 'Top Content by Views' list"
+        },
+        {
+          "post_identity": "POV: ...first payout (Sep 4)",
+          "old_views": 823,
+          "old_source": "Sep 14 screenshot, 'All content' list",
+          "new_views": 361,
+          "new_source": "Sep 28 screenshot, 'Top Content by Views' list"
+        }
+      ]
+    }
   },
   "dailyIntelligenceReport": {
     "_readme": "Transcribed directly from the real 'DT Intelligence Report - Sep 23rd' PDF, provided by the user. Report is credited to Abi. All figures, quotes, and ad data are real as captured by the report's own research (Meta Ad Library live pulls, Trustpilot live pulls, agent-mail inbox, Reddit) - not independently re-verified by Claude, but transcribed faithfully from a real source document.",

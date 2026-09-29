@@ -37,8 +37,13 @@ export default function ContentPerformanceAnalysis() {
         <p className="text-gray-400 text-sm mt-1">
           {a.allPosts.length} posts from public X search (Jul 2026) + {a.multiPlatformPosts.length} rows across
           6 platforms from the internal Weekly Content Performance sheet (Aug 29&ndash;Sep 7, 2026) + real native
-          platform analytics below (Sep 14, 2026).
+          platform analytics below (Sep 28, 2026).
         </p>
+        <div className="flex gap-2 mt-2 flex-wrap">
+          <span className="text-[10px] bg-white/5 rounded px-2 py-1 text-gray-400">
+            Facebook, {p.facebookWeekly.range}: {p.facebookWeekly.published.total} posts published, {fmt(p.facebookWeekly.reach)} reach
+          </span>
+        </div>
       </div>
 
       {/* ---- Native platform analytics (real, from each platform's own dashboard) ---- */}
@@ -52,13 +57,14 @@ export default function ContentPerformanceAnalysis() {
             name="Facebook"
             period={p.facebook.period}
             rows={[
-              ["Views", p.facebook.views],
+              ["Total Views", p.facebook.views],
+              ["Organic Views", p.facebook.organicViews],
+              ["Ad Views", p.facebook.adViews],
               ["Viewers", p.facebook.viewers],
               ["Net Follows", p.facebook.netFollows],
-              ["Visits", p.facebook.visits],
               ["Interactions", p.facebook.contentInteractions],
-              ["Link Clicks", p.facebook.linkClicks],
             ]}
+            warning={p.facebook._note}
           />
           <PlatformCard
             name="Instagram"
@@ -101,11 +107,11 @@ export default function ContentPerformanceAnalysis() {
                 <div className="text-xs font-bold text-gray-600 w-5">{i + 1}</div>
                 <div className="flex-1 min-w-0">
                   <div className="text-xs font-semibold truncate">{post.title}</div>
-                  <div className="text-[10px] text-gray-500">{post.format} &middot; {post.date}</div>
+                  <div className="text-[10px] text-gray-500">{post.format ?? ""} {post.format ? "·" : ""} {post.date}</div>
                 </div>
                 <span className="text-[8px] font-bold text-green-400 bg-green-400/10 rounded px-1.5 py-0.5 shrink-0">VERIFIED</span>
                 <div className="text-xs font-bold text-gray-300 w-20 text-right shrink-0">{fmt(post.views)} views</div>
-                <div className="text-xs text-gray-500 w-20 text-right shrink-0">{fmt(post.reach)} reach</div>
+                {post.reach && <div className="text-xs text-gray-500 w-20 text-right shrink-0">{fmt(post.reach)} reach</div>}
               </div>
               {post.instagramEngagement && (
                 <div className="text-[10px] text-gray-500 mt-1 ml-8">
@@ -116,6 +122,24 @@ export default function ContentPerformanceAnalysis() {
             </div>
           ))}
         </div>
+
+        {/* ---- Unresolved conflicts, surfaced not buried ---- */}
+        {data.realRecentPosts._unresolvedConflicts && (
+          <div className="mt-3 bg-amber-500/10 border border-amber-500/30 rounded-lg p-3">
+            <div className="flex items-center gap-2 mb-2">
+              <AlertCircle size={13} className="text-amber-400" />
+              <span className="text-xs font-bold text-amber-400">3 Posts With Conflicting Numbers &mdash; Not Resolved</span>
+            </div>
+            <p className="text-[10px] text-amber-300/80 mb-2 leading-relaxed">{data.realRecentPosts._unresolvedConflicts._readme}</p>
+            <div className="space-y-1.5">
+              {data.realRecentPosts._unresolvedConflicts.conflicts.map((c: any, i: number) => (
+                <div key={i} className="text-[10px] text-gray-300 bg-black/20 rounded px-2 py-1.5">
+                  <span className="font-semibold">{c.post_identity}</span>: {c.old_views} views ({c.old_source}) vs <b className="text-amber-300">{c.new_views} views</b> ({c.new_source})
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* ---- What worked best ---- */}
@@ -308,7 +332,7 @@ function StatRow({ label, stat, suffix = "" }: { label: string; stat: { value: n
   );
 }
 
-function PlatformCard({ name, period, rows }: { name: string; period: string; rows: [string, { value: number; changePct: number }][] }) {
+function PlatformCard({ name, period, rows, warning }: { name: string; period: string; rows: [string, { value: number; changePct: number }][]; warning?: string }) {
   return (
     <div className="bg-[#151517] border border-white/10 rounded-xl p-4">
       <div className="flex items-center justify-between mb-1">
@@ -319,6 +343,9 @@ function PlatformCard({ name, period, rows }: { name: string; period: string; ro
       {rows.map(([label, stat]) => (
         <StatRow key={label} label={label} stat={stat} />
       ))}
+      {warning && (
+        <p className="text-[9px] text-amber-400 leading-relaxed mt-2 pt-2 border-t border-white/10">{warning}</p>
+      )}
     </div>
   );
 }
