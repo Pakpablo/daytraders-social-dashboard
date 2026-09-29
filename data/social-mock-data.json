@@ -593,7 +593,19 @@
         "firm": "Bulenox",
         "reason": "Searched specifically — only found small reseller/affiliate accounts (largest was 1,453 followers), no official Bulenox brand account with a credible follower count turned up. Confirmed real, established firm; just no verifiable social number."
       }
-    ]
+    ],
+    "abiScorecard": {
+      "_readme": "Abi's homepage audit, built by adapting a framework used by professional website auditors (real people who charge $5-6K per audit). This isn't a competitor follower-count comparison like the section above — it's benchmarking daytraders.com's OWN homepage against best-practice standards those auditors use across any industry.",
+      "owner": "Abi",
+      "methodology": "60+ trigger points across 7 layers (e.g. friction & ease, framing & perception), each rated Optimized / Emerging / Opportunity.",
+      "exampleFinding": {
+        "rating": "Opportunity",
+        "area": "Choice Overload Reduction",
+        "finding": "Too many account options (25K–300K, spanning multiple program types, largely uncurated) risks analysis paralysis for new visitors.",
+        "recommendation": "Add a short quiz (\"which account is right for me?\") or reduce the visible default set to 2–3 curated choices."
+      },
+      "proposal": "A/B test a redesigned homepage (Claude-generated, based on the recommendations) against the current one for 2–4 weeks — leadership's call on whether to greenlight it."
+    }
   },
   "contentPerformanceAnalysis": {
     "_readme": "Two real datasets now: 'allPosts' (12 posts, X only, found via public search in the July World Cup period) and 'multiPlatformPosts' (55 rows / 16 distinct posts, Aug 29-Sep 7, pulled directly from the team's internal Weekly Content Performance sheet across X/Instagram/Facebook/YouTube/TikTok/LinkedIn - far richer, first-party data). Findings above are informed by both. Posts marked adsRun:true had paid promotion behind them - not directly comparable to organic reach.",
