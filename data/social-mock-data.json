@@ -1405,5 +1405,55 @@
     "coverageFlags": "Not reachable / not verified today: FundingPips, The5ers, E8 Meta ads (keyword search pages polluted by unrelated advertisers); Quantfury Ad Library keyword search renders blank (2nd day); Google Ads Transparency Center not checked this run; YouTube comments and TikTok not sampled today; Trustpilot live pulls done for Nurp, DayTraders, Blue Guardian, GemAlgo only (other profiles from Sep 21-22 baselines). Blue Guardian Trustpilot rating is suspended (\"breach of guidelines\") — review counts still visible (2,075) but no score. DayTraders review count: live page shows 492/4.6 vs 347/4.5 from Sep 21-22 search snippets — live page treated as today's source of truth.",
     "reissueNote": "Re-issue note (5:08 PM): file regenerated after a workspace reset. All morning content unchanged; two winner-ad screenshots (Apex PASS, Blue Guardian $400K) now show their current Ad Library state because BOTH ads were taken down today — flagged inline.",
     "sources": "Meta Ad Library (live, US), Trustpilot (live), agent-mail inbox captures, Reddit, trade press. Screenshots captured 6:27-6:28 AM IST; Apex/BG screenshots refreshed 5:08-5:10 PM IST."
+  },
+  "marketingMeeting": {
+    "_readme": "Content from the Sept 7, 2026 marketing meeting recap (real transcript-sourced). Logo below references DayTraders' own hosted SVG directly, per their brand guidelines (white/red-white version for dark backgrounds).",
+    "date": "Sept 7, 2026",
+    "logoUrl": "https://daytraders.com/assets/images/logo/red_white.svg",
+    "sections": [
+      {
+        "num": 1,
+        "title": "GTA 6 Content — Proceed with Caution",
+        "owner": "Pablo, Rassell & DJ",
+        "body": "The team discussed tying content into GTA 6's hype ahead of its Nov 19, 2026 launch. DJ flagged that Rockstar Games is known to be protective of its IP, so any tie-in content should be inspired by the moment (aesthetic, hype, timing) — not built from actual game footage, characters, or music."
+      },
+      {
+        "num": 2,
+        "title": "New Channel: Telegram",
+        "owner": "Rassell",
+        "body": "Rassel proposed it: Telegram serves a different audience than our Discord (bigger in Asia & India specifically), so it'd work as a promotion channel rather than a duplicate community. Rassel is pulling example channels + a platform comparison for the team to study before it goes to leadership."
+      },
+      {
+        "num": 3,
+        "title": "Weekly Internal Newsletter — Starting This Week",
+        "owner": "Pablo",
+        "body": "Pablo proposed a short internal weekly summary (this tab) so Martin & Kha-Yen can review ideas organized, without digging through the marketing channel. First edition covers GTA 6, Telegram, and the scorecard below."
+      },
+      {
+        "num": 4,
+        "title": "Behavioural Audit Scorecard — Real Findings, Not Just a Doc",
+        "owner": "Abi",
+        "body": "Abi built this himself over the weekend, adapting a framework used by pro website auditors (60+ trigger points across 7 layers — e.g. friction, framing), rating each area Optimized / Emerging / Opportunity for the daytraders.com homepage specifically. Example finding: too many account options (25K–300K, uncurated) risks analysis paralysis — recommends a short quiz or 2–3 curated defaults. Proposal: A/B test it against the current homepage for 2–4 weeks — leadership's call."
+      },
+      {
+        "num": 5,
+        "title": "Social Dashboard App — Flagged for Review & Improvement",
+        "owner": "Pablo",
+        "body": "Pablo's Marketing & Social Dashboard (this app) was flagged as something the team wants to review together and keep improving."
+      }
+    ],
+    "bestPost": {
+      "platform": "X",
+      "caption": "Predict the exact World Cup Final score for a $50K S2F Account",
+      "views": 7700,
+      "note": "Re-checked and confirmed stable. One number technically ranked higher — an Instagram post at 8.0K reach — but it's tagged as a paid ad, not organic, so it wasn't swapped in as a like-for-like comparison."
+    },
+    "talkingPoints": [
+      "Telegram proposal — Pablo drafts after syncing with Rassel; present the case (audience fit, Asia/India strength) for a go/no-go.",
+      "Scorecard findings + A/B test decision — walk through Abi's ratings and the redesigned homepage mockup; decide whether to greenlight a split test.",
+      "Newsletter format check-in — confirm this internal weekly summary is useful, adjust format if not.",
+      "GTA 6 content sign-off — agree what's safe to post given Rockstar's IP sensitivity.",
+      "Social Dashboard priorities — agree top 2–3 next steps, live in the app."
+    ]
   }
 }
